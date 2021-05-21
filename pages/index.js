@@ -116,7 +116,7 @@ function Landing(props) {
             <CompanyLogo />
           </section>
           <section id="news" className={classes.spaceTopShort}>
-            <NewsEvent />
+            <NewsEvent /> {/* 바보바보바보바보*/}
           </section>
         </main>
         <FooterWithDeco toggleDir={onToggleDir} />
