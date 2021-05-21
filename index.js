@@ -3,4 +3,3 @@ setConfig(require('./next.config'))
 
 require('./server')
 
-
