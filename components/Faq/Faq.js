@@ -116,4 +116,4 @@ Faq.propTypes = {
   t: PropTypes.func.isRequired
 };
 
-export default withTranslation(['saas-landing'])(Faq);
+export default withTranslation(['mobile-landing'])(Faq);
