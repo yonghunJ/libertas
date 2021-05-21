@@ -121,7 +121,7 @@ function Landing(props) {
         </main>
         <FooterWithDeco toggleDir={onToggleDir} />
         <Hidden mdDown>
-          <PageNav />
+          <PageNav /> 
         </Hidden>
         <Hidden mdDown>
           <Notification />
