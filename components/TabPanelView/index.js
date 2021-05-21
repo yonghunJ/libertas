@@ -97,6 +97,7 @@ const FloatingActionButtonZoom = () => {
           Item Three
         </TabPanel>
         <TabPanel value={value} index={3} dir={theme.direction}>
+        <img src="/images/mobile/play-store.png" alt="play store" />
           Item Four
         </TabPanel>
       </SwipeableViews>

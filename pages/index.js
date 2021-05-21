@@ -17,6 +17,7 @@ import FooterWithDeco from '../components/Footer/FooterWithDeco';
 import PageNav from '../components/PageNav';
 import Notification from '../components/Notification';
 import TabPanelView from '../components/TabPanelView';
+import TabPanelView2 from '../components/TabPanelView2';
 import brand from '../public/text/brand';
 
 const sectionMargin = margin => (margin * 20);
@@ -107,7 +108,7 @@ function Landing(props) {
             <TabPanelView />
           </section>
           <section id="tabPanel2" className={classes.spaceMiddle}>
-            <TabPanelView />
+            <TabPanelView2 />
           </section>
           <section id="faq" className={classes.spaceTopShort}>
             <Faq />
