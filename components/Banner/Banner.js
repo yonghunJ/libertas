@@ -57,14 +57,10 @@ function Banner(props) {
               <div className={classes.btnArea}>
                 <Link href="/">
                   <a>
-                    <img src="/images/mobile/app-store.png" alt="app store" />
+                    Free Quote
                   </a>
                 </Link>
-                <Link href="/">
-                  <a>
-                    <img src="/images/mobile/play-store.png" alt="play store" />
-                  </a>
-                </Link>
+
               </div>
             </div>
           </Grid>
