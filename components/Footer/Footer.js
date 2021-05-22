@@ -21,6 +21,7 @@ import brand from '~/public/text/brand';
 import logo from '~/public/images/mobile-logo.svg';
 import { i18n } from '~/i18n';
 import useStyles from './footer-style';
+import { Button } from '@material-ui/core';
 
 function Copyright() {
   return (
@@ -152,21 +153,12 @@ function Footer(props) {
             ))}
           </Grid>
         </Grid>
-        <Grid item xs={12} md={3}>
-          <div className={classes.socmed}>
-            <IconButton aria-label="FB" className={classes.margin} size="small">
-              <i className="ion-social-twitter" />
-            </IconButton>
-            <IconButton aria-label="TW" className={classes.margin} size="small">
-              <i className="ion-social-facebook" />
-            </IconButton>
-            <IconButton aria-label="IG" className={classes.margin} size="small">
-              <i className="ion-social-instagram" />
-            </IconButton>
-            <IconButton aria-label="LI" className={classes.margin} size="small">
-              <i className="ion-social-linkedin" />
-            </IconButton>
-          </div>
+        <Grid item xs={12} md={3} container direction="column" justify="center" alignItems="center">
+          <Link href="/en/contact">
+            <Button variant="contained" color="primary">
+              See Detail
+            </Button>
+          </Link>
           <Select
             value={values.lang}
             onChange={handleChange}

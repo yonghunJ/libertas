@@ -12,6 +12,7 @@ import EditIcon from '@material-ui/icons/Edit';
 import UpIcon from '@material-ui/icons/KeyboardArrowUp';
 import TabPanel from './TabPanel';
 import useStyles from './css';
+import Feature from '../Feature';
 
 const a11yProps = (index) => {
   return {
@@ -88,7 +89,7 @@ const FloatingActionButtonZoom = () => {
         onChangeIndex={handleChangeIndex}
       >
         <TabPanel value={value} index={0} dir={theme.direction}>
-          Item One
+           <Feature />
         </TabPanel>
         <TabPanel value={value} index={1} dir={theme.direction}>
           Item Two1

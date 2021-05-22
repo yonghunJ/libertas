@@ -107,7 +107,7 @@ function Feature(props) {
                 </svg>
                 <ParallaxSmall />
                 <figure className={classes.screen}>
-                  <img src={imgAPI.mobile[4]} alt="illustration" />
+                  <img src={imgAPI.mobile[4]} alt="illustration" style={{height:'100%'}}/>
                 </figure>
               </div>
             </Grid>
@@ -122,7 +122,7 @@ function Feature(props) {
           </Grid>
         </div>
       </Container>
-      <div className={classes.bgColor}>
+      {/* <div className={classes.bgColor}>
         <div className={classes.decoBgTop} />
         <Container fixed>
           <div className={classes.item}>
@@ -176,7 +176,7 @@ function Feature(props) {
             </Container>
           </div>
         </Container>
-      </div>
+      </div> */}
     </div>
   );
 }

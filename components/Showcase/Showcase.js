@@ -60,6 +60,7 @@ function Showcase(props) {
   };
 
   return (
+    <>
     <div className={classes.root}>
       <svg className={classes.decoTop}>
         <use xlinkHref="/images/mobile/deco-wave-top.svg#main" />
@@ -176,6 +177,7 @@ function Showcase(props) {
         </ul>
       </div>
     </div>
+    </>
   );
 }
 
