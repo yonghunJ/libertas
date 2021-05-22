@@ -134,7 +134,7 @@ const footerStyles = makeStyles(theme => ({
     marginTop: theme.spacing(2),
     color: theme.palette.common.white,
     '& $icon': {
-      top: 21,
+      // top: 21,
       color: theme.palette.primary.light,
       position: 'relative',
       '& + div': {

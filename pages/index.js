@@ -6,7 +6,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Header from '../components/Header';
 import Banner from '../components/Banner';
-import Counter from '../components/Counter';
 import Feature from '../components/Feature';
 import Showcase from '../components/Showcase';
 import Testimonials from '../components/Testimonials';
@@ -15,12 +14,12 @@ import CompanyLogo from '../components/CompanyLogo';
 import NewsEvent from '../components/NewsEvent';
 import FooterWithDeco from '../components/Footer/FooterWithDeco';
 import PageNav from '../components/PageNav';
-import Notification from '../components/Notification';
 import TabPanelView from '../components/TabPanelView';
 import TabPanelView2 from '../components/TabPanelView2';
 import brand from '../public/text/brand';
+import CallAction from '../components/CallAction/CallAction';
 
-const sectionMargin = margin => (margin * 20);
+const sectionMargin = margin => (margin * 20)
 const useStyles = makeStyles(theme => ({
   mainWrap: {
     position: 'relative',
@@ -92,9 +91,6 @@ function Landing(props) {
           <section id="home">
             <Banner />
           </section>
-          <section id="counter">
-            <Counter />
-          </section>
           <section id="feature" className={classes.spaceTop}>
             <Feature />
           </section>
@@ -110,12 +106,6 @@ function Landing(props) {
           <section id="tabPanel2" className={classes.spaceMiddle}>
             <TabPanelView2 />
           </section>
-          <section id="faq" className={classes.spaceTopShort}>
-            <Faq />
-          </section>
-          <section className={classes.spaceTopShort}>
-            <CompanyLogo />
-          </section>
           <section id="news" className={classes.spaceTopShort}>
             <NewsEvent />
           </section>   
@@ -123,9 +113,6 @@ function Landing(props) {
         <FooterWithDeco toggleDir={onToggleDir} />
         <Hidden mdDown>
           <PageNav /> 
-        </Hidden>
-        <Hidden mdDown>
-          <Notification />
         </Hidden>
         <script src="/scripts/particles-spray.js" />
       </div>

@@ -9,6 +9,7 @@ import imgAPI from '~/public/images/imgAPI';
 import { withTranslation } from '~/i18n';
 import Title from '../Title';
 import useStyles from './testi-style';
+import CallAction from '../CallAction/CallAction';
 
 const testiContent = [
   {
@@ -115,6 +116,7 @@ function Testimonials(props) {
 
   return (
     <div className={classes.root}>
+      <CallAction />
       <ReactWOW animation="fadeInUpShort" offset={-50} delay="0.3s" duration="0.5s">
         <div>
           <Title align="center">

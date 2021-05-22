@@ -12,6 +12,7 @@ import imgAPI from '~/public/images/imgAPI';
 import { withTranslation } from '~/i18n';
 import { useText } from '~/theme/common';
 import useStyles from './banner-style';
+import { Button } from '@material-ui/core';
 
 function Banner(props) {
   const classes = useStyles();
@@ -55,10 +56,11 @@ function Banner(props) {
                 {t('common:mobile-landing.banner_desc')}
               </Typography>
               <div className={classes.btnArea}>
-                <Link href="/">
-                  <a>
+
+                <Link href="/en/contact">
+                  <Button variant="contained" color="primary">
                     Free Quote
-                  </a>
+                  </Button>
                 </Link>
 
               </div>

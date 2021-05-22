@@ -142,24 +142,6 @@ function Header(props) {
               )}
             </nav>
             <nav className={classes.navMenu}>
-              {!invert && (
-                <Hidden xsDown>
-                  <Fragment>
-                    <IconButton aria-label="facebook" className={classes.socialBtn} size="small">
-                      <i className="ion-social-twitter" />
-                    </IconButton>
-                    <IconButton aria-label="twitter" className={classes.socialBtn} size="small">
-                      <i className="ion-social-facebook" />
-                    </IconButton>
-                    <IconButton aria-label="instagram" className={classes.socialBtn} size="small">
-                      <i className="ion-social-instagram" />
-                    </IconButton>
-                    <IconButton aria-label="linkedin" className={classes.socialBtn} size="small">
-                      <i className="ion-social-linkedin" />
-                    </IconButton>
-                  </Fragment>
-                </Hidden>
-              )}
               <Settings toggleDark={onToggleDark} toggleDir={onToggleDir} invert={invert} />
             </nav>
           </div>

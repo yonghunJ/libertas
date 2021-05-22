@@ -56,6 +56,9 @@
     "company_title": "Trusted by organizations worldwide",
     "news_title": "Latest News",
     "news_desc": "Read more about latest news and our special event",
-    "footer_text": "What are you waiting for? Download Now!"
+    "footer_text": "What are you waiting for? Download Now!",
+    "cta_title": "Ready to get started?",
+    "cta_subtitle": "Best Tech team are not instant born, they are made",
+    "cta_btn": "CONTACT US"
   }
 }
