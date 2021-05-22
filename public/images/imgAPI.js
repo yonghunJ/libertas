@@ -29,7 +29,7 @@ const imgAPI = {
     'https://via.placeholder.com/640x425/c4cdff/757575',
   ],
   mobile: [
-    '/images/mobile/mobile_banner.png',
+    '/images/mobile/mobile_banner.svg',
     '/images/mobile/widget-top.png',
     '/images/mobile/widget-left.png',
     '/images/mobile/widget-right.png',
