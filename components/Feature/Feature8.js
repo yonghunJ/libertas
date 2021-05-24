@@ -50,7 +50,7 @@ const Feature8 = (props) => {
                       <use xlinkHref="/images/mobile/deco-feature.svg#main" />
                     </svg>
                     <figure className={classes.screen}>
-                      <img src={imgAPI.mobile[5]} alt="screen" />
+                      <img src={imgAPI.feature[6]} alt="Feature(8) Security" />
                     </figure>
                   </div>
                 </Grid>

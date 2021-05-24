@@ -33,8 +33,8 @@ const imgAPI = {
     '/images/mobile/widget-top.png',
     '/images/mobile/widget-left.png',
     '/images/mobile/widget-right.png',
-    '/images/mobile/mobile_feature.png',
-    '/images/mobile/mobile_feature2.png',
+    '/images/mobile/tab-solution1.svg',
+    '/images/mobile/tab-solution2.png',
     'https://via.placeholder.com/536x302/fbd2ff/757575',
     'https://via.placeholder.com/518x1120/fbd2ff/757575',
     'https://via.placeholder.com/518x1120/d2ffff/757575',
@@ -50,7 +50,15 @@ const imgAPI = {
     '/images/mobile/widget_screen5.png',
     '/images/mobile/widget_screen6.png',
     '/images/mobile/widget_screen7.png',
-    ''
+  ],
+  feature: [
+    '/images/mobile/tab-solution1.svg',
+    '/images/mobile/tab-solution2.png',
+    '/images/mobile/tab-solution3.png',
+    '/images/mobile/tab-solution4.png',
+    '/images/mobile/tab-solution5.png',
+    '/images/mobile/tab-solution6.png',
+    '/images/mobile/tab-solution7.png'
   ]
 };
 

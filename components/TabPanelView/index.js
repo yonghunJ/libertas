@@ -80,10 +80,10 @@ const FloatingActionButtonZoom = () => {
           variant="fullWidth"
           aria-label="action tabs example"
         >
-          <Tab label="Item One" {...a11yProps(0)} />
-          <Tab label="Item Two" {...a11yProps(1)} />
-          <Tab label="Item Three" {...a11yProps(2)} />
-          <Tab label="Item Four" {...a11yProps(3)} />
+          <Tab label="Inquiry" {...a11yProps(0)} />
+          <Tab label="Estimate" {...a11yProps(1)} />
+          <Tab label="Invoicing" {...a11yProps(2)} />
+          <Tab label="Tracking" {...a11yProps(3)} />
         </Tabs>
       </AppBar>
       <SwipeableViews
