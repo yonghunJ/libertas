@@ -16,7 +16,7 @@ const showcaseStyles = makeStyles(theme => ({
     },
     [theme.breakpoints.down(330)]: {
       padding: theme.spacing(60, 0, 0),
-    }
+    },
   },
   decoTop: {
     fill: theme.palette.type === 'dark' ? darken(theme.palette.primary.light, 0.65) : lighten(theme.palette.primary.light, 0.8),
@@ -26,11 +26,11 @@ const showcaseStyles = makeStyles(theme => ({
     top: -3,
     left: 0,
     [theme.breakpoints.up('lg')]: {
-      transform: 'scale(1.5, 1)'
+      transform: 'scale(1.5, 1)',
     },
     [theme.breakpoints.up('xl')]: {
-      display: 'none'
-    }
+      display: 'none',
+    },
   },
   decoBottom: {
     fill: theme.palette.type === 'dark' ? darken(theme.palette.primary.light, 0.6) : lighten(theme.palette.primary.light, 0.8),
@@ -40,18 +40,18 @@ const showcaseStyles = makeStyles(theme => ({
     bottom: -70,
     zIndex: 21,
     [theme.breakpoints.up('lg')]: {
-      transform: 'scale(1.5, 1)'
+      transform: 'scale(1.5, 1)',
     },
     [theme.breakpoints.up('xl')]: {
-      display: 'none'
+      display: 'none',
     },
     [theme.breakpoints.down('sm')]: {
       width: 1280,
-      left: '-50%'
+      left: '-50%',
     },
     [theme.breakpoints.down('xs')]: {
-      display: 'none'
-    }
+      display: 'none',
+    },
   },
   decoBottomMobile: {
     display: 'none',
@@ -64,8 +64,8 @@ const showcaseStyles = makeStyles(theme => ({
     zIndex: 21,
     background: theme.palette.type === 'dark' ? darken(theme.palette.primary.light, 0.6) : lighten(theme.palette.primary.light, 0.8),
     [theme.breakpoints.down('xs')]: {
-      display: 'block'
-    }
+      display: 'block',
+    },
   },
   invertParallax: {
     filter: 'brightness(0) invert(1)',
@@ -84,13 +84,13 @@ const showcaseStyles = makeStyles(theme => ({
     },
     [theme.breakpoints.down('xs')]: {
       paddingTop: theme.spacing(5),
-    }
+    },
   },
   item: {
     position: 'relative',
     '&:focus': {
-      outline: 'none'
-    }
+      outline: 'none',
+    },
   },
   frame: {
     padding: theme.spacing(1),
@@ -99,16 +99,16 @@ const showcaseStyles = makeStyles(theme => ({
     background: theme.palette.common.white,
     '& img': {
       display: 'block',
-      width: '100%'
-    }
+      width: '100%',
+    },
   },
   carouselSide: {
     [theme.breakpoints.up('xl')]: {
       maxWidth: 1440,
-      margin: '0 auto'
+      margin: '0 auto',
     },
     [theme.breakpoints.down('xs')]: {
-      display: 'none'
+      display: 'none',
     },
     '& $frame': {
       width: 200,
@@ -117,8 +117,8 @@ const showcaseStyles = makeStyles(theme => ({
         width: 166,
         height: 365,
       },
-      '& img': {}
-    }
+      '& img': {},
+    },
   },
   carouselCenter: {
     width: 320,
@@ -133,7 +133,7 @@ const showcaseStyles = makeStyles(theme => ({
       bottom: -60,
     },
     [theme.breakpoints.down('xs')]: {
-      margin: '0 auto'
+      margin: '0 auto',
     },
     '& $frame': {
       width: 249,
@@ -149,21 +149,21 @@ const showcaseStyles = makeStyles(theme => ({
       },
       '& img': {
         transition: 'all 0.3s ease-out',
-        transform: 'translateY(30px)'
-      }
+        transform: 'translateY(30px)',
+      },
     },
     '& div[class="slick-list"]': {
-      overflow: 'visible'
+      overflow: 'visible',
     },
     '& div[class*="slick-active "]': {
       '& img': {
-        transform: 'translate(0)'
+        transform: 'translate(0)',
       },
       '& $widget': {
         transform: 'scale(1.2)',
         opacity: 1,
-      }
-    }
+      },
+    },
   },
   widget: {
     position: 'absolute',
@@ -176,14 +176,14 @@ const showcaseStyles = makeStyles(theme => ({
     zIndex: 2,
     '& img': {
       width: '100%',
-    }
+    },
   },
   active: {},
   pagination: {
     zIndex: 220,
     position: 'relative',
     [theme.breakpoints.down('xs')]: {
-      marginTop: theme.spacing(-8)
+      marginTop: theme.spacing(-8),
     },
     '& ul': {
       position: 'absolute',
@@ -208,18 +208,18 @@ const showcaseStyles = makeStyles(theme => ({
           width: 40,
         },
         '&:hover': {
-          opacity: 0.5
+          opacity: 0.5,
         },
         '& button': {
           opacity: 0,
           cursor: 'pointer',
           padding: 0,
           width: '100%',
-          height: '100%'
-        }
+          height: '100%',
+        },
       },
-    }
-  }
+    },
+  },
 }));
 
 export default showcaseStyles;
