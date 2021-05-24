@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Head from 'next/head';
 import Hidden from '@material-ui/core/Hidden';
+import { withTranslation } from '~/i18n';
 import { makeStyles } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Header from '../components/Header';
@@ -14,7 +15,6 @@ import PageNav from '../components/PageNav';
 import TabPanelView from '../components/TabPanelView';
 import TabPanelView2 from '../components/TabPanelView2';
 import brand from '../public/text/brand';
-import Title from '../components/Title';
 import CallAction from '../components/CallAction/CallAction';
 
 const sectionMargin = margin => (margin * 20);
@@ -89,9 +89,6 @@ function Landing(props) {
           <section id="home">
             <Banner />
           </section>
-          <Title align="center">
-            {('common:mobile-landing.feature_title')}
-          </Title>
           <section id="tabPanel" className={classes.spaceMiddle}>
             <TabPanelView />
           </section>
@@ -128,7 +125,8 @@ Landing.getInitialProps = async () => ({
 Landing.propTypes = {
   onToggleDark: PropTypes.func.isRequired,
   onToggleDir: PropTypes.func.isRequired,
+  t: PropTypes.func.isRequired,
 };
 
 
-export default Landing;
+export default withTranslation(['mobile-landing'])(Landing);

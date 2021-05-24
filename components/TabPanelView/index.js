@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import SwipeableViews from 'react-swipeable-views';
 import { useTheme } from '@material-ui/core/styles';
@@ -6,6 +7,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Zoom from '@material-ui/core/Zoom';
+import { withTranslation } from '~/i18n';
 import Fab from '@material-ui/core/Fab';
 import AddIcon from '@material-ui/icons/Add';
 import EditIcon from '@material-ui/icons/Edit';
@@ -16,19 +18,20 @@ import Feature1 from '../Feature/Feature1';
 import Feature2 from '../Feature/Feature2';
 import Feature3 from '../Feature/Feature3';
 import Feature4 from '../Feature/Feature4';
+import Title from '../Title';
 
 const a11yProps = (index) => {
   return {
     id: `action-tab-${index}`,
     'aria-controls': `action-tabpanel-${index}`,
   };
-}
+};
 
-const FloatingActionButtonZoom = () => {
+const FloatingActionButtonZoom = (props) => {
   const classes = useStyles();
   const theme = useTheme();
   const [value, setValue] = React.useState(0);
-
+  const { t } = props;
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
@@ -71,6 +74,9 @@ const FloatingActionButtonZoom = () => {
 
   return (
     <div className={classes.root}>
+      <Title align="center">
+        {t('common:mobile-landing.feature_title')}
+      </Title>
       <AppBar position="static" color="default">
         <Tabs
           value={value}
@@ -90,7 +96,6 @@ const FloatingActionButtonZoom = () => {
         axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
         index={value}
         onChangeIndex={handleChangeIndex}
-        // style={{ height: 500 }}
       >
         <TabPanel value={value} index={0} dir={theme.direction}>
           <Feature1 />
@@ -124,4 +129,7 @@ const FloatingActionButtonZoom = () => {
   );
 };
 
-export default FloatingActionButtonZoom;
+FloatingActionButtonZoom.propTypes = {
+  t: PropTypes.func.isRequired,
+};
+export default withTranslation(['mobile-landing'])(FloatingActionButtonZoom);

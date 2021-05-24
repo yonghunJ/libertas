@@ -7,6 +7,8 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Zoom from '@material-ui/core/Zoom';
 import Fab from '@material-ui/core/Fab';
+import PropTypes from 'prop-types';
+import { withTranslation } from '~/i18n';
 import AddIcon from '@material-ui/icons/Add';
 import EditIcon from '@material-ui/icons/Edit';
 import UpIcon from '@material-ui/icons/KeyboardArrowUp';
@@ -16,6 +18,7 @@ import Feature5 from '../Feature/Feature5';
 import Feature6 from '../Feature/Feature6';
 import Feature7 from '../Feature/Feature7';
 import Feature8 from '../Feature/Feature8';
+import Title from '../Title';
 
 const a11yProps = (index) => {
   return {
@@ -24,11 +27,11 @@ const a11yProps = (index) => {
   };
 };
 
-const FloatingActionButtonZoom = () => {
+const FloatingActionButtonZoom = (props) => {
   const classes = useStyles();
   const theme = useTheme();
   const [value, setValue] = React.useState(0);
-
+  const { t } = props;
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
@@ -71,6 +74,9 @@ const FloatingActionButtonZoom = () => {
 
   return (
     <div className={classes.root}>
+      <Title align="center">
+        {t('common:mobile-landing.feature_title_2')}
+      </Title>
       <AppBar position="static" color="default">
         <Tabs
           value={value}
@@ -123,4 +129,7 @@ const FloatingActionButtonZoom = () => {
   );
 };
 
-export default FloatingActionButtonZoom;
+FloatingActionButtonZoom.propTypes = {
+  t: PropTypes.func.isRequired,
+};
+export default withTranslation(['mobile-landing'])(FloatingActionButtonZoom);
