@@ -1,8 +1,8 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { useTheme } from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
+import { Typography } from '@material-ui/core';
 import Button from '@material-ui/core/Button';
 import Container from '@material-ui/core/Container';
 import Paper from '@material-ui/core/Paper';
@@ -21,7 +21,7 @@ function CallAction(props) {
 
   const classes = useStyles();
   return (
-    <div style= {{marginBottom: 100}}>
+    <div style={{ marginBottom: 100 }}>
       <svg
         fill="#cccccc"
         width={845}
@@ -59,7 +59,7 @@ function CallAction(props) {
 }
 
 CallAction.propTypes = {
-  t: PropTypes.func.isRequired
+  t: PropTypes.func.isRequired,
 };
 
-export default withTranslation(['agency-landing'])(CallAction);
+export default withTranslation(['mobile-landing'])(CallAction);

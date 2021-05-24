@@ -5,7 +5,7 @@ import {
   ThemeProvider,
   createMuiTheme,
   StylesProvider,
-  jssPreset
+  jssPreset,
 } from '@material-ui/core/styles';
 import { create } from 'jss';
 import { PageTransition } from 'next-page-transitions';
@@ -31,7 +31,7 @@ function MyApp(props) {
   const [loading, setLoading] = useState(0);
   const [theme, setTheme] = useState({
     ...appTheme('joker', themeType),
-    direction: i18n.language === 'ar' ? 'rtl' : 'ltr'
+    direction: i18n.language === 'ar' ? 'rtl' : 'ltr',
   });
 
   useEffect(() => {
@@ -66,14 +66,14 @@ function MyApp(props) {
     });
   };
 
-  const toggleDirection = dir => {
+  const toggleDirection = (dir) => {
     document.dir = dir;
     setTheme({
       ...theme,
       direction: dir,
       palette: {
-        ...theme.palette
-      }
+        ...theme.palette,
+      },
     });
   };
 
@@ -109,9 +109,9 @@ function MyApp(props) {
 
 MyApp.propTypes = {
   Component: PropTypes.elementType.isRequired,
-  pageProps: PropTypes.object.isRequired
+  pageProps: PropTypes.object.isRequired,
 };
 
-MyApp.getInitialProps = async (appContext) => ({...await App.getInitialProps(appContext) })
+MyApp.getInitialProps = async (appContext) => ({ ...await App.getInitialProps(appContext) });
 
 export default appWithTranslation(MyApp);

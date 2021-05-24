@@ -1,8 +1,29 @@
 {
   "presets": [
-    "next/babel"
+    "next/babel",
+    ["@babel/preset-env",
+      {
+        "targets": {
+          "node": "current"
+        }
+      }
+    ]
   ],
   "plugins": [
-    "babel-plugin-root-import"
+    "babel-plugin-root-import",
+    "@babel/plugin-proposal-class-properties",
+    [
+      "babel-plugin-module-resolver",
+      {
+        "root": ["./src"],
+        "alias": {
+          "db": "./src/db",
+          "middleware": "./src/middleware",
+          "helpers": "./src/helpers",
+          "core": "./src/core",
+          "src": "./src"
+        }
+      }
+    ]
   ]
 }

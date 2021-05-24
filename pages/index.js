@@ -6,20 +6,18 @@ import { makeStyles } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Header from '../components/Header';
 import Banner from '../components/Banner';
-import Feature from '../components/Feature';
 import Showcase from '../components/Showcase';
 import Testimonials from '../components/Testimonials';
-import Faq from '../components/Faq';
-import CompanyLogo from '../components/CompanyLogo';
 import NewsEvent from '../components/NewsEvent';
 import FooterWithDeco from '../components/Footer/FooterWithDeco';
 import PageNav from '../components/PageNav';
 import TabPanelView from '../components/TabPanelView';
 import TabPanelView2 from '../components/TabPanelView2';
 import brand from '../public/text/brand';
+import Title from '../components/Title';
 import CallAction from '../components/CallAction/CallAction';
 
-const sectionMargin = margin => (margin * 20)
+const sectionMargin = margin => (margin * 20);
 const useStyles = makeStyles(theme => ({
   mainWrap: {
     position: 'relative',
@@ -34,7 +32,7 @@ const useStyles = makeStyles(theme => ({
     },
     [theme.breakpoints.down('sm')]: {
       marginBottom: sectionMargin(theme.spacing() / 2),
-    }
+    },
   },
   spaceTop: {
     marginTop: sectionMargin(theme.spacing()),
@@ -43,7 +41,7 @@ const useStyles = makeStyles(theme => ({
     },
     [theme.breakpoints.down('sm')]: {
       marginTop: sectionMargin(theme.spacing() / 2),
-    }
+    },
   },
   spaceMiddle: {
     display: 'flex',
@@ -53,26 +51,26 @@ const useStyles = makeStyles(theme => ({
     marginBottom: sectionMargin(theme.spacing() / 2),
     [theme.breakpoints.down('sm')]: {
       marginBottom: sectionMargin(2),
-    }
+    },
   },
   spaceTopShort: {
     marginTop: sectionMargin(theme.spacing() / 2),
     [theme.breakpoints.down('sm')]: {
       marginTop: sectionMargin(2),
-    }
+    },
   },
   containerWrap: {
     marginTop: -40,
     '& > section': {
-      position: 'relative'
-    }
-  }
+      position: 'relative',
+    },
+  },
 }));
 
 function Landing(props) {
   const classes = useStyles();
   const { onToggleDark, onToggleDir } = props;
-
+  const { t } = props;
   return (
     <React.Fragment>
       <Head>
@@ -91,8 +89,14 @@ function Landing(props) {
           <section id="home">
             <Banner />
           </section>
-          <section id="feature" className={classes.spaceTop}>
-            <Feature />
+          <Title align="center">
+            {('common:mobile-landing.feature_title')}
+          </Title>
+          <section id="tabPanel" className={classes.spaceMiddle}>
+            <TabPanelView />
+          </section>
+          <section id="tabPanel2" className={classes.spaceMiddle}>
+            <TabPanelView2 />
           </section>
           <section id="showcase">
             <Showcase />
@@ -100,19 +104,16 @@ function Landing(props) {
           <section id="testimonials">
             <Testimonials />
           </section>
-          <section id="tabPanel" className={classes.spaceMiddle}>
-            <TabPanelView />
-          </section>
-          <section id="tabPanel2" className={classes.spaceMiddle}>
-            <TabPanelView2 />
+          <section id="callAction">
+            <CallAction />
           </section>
           <section id="news" className={classes.spaceTopShort}>
             <NewsEvent />
-          </section>   
+          </section>
         </main>
         <FooterWithDeco toggleDir={onToggleDir} />
         <Hidden mdDown>
-          <PageNav /> 
+          <PageNav />
         </Hidden>
         <script src="/scripts/particles-spray.js" />
       </div>

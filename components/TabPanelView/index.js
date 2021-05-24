@@ -12,7 +12,10 @@ import EditIcon from '@material-ui/icons/Edit';
 import UpIcon from '@material-ui/icons/KeyboardArrowUp';
 import TabPanel from './TabPanel';
 import useStyles from './css';
-import Feature from '../Feature';
+import Feature1 from '../Feature/Feature1';
+import Feature2 from '../Feature/Feature2';
+import Feature3 from '../Feature/Feature3';
+import Feature4 from '../Feature/Feature4';
 
 const a11yProps = (index) => {
   return {
@@ -87,19 +90,19 @@ const FloatingActionButtonZoom = () => {
         axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
         index={value}
         onChangeIndex={handleChangeIndex}
+        // style={{ height: 500 }}
       >
         <TabPanel value={value} index={0} dir={theme.direction}>
-           <Feature />
+          <Feature1 />
         </TabPanel>
         <TabPanel value={value} index={1} dir={theme.direction}>
-          Item Two1
+          <Feature2 />
         </TabPanel>
         <TabPanel value={value} index={2} dir={theme.direction}>
-          Item Three
+          <Feature3 />
         </TabPanel>
         <TabPanel value={value} index={3} dir={theme.direction}>
-        <img src="/images/mobile/play-store.png" alt="play store" />
-          Item Four
+          <Feature4 />
         </TabPanel>
       </SwipeableViews>
       {fabs.map((fab, index) => (
@@ -119,6 +122,6 @@ const FloatingActionButtonZoom = () => {
       ))}
     </div>
   );
-}
+};
 
 export default FloatingActionButtonZoom;

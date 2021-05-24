@@ -12,6 +12,7 @@ import NewsCard from '../Cards/News';
 import ParallaxLarge from '../Parallax/Large';
 import imgAPI from '~/public/images/imgAPI';
 import useStyle from './news-event-style';
+import CallAction from '../CallAction/CallAction';
 
 function NewsEvent(props) {
   const classes = useStyle();
@@ -23,6 +24,7 @@ function NewsEvent(props) {
 
   return (
     <div className={classes.root}>
+      <CallAction />
       <div className={classes.decoBgTop} />
       <div className={classes.parallaxEvent}>
         <ParallaxLarge />
@@ -66,7 +68,7 @@ function NewsEvent(props) {
 }
 
 NewsEvent.propTypes = {
-  t: PropTypes.func.isRequired
+  t: PropTypes.func.isRequired,
 };
 
 export default withTranslation(['mobile-landing'])(NewsEvent);

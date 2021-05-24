@@ -12,7 +12,9 @@ const decoStyle = {
 };
 
 const featureStyles = makeStyles(theme => ({
-  root: {},
+  root: {
+    height: '100%',
+  },
   decoPrimary: {
     fill: theme.palette.type === 'dark' ? theme.palette.primary.dark : theme.palette.primary.light,
     [theme.breakpoints.down('sm')]: {

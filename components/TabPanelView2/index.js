@@ -12,13 +12,17 @@ import EditIcon from '@material-ui/icons/Edit';
 import UpIcon from '@material-ui/icons/KeyboardArrowUp';
 import TabPanel from './TabPanel';
 import useStyles from './css';
+import Feature5 from '../Feature/Feature5';
+import Feature6 from '../Feature/Feature6';
+import Feature7 from '../Feature/Feature7';
+import Feature8 from '../Feature/Feature8';
 
 const a11yProps = (index) => {
   return {
     id: `action-tab-${index}`,
     'aria-controls': `action-tabpanel-${index}`,
   };
-}
+};
 
 const FloatingActionButtonZoom = () => {
   const classes = useStyles();
@@ -88,16 +92,16 @@ const FloatingActionButtonZoom = () => {
         onChangeIndex={handleChangeIndex}
       >
         <TabPanel value={value} index={0} dir={theme.direction}>
-          Item One
+          <Feature5 />
         </TabPanel>
         <TabPanel value={value} index={1} dir={theme.direction}>
-          Item Two1
+          <Feature6 />
         </TabPanel>
         <TabPanel value={value} index={2} dir={theme.direction}>
-          Item Three
+          <Feature7 />
         </TabPanel>
         <TabPanel value={value} index={3} dir={theme.direction}>
-          Item Four
+          <Feature8 />
         </TabPanel>
       </SwipeableViews>
       {fabs.map((fab, index) => (
@@ -117,6 +121,6 @@ const FloatingActionButtonZoom = () => {
       ))}
     </div>
   );
-}
+};
 
 export default FloatingActionButtonZoom;

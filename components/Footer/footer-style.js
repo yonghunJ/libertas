@@ -14,20 +14,20 @@ const footerStyles = makeStyles(theme => ({
     position: 'absolute',
     top: -10,
     [theme.breakpoints.up('xl')]: {
-      display: 'none'
+      display: 'none',
     },
     [theme.breakpoints.up('lg')]: {
-      transform: 'scale(1.5, 1)'
+      transform: 'scale(1.5, 1)',
     },
     [theme.breakpoints.down('md')]: {
       transform: 'scale(1.2, 0.7)',
-      top: -80
+      top: -80,
     },
     [theme.breakpoints.down('xs')]: {
       transform: 'scale(0.5, 0.5)',
       top: -90,
       left: -330,
-      width: 1280
+      width: 1280,
     },
   },
   footer: {
@@ -44,8 +44,8 @@ const footerStyles = makeStyles(theme => ({
     '& p': {
       color: theme.palette.common.white,
       [theme.breakpoints.down('sm')]: {
-        marginBottom: theme.spacing(4)
-      }
+        marginBottom: theme.spacing(4),
+      },
     },
     '& ul': {
       margin: 0,
@@ -59,29 +59,29 @@ const footerStyles = makeStyles(theme => ({
         textDecoration: 'none !important',
         color: theme.palette.common.white,
         '&:hover': {
-          color: theme.palette.primary.light
-        }
-      }
+          color: theme.palette.primary.light,
+        },
+      },
     },
     '&$invert': {
       '& p': {
-        color: theme.palette.text.primary
+        color: theme.palette.text.primary,
       },
       '& li a': {
-        color: theme.palette.text.primary
+        color: theme.palette.text.primary,
       },
       '& $logo': {
         '& h6': {
-          color: theme.palette.primary.dark
-        }
+          color: theme.palette.primary.dark,
+        },
       },
       '& $selectLang': {
         color: theme.palette.text.primary,
         '& svg': {
           color: theme.palette.text.primary,
         },
-      }
-    }
+      },
+    },
   },
   title: {
     color: theme.palette.common.white,
@@ -99,18 +99,18 @@ const footerStyles = makeStyles(theme => ({
     },
     '& h6': {
       color: theme.palette.common.white,
-    }
+    },
   },
   footerDesc: {
     display: 'block',
-    fontSize: 14
+    fontSize: 14,
   },
   socmed: {
     display: 'flex',
     justifyContent: 'center',
     marginBottom: theme.spacing(4),
     [theme.breakpoints.down('sm')]: {
-      marginTop: theme.spacing(4)
+      marginTop: theme.spacing(4),
     },
     '& button': {
       margin: theme.spacing(),
@@ -120,11 +120,11 @@ const footerStyles = makeStyles(theme => ({
       height: 36,
       '& i': {
         color: theme.palette.common.white,
-      }
+      },
     },
     '& i': {
-      fontSize: 24
-    }
+      fontSize: 24,
+    },
   },
   icon: {},
   selectLang: {
@@ -141,7 +141,7 @@ const footerStyles = makeStyles(theme => ({
         background: 'none !important',
         padding: theme.spacing(1.5, 1.5, 1.5, 4),
         width: 'calc(100% - 32px)',
-      }
+      },
     },
     '& svg': {
       color: theme.palette.primary.light,
@@ -152,15 +152,15 @@ const footerStyles = makeStyles(theme => ({
       '& legend': {
         top: 6,
         position: 'relative',
-        borderTop: `1px solid ${fade(theme.palette.primary.light, 0.5)}`
+        borderTop: `1px solid ${fade(theme.palette.primary.light, 0.5)}`,
       },
-    }
+    },
   },
   siteMapItem: {
     [theme.breakpoints.down('md')]: {
       paddingBottom: '0 !important',
       paddingTop: '0 !important',
-    }
+    },
   },
   accordionRoot: {
     background: 'none',
@@ -171,17 +171,17 @@ const footerStyles = makeStyles(theme => ({
       color: theme.palette.text.primary,
       '& svg': {
         fill: theme.palette.text.primary,
-      }
+      },
     },
     '& svg': {
-      fill: theme.palette.common.white
-    }
+      fill: theme.palette.common.white,
+    },
   },
   accordionContent: {
-    margin: 0
+    margin: 0,
   },
   accordionIcon: {
-    padding: 0
+    padding: 0,
   },
   footerDeco: {
     position: 'relative',
@@ -191,7 +191,7 @@ const footerStyles = makeStyles(theme => ({
     marginTop: -360,
     [theme.breakpoints.up('xl')]: {
       paddingTop: theme.spacing(20),
-      marginTop: theme.spacing(20)
+      marginTop: theme.spacing(20),
     },
     [theme.breakpoints.down('sm')]: {
       paddingTop: theme.spacing(30),
@@ -210,7 +210,7 @@ const footerStyles = makeStyles(theme => ({
       opacity: 0.1,
       background: `url(${decoWave}) no-repeat transparent`,
       backgroundSize: '100%',
-    }
+    },
   },
   decoration: {
     position: 'absolute',
@@ -225,7 +225,7 @@ const footerStyles = makeStyles(theme => ({
       opacity: 0.15,
       position: 'fixed',
       top: 0,
-    }
+    },
   },
   leftDeco: {
     left: 0,
@@ -248,16 +248,16 @@ const footerStyles = makeStyles(theme => ({
     paddingTop: theme.spacing(8),
     [theme.breakpoints.down('md')]: {
       paddingTop: 0,
-      paddingBottom: theme.spacing(3)
+      paddingBottom: theme.spacing(3),
     },
     [theme.breakpoints.down('xs')]: {
       paddingTop: theme.spacing(15),
-      paddingBottom: 0
+      paddingBottom: 0,
     },
     '& h4': {
       color: theme.palette.common.white,
-      marginBottom: theme.spacing(6)
-    }
+      marginBottom: theme.spacing(6),
+    },
   },
   btnArea: {
     margin: theme.spacing(5, 0),
@@ -265,23 +265,23 @@ const footerStyles = makeStyles(theme => ({
     position: 'relative',
     display: 'flex',
     [theme.breakpoints.down('xs')]: {
-      justifyContent: 'space-around'
+      justifyContent: 'space-around',
     },
     '& a': {
       [theme.breakpoints.up('sm')]: {
         marginRight: theme.spacing(2),
       },
       [theme.breakpoints.down('xs')]: {
-        margin: 4
+        margin: 4,
       },
       '& img': {
         width: 160,
         [theme.breakpoints.down('xs')]: {
           width: '100%',
         },
-      }
-    }
-  }
+      },
+    },
+  },
 }));
 
 export default footerStyles;
