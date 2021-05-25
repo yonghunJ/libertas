@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import clsx from 'clsx';
 import SwipeableViews from 'react-swipeable-views';
 import { useTheme } from '@material-ui/core/styles';
@@ -30,8 +30,13 @@ const a11yProps = (index) => {
 const FloatingActionButtonZoom = (props) => {
   const classes = useStyles();
   const theme = useTheme();
-  const [value, setValue] = React.useState(0);
+  const [value, setValue] = useState(2);
   const { t } = props;
+
+  useEffect(() => {
+    setValue(0);
+  }, []);
+
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
@@ -77,7 +82,7 @@ const FloatingActionButtonZoom = (props) => {
       <Title align="center">
         {t('common:mobile-landing.feature_title_2')}
       </Title>
-      <AppBar position="static" color="default">
+      <AppBar position="static" color="default" style={{ width: '50%', margin: 'auto' }}>
         <Tabs
           value={value}
           onChange={handleChange}

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import SwipeableViews from 'react-swipeable-views';
@@ -30,7 +30,11 @@ const a11yProps = (index) => {
 const FloatingActionButtonZoom = (props) => {
   const classes = useStyles();
   const theme = useTheme();
-  const [value, setValue] = React.useState(0);
+  const [value, setValue] = useState(1);
+
+  useEffect(() => {
+    setValue(0);
+  }, []);
   const { t } = props;
   const handleChange = (event, newValue) => {
     setValue(newValue);
