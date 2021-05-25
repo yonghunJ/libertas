@@ -14,7 +14,7 @@
 	"main": "index.js",
 	"private": true,
 	"scripts": {
-		"dev": "nodemon index.js",
+		"dev": "next",
 		"build": "next build",
 		"start": "NODE_ENV=production node index.js",
 		"export": "next export",
