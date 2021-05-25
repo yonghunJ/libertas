@@ -81,7 +81,7 @@ const FloatingActionButtonZoom = (props) => {
       <Title align="center">
         {t('common:mobile-landing.feature_title')}
       </Title>
-      <AppBar position="static" color="default">
+      <AppBar position="static" color="default" style={{ width: '80%', margin: 'auto' }}>
         <Tabs
           value={value}
           onChange={handleChange}

@@ -4,11 +4,11 @@ import { green } from '@material-ui/core/colors';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    backgroundColor: theme.palette.background.paper,
+    //backgroundColor: theme.palette.background.paper,
     width: '100%',
     position: 'relative',
-    minHeight: 200,
-    marginTop: 150,
+    minHeight: '470',
+    //marginTop: 150,
   },
   fab: {
     position: 'absolute',

@@ -4,18 +4,18 @@ import { lighten, darken } from '@material-ui/core/styles/colorManipulator';
 const showcaseStyles = makeStyles(theme => ({
   root: {
     backgroundImage: `linear-gradient(185deg, ${theme.palette.type === 'dark' ? theme.palette.primary.dark : theme.palette.primary.main} 50%, ${theme.palette.type === 'dark' ? theme.palette.secondary.dark : theme.palette.secondary.main} 100%)`,
-    paddingTop: theme.spacing(80),
+    paddingTop: theme.spacing(40),
     [theme.breakpoints.down('md')]: {
-      paddingTop: theme.spacing(70),
+      paddingTop: theme.spacing(40),
     },
     [theme.breakpoints.up('xl')]: {
       paddingTop: theme.spacing(50),
     },
     [theme.breakpoints.down('xs')]: {
-      padding: theme.spacing(60, 3, 0),
+      padding: theme.spacing(10, 3, 0),
     },
     [theme.breakpoints.down(330)]: {
-      padding: theme.spacing(60, 0, 0),
+      padding: theme.spacing(10, 0, 0),
     },
   },
   decoTop: {
@@ -30,6 +30,15 @@ const showcaseStyles = makeStyles(theme => ({
     },
     [theme.breakpoints.up('xl')]: {
       display: 'none',
+    },
+    [theme.breakpoints.down('xs')]: {
+      transform: 'scale(1.5, 0.5)',
+      width:'100%',
+      top: -180,
+    },
+    [theme.breakpoints.down(330)]: {
+      transform: 'scale(1.5, 0.5)',
+      top: -100,
     },
   },
   decoBottom: {

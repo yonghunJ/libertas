@@ -7,26 +7,33 @@ const decoStyle = {
   width: 450,
   height: 550,
   position: 'absolute',
-  top: 40,
+  top: 50,
   right: 30,
 };
 
 const featureStyles = makeStyles(theme => ({
   root: {
     height: '100%',
-    minHeight: 550,
+    minHeight: 600,
   },
+
+  /* First feature tab BG */
   decoPrimary: {
     fill: theme.palette.type === 'dark' ? theme.palette.primary.dark : theme.palette.primary.light,
     [theme.breakpoints.down('sm')]: {
-      top: 0,
+      top: -20,
+      left: 20,
+      transform: 'scale(0.7)',
     },
     ...decoStyle,
   },
+ /* Second feature tab BG */
   decoSecondary: {
     fill: theme.palette.type === 'dark' ? theme.palette.secondary.dark : theme.palette.secondary.light,
     [theme.breakpoints.down('sm')]: {
-      top: 0,
+      top: -20,
+      left: -20,
+      transform: 'scale(0.7)',
     },
     ...decoStyle,
   },
@@ -54,18 +61,23 @@ const featureStyles = makeStyles(theme => ({
       transform: 'scale(0.5)',
     },
   },
+
   bgColor: {
     position: 'relative',
     background: theme.palette.type === 'dark' ? darken(theme.palette.primary.light, 0.65) : fade(theme.palette.primary.light, 0.2),
-    padding: theme.spacing(20, 0),
-    marginTop: theme.spacing(-20),
+    padding: theme.spacing(0, 10, 50, 10),
+    //marginTop: theme.spacing(-20),
+    [theme.breakpoints.up('xs')]: {
+      padding: theme.spacing(),
+    },
+    
   },
   decoBgTop: {
     background: `url(${theme.palette.type === 'dark' ? decoDarkTop : decoLightTop}) no-repeat transparent`,
     backgroundSize: '100% auto',
     position: 'absolute',
     width: '100%',
-    height: 470,
+    height: '100%',
     left: 0,
     top: 0,
     '&:after': {
@@ -74,12 +86,13 @@ const featureStyles = makeStyles(theme => ({
       backgroundSize: '100% auto',
       position: 'absolute',
       width: '100%',
-      height: 470,
+      height: '100%',
       opacity: 0.5,
       left: 20,
       top: 20,
     },
   },
+  
   button: {},
   item: {
     position: 'relative',
@@ -101,6 +114,7 @@ const featureStyles = makeStyles(theme => ({
       textAlign: 'center',
     },
   },
+  /*Image*/
   screen: {
     position: 'relative',
     '& img': {
@@ -109,11 +123,16 @@ const featureStyles = makeStyles(theme => ({
       margin: '0 auto',
       [theme.breakpoints.down('sm')]: {
         width: 320,
-        margin: '0 auto',
+        margintop: '0 auto',
       },
     },
     top: 120,
+    [theme.breakpoints.down('sm')]: {
+      top: 50,
+    },
   },
+
+
   video: {
     overflow: 'hidden',
     fontWeight: theme.typography.fontWeightBold,
@@ -150,6 +169,8 @@ const featureStyles = makeStyles(theme => ({
       },
     },
   },
+
+
   graphic: {
     position: 'absolute',
     '& img': {
@@ -165,6 +186,8 @@ const featureStyles = makeStyles(theme => ({
     fontSize: 18,
     borderBottom: `1px solid ${theme.palette.text.disabled}`,
   },
+
+  /*Image+Graphic location*/
   illustrationLeft: {
     position: 'relative',
     '& $screen': {
@@ -173,10 +196,12 @@ const featureStyles = makeStyles(theme => ({
         marginTop: -50,
       },
       [theme.breakpoints.down('sm')]: {
-        marginLeft: theme.spacing(-20),
+        marginLeft: theme.spacing(),
+        marginTop: -40,
       },
       [theme.breakpoints.down('xs')]: {
         marginLeft: theme.spacing(),
+        marginTop: -40,
       },
     },
   },
@@ -184,11 +209,17 @@ const featureStyles = makeStyles(theme => ({
     position: 'relative',
     '& $screen': {
       [theme.breakpoints.up('md')]: {
-        left: 20,
+        //left: 20,
         // top: -40,
+        marginTop: -50,
+      },
+      [theme.breakpoints.down('sm')]: {
+        marginLeft: theme.spacing(),
+        marginTop: -40,
       },
       [theme.breakpoints.down('xs')]: {
         marginLeft: theme.spacing(),
+        marginTop: -40,
       },
     },
   },
@@ -198,6 +229,9 @@ const featureStyles = makeStyles(theme => ({
     [theme.breakpoints.down('xs')]: {
       marginTop: theme.spacing(3),
     },
+
+
+
   },
   videoPopup: {
     width: 690,

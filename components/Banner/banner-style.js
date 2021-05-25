@@ -64,11 +64,11 @@ const bannerStyles = makeStyles(theme => ({
     },
     '& h3': {
       marginTop: theme.spacing(12),
-      [theme.breakpoints.down('md')]: {
-        marginTop: theme.spacing(3),
+      [theme.breakpoints.down('sm')]: {
+        margin: theme.spacing(10, 30, 2, 0),
       },
       [theme.breakpoints.down('xs')]: {
-        marginTop: 0,
+        margin: theme.spacing(0, 5),
         textAlign: 'center'
       },
       '& strong': {
@@ -78,9 +78,13 @@ const bannerStyles = makeStyles(theme => ({
     },
     '& h5': {
       color: theme.palette.text.secondary,
-      margin: theme.spacing(4, 0),
+      margin: theme.spacing(2, 10, 5, 0),
+      [theme.breakpoints.down('sm')]: {
+        margin: theme.spacing(0, 60, 5, 0),
+      },
       [theme.breakpoints.down('xs')]: {
-        textAlign: 'center'
+        textAlign: 'center',
+        margin: theme.spacing(2, 5),
       },
     },
   },
@@ -141,12 +145,14 @@ const bannerStyles = makeStyles(theme => ({
       opacity: theme.palette.type === 'dark' ? 0.4 : 0.8
     },
     [theme.breakpoints.down('sm')]: {
-      right: 0,
-      top: 200
+      right: -20,
+      top: 200,
     },
     [theme.breakpoints.down('xs')]: {
-      right: theme.spacing(-20),
-      opacity: theme.palette.type === 'dark' ? 0.2 : 0.4
+      top: 200,
+      right: theme.spacing(-10),
+      transform: 'scale(0.7)',
+      //opacity: theme.palette.type === 'dark' ? 0.2 : 0.4
     },
     '& img': {
       position: 'absolute',

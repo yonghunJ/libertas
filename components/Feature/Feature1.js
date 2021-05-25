@@ -38,7 +38,7 @@ const Feature = (props) => {
                     <use xlinkHref="/images/mobile/deco-feature.svg#main" />
                   </svg>
                   <figure className={classes.screen}>
-                    <img src={imgAPI.feature[0]} alt="illustration" style={{ height: '100%' }} />
+                    <img src={imgAPI.feature[0]} alt="Feature(1) Communication" style={{ height: '100%' }} />
                   </figure>
                 </div>
               </Grid>
