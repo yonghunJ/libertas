@@ -28,9 +28,6 @@ const Feature5 = (props) => {
   return (
     <>
       <div className={classes.root}>
-        <Title align="center">
-          {t('common:mobile-landing.feature_title')}
-        </Title>
         <div className={classes.bgColor}>
           <div className={classes.decoBgTop} />
           <Container fixed>
