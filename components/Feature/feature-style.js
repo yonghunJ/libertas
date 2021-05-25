@@ -185,7 +185,7 @@ const featureStyles = makeStyles(theme => ({
     '& $screen': {
       [theme.breakpoints.up('md')]: {
         left: 20,
-        top: -40,
+        // top: -40,
       },
       [theme.breakpoints.down('xs')]: {
         marginLeft: theme.spacing(),
