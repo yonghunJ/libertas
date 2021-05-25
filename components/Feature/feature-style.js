@@ -24,12 +24,12 @@ const featureStyles = makeStyles(theme => ({
     ...decoStyle,
   },
   decoSecondary: {
+    fill: theme.palette.type === 'dark' ? theme.palette.secondary.dark : theme.palette.secondary.light,
     [theme.breakpoints.down('sm')]: {
       top: 0,
     },
     ...decoStyle,
   },
-  
   first: {
     position: 'relative',
     zIndex: 10,
