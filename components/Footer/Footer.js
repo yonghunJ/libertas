@@ -18,7 +18,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 import Link from '@material-ui/core/Link';
 import IconButton from '@material-ui/core/IconButton';
 import brand from '~/public/text/brand';
-import logo from '~/public/images/mobile-logo.svg';
+import logo from '~/public/images/mobile-logo-white.svg';
 import { i18n } from '~/i18n';
 import useStyles from './footer-style';
 import { Button } from '@material-ui/core';

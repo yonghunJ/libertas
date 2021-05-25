@@ -1,6 +1,6 @@
 module.exports = {
   mobile: {
-    name: 'LUBERTAS Solution',
+    name: 'LIBERTAS Solution',
     desc: 'All-in-one Solution for your business',
     prefix: 'LIBERTAS',
     footerText: 'LIBERTAS 2021',
