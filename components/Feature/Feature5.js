@@ -28,9 +28,7 @@ const Feature5 = (props) => {
   return (
     <>
       <div className={classes.root}>
-        <div className={classes.bgColor}>
-          <div className={classes.decoBgTop} />
-          <Container fixed>
+          <Container>
             <div className={classes.item}>
               <Grid container>
                 <Grid item md={6} xs={12}>
@@ -55,7 +53,6 @@ const Feature5 = (props) => {
             </div>
           </Container>
         </div>
-      </div>
     </>
   );
 };

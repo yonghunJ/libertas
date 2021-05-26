@@ -8,7 +8,17 @@ const useStyles = makeStyles((theme) => ({
     width: '100%',
     position: 'relative',
     minHeight: 470,
-    marginTop: 250,
+    marginTop: 150,
+    [theme.breakpoints.down('sm')]: {
+      marginTop: 300,
+    },
+  },
+  bgColor: {
+    position: 'relative',
+    backgroundSize: '100% auto',
+    //paddingTop: theme.spacing(10),
+    marginTop: theme.spacing(2),
+    
   },
   fab: {
     position: 'absolute',

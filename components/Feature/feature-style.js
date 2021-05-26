@@ -1,7 +1,4 @@
 import { makeStyles } from '@material-ui/core/styles';
-import { fade, darken } from '@material-ui/core/styles/colorManipulator';
-import decoLightTop from '~/public/images/mobile/deco-light-top.svg';
-import decoDarkTop from '~/public/images/mobile/deco-dark-top.svg';
 
 const decoStyle = {
   width: 450,
@@ -14,7 +11,7 @@ const decoStyle = {
 const featureStyles = makeStyles(theme => ({
   root: {
     height: '100%',
-    minHeight: 600,
+    minHeight: 580,
   },
 
   /* First feature tab BG */
@@ -62,36 +59,7 @@ const featureStyles = makeStyles(theme => ({
     },
   },
 
-  bgColor: {
-    position: 'relative',
-    background: theme.palette.type === 'dark' ? darken(theme.palette.primary.light, 0.65) : fade(theme.palette.primary.light, 0.2),
-    padding: theme.spacing(0, 10, 50, 10),
-    //marginTop: theme.spacing(-20),
-    [theme.breakpoints.up('xs')]: {
-      padding: theme.spacing(),
-    },
-    
-  },
-  decoBgTop: {
-    background: `url(${theme.palette.type === 'dark' ? decoDarkTop : decoLightTop}) no-repeat transparent`,
-    backgroundSize: '100% auto',
-    position: 'absolute',
-    width: '100%',
-    height: '100%',
-    left: 0,
-    top: 0,
-    '&:after': {
-      content: '""',
-      background: `url(${theme.palette.type === 'dark' ? decoDarkTop : decoLightTop}) no-repeat transparent`,
-      backgroundSize: '100% auto',
-      position: 'absolute',
-      width: '100%',
-      height: '100%',
-      opacity: 0.5,
-      left: 20,
-      top: 20,
-    },
-  },
+  
   
   button: {},
   item: {
