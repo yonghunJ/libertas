@@ -7,7 +7,8 @@ import decoLineDark from '~/public/images/mobile/deco-line-dark.png';
 const bannerStyles = makeStyles(theme => ({
   root: {
     position: 'relative',
-    display: 'block'
+    display: 'block',
+    paddingTop:50,
   },
   background: {
     position: 'absolute',
