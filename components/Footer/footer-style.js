@@ -3,6 +3,10 @@ import { fade, lighten, darken } from '@material-ui/core/styles/colorManipulator
 import decoWave from '~/public/images/mobile/deco-wave-footer.png';
 
 const footerStyles = makeStyles(theme => ({
+  detail: {
+    backgroundColor: 'black',
+    opacity: 0.7,
+  },
   link: {
     margin: theme.spacing(1, 1.5),
   },

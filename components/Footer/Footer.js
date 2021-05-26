@@ -16,12 +16,10 @@ import Select from '@material-ui/core/Select';
 import OutlinedInput from '@material-ui/core/OutlinedInput';
 import MenuItem from '@material-ui/core/MenuItem';
 import Link from '@material-ui/core/Link';
-import IconButton from '@material-ui/core/IconButton';
 import brand from '~/public/text/brand';
 import logo from '~/public/images/mobile-logo-white.svg';
 import { i18n } from '~/i18n';
 import useStyles from './footer-style';
-import { Button } from '@material-ui/core';
 
 function Copyright() {
   return (
@@ -154,16 +152,11 @@ function Footer(props) {
           </Grid>
         </Grid>
         <Grid item xs={12} md={3} container direction="column" justify="center" alignItems="center">
-          <Link href="/en/contact">
-            <Button variant="contained" color="primary">
-              See Detail
-            </Button>
-          </Link>
           <Select
             value={values.lang}
             onChange={handleChange}
             MenuProps={{
-              container: ctn
+              container: ctn,
             }}
             startAdornment={(
               <InputAdornment className={classes.icon} position="start">

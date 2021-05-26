@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'next/link';
+import { Button } from '@material-ui/core';
 import Typography from '@material-ui/core/Typography';
 import { withTranslation } from '~/i18n';
 import { useText } from '~/theme/common';
@@ -22,18 +23,11 @@ function FooterWithDeco(props) {
         <Typography variant="h4" className={text.subtitle}>
           {t('common:mobile-landing.footer_text')}
         </Typography>
-        <div className={classes.btnArea}>
-          <Link href="/">
-            <a>
-              <img src="/images/mobile/app-store.png" alt="app store" />
-            </a>
-          </Link>
-          <Link href="/">
-            <a>
-              <img src="/images/mobile/play-store.png" alt="play store" />
-            </a>
-          </Link>
-        </div>
+        <Link href="/en/contact">
+          <Button variant="contained" color="primary" className={classes.detail}>
+            See Detail
+          </Button>
+        </Link>
       </div>
       <Footer toggleDir={toggleDir} />
     </div>
@@ -42,7 +36,7 @@ function FooterWithDeco(props) {
 
 FooterWithDeco.propTypes = {
   t: PropTypes.func.isRequired,
-  toggleDir: PropTypes.func.isRequired
+  toggleDir: PropTypes.func.isRequired,
 };
 
 export default withTranslation(['mobile-landing'])(FooterWithDeco);
