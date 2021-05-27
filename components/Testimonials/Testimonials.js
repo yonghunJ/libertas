@@ -30,11 +30,6 @@ const testiContent = [
     name: 'Jovelin Doe',
     title: 'Senior Graphic Designer',
   },
-  {
-    text: 'Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.',
-    avatar: imgAPI.avatar[4],
-    name: 'Jihan Doe',
-  },
 ];
 
 function Testimonials(props) {
@@ -72,7 +67,7 @@ function Testimonials(props) {
     centerPadding: '2px',
     centerMode: true,
     autoplaySpeed: 1500,
-    slidesToShow: 4,
+    slidesToShow: 3,
     pauseOnHover: false,
     arrows: false,
     responsive: [{
@@ -80,8 +75,8 @@ function Testimonials(props) {
       settings: {
         slidesToShow: 3,
         slidesToScroll: 1,
-      }
-    }]
+      },
+    }],
   };
 
   return (
