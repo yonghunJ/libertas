@@ -22,14 +22,6 @@ function CallAction(props) {
   const classes = useStyles();
   return (
     <div style={{ marginBottom: 100 }}>
-      <svg
-        fill="#cccccc"
-        width={845}
-        height={1099}
-        className={classes.background}
-      >
-        <use xlinkHref="/images/decoration/square-deco-primary.svg#square" />
-      </svg>
       <Container fixed={isDesktop}>
         <div className={classes.root}>
           <Paper className={classes.paper}>

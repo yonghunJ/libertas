@@ -81,7 +81,6 @@ function Testimonials(props) {
 
   return (
     <div className={classes.root}>
-      <CallAction />
       <ReactWOW animation="fadeInUpShort" offset={-50} delay="0.3s" duration="0.5s">
         <div>
           <Title align="center">
