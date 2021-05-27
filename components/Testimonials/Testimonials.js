@@ -59,12 +59,6 @@ const testiContent = [
     name: 'John Doe',
     title: 'Chief Digital Officer',
   },
-  {
-    text: 'Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.',
-    avatar: imgAPI.avatar[8],
-    name: 'Jean Doe',
-    title: 'Chief Digital Officer',
-  },
 ];
 
 function Testimonials(props) {
