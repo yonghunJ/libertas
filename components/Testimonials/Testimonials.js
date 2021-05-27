@@ -13,12 +13,6 @@ import CallAction from '../CallAction/CallAction';
 
 const testiContent = [
   {
-    text: 'Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam nec ex aliquet, aliquam neque non.',
-    avatar: imgAPI.avatar[10],
-    name: 'John Doe',
-    title: 'Chief Digital Officer',
-  },
-  {
     text: 'Vestibulum sit amet tortor sit amet libero lobortis semper at et odio. In eu tellus tellus. Pellentesque ullamcorper aliquet ultrices. Aenean facilisis vitae purus facilisis semper. Nam vitae scelerisque lorem, quis tempus libero.',
     avatar: imgAPI.avatar[1],
     name: 'Jean Doe',
@@ -41,19 +35,6 @@ const testiContent = [
     avatar: imgAPI.avatar[4],
     name: 'Jihan Doe',
   },
-  {
-    text: 'Vestibulum sit amet tortor sit amet libero lobortis semper at et odio. In eu tellus tellus. Pellentesque ullamcorper aliquet ultrices. Aenean facilisis vitae purus facilisis semper. Nam vitae scelerisque lorem, quis tempus libero.',
-    avatar: imgAPI.avatar[6],
-    name: 'Jovelin Doe',
-    title: 'Senior Graphic Designer',
-  },
-  {
-    text: 'Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.',
-    avatar: imgAPI.avatar[7],
-    name: 'John Doe',
-    title: 'Senior Graphic Designer',
-  },
-  
 ];
 
 function Testimonials(props) {
@@ -90,15 +71,15 @@ function Testimonials(props) {
     autoplay: true,
     centerPadding: '2px',
     centerMode: true,
-    autoplaySpeed: 5000,
-    slidesToShow: 7,
+    autoplaySpeed: 1500,
+    slidesToShow: 4,
     pauseOnHover: false,
     arrows: false,
     responsive: [{
       breakpoint: 600,
       settings: {
         slidesToShow: 3,
-        slidesToScroll: 1
+        slidesToScroll: 1,
       }
     }]
   };

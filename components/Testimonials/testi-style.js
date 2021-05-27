@@ -41,7 +41,7 @@ const testiStyles = makeStyles(theme => ({
   carouselAvatar: {
     margin: '0 auto',
     [theme.breakpoints.up('sm')]: {
-      width: 768,
+      width: 400,
     },
     '& $item': {
       cursor: 'pointer',
