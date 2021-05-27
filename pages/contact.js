@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import Head from 'next/head';
 import brand from '../public/text/brand';
 import ContactFrm from '../components/Forms/Contact';
-
+// import AppLayout from '../components/AppLayout';
 function Contact() {
   return (
     <Fragment>

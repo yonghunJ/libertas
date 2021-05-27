@@ -16,6 +16,7 @@ import TabPanelView from '../components/TabPanelView';
 import TabPanelView2 from '../components/TabPanelView2';
 import brand from '../public/text/brand';
 import CallAction from '../components/CallAction/CallAction';
+// import AppLayout from '../components/AppLayout';
 
 const sectionMargin = margin => (margin * 20);
 const useStyles = makeStyles(theme => ({

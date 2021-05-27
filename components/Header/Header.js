@@ -134,9 +134,11 @@ function Header(props) {
                     </li>
                   ))}
                   <li>
-                    <Button href={linkRouter.mobile.contact}>
-                      {t('common:mobile-landing.header_contact')}
-                    </Button>
+                    <Link href={linkRouter.mobile.contact}>
+                      <Button>
+                        {t('common:mobile-landing.header_contact')}
+                      </Button>
+                    </Link>
                   </li>
                 </Scrollspy>
               )}
