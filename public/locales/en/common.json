@@ -31,6 +31,8 @@
     "header_dark": "dark",
     "header_light": "light",
     "header_feature": "feature",
+    "header_home": "home",
+    "header_news": "news",
     "header_showcase": "showcase",
     "header_testimonials": "testimonials",
     "header_faq": "faq",
