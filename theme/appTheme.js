@@ -16,7 +16,7 @@ const appTheme = (color, mode) => ({
     ].join(','),
     fontWeightRegular: 400,
     fontWeightMedium: 600,
-    fontWeightBold: 700,
+    fontWeightBold: 900,
   },
   shade: {
     light: '0 10px 15px -5px rgba(62, 57, 107, .07)',
