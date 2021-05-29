@@ -1,18 +1,18 @@
 import React, { useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
+import Link from 'next/link';
 import Container from '@material-ui/core/Container';
 import Hidden from '@material-ui/core/Hidden';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { useTheme } from '@material-ui/core/styles';
-import Link from 'next/link';
+import { Button } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import imgAPI from '~/public/images/imgAPI';
 import { withTranslation } from '~/i18n';
 import { useText } from '~/theme/common';
 import useStyles from './banner-style';
-import { Button } from '@material-ui/core';
 
 function Banner(props) {
   const classes = useStyles();
@@ -21,11 +21,15 @@ function Banner(props) {
 
   const theme = useTheme();
   const isDesktop = useMediaQuery(theme.breakpoints.up('lg'));
-
+  const interval = useRef();
   const elem = useRef(null);
 
   useEffect(() => {
-    window.renderParticles();
+    interval.current = window.renderParticles();
+
+    // return () => {
+    //   clearInterval(interval.current);
+    // };
   }, []);
 
   return (

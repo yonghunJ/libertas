@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { useTheme } from '@material-ui/core/styles';
-import { Typography } from '@material-ui/core';
+import { Link, Typography } from '@material-ui/core';
 import Button from '@material-ui/core/Button';
 import Container from '@material-ui/core/Container';
 import Paper from '@material-ui/core/Paper';
@@ -36,10 +36,20 @@ function CallAction(props) {
               </Grid>
               <Grid item md={3} xs={12}>
                 <Grid container alignItems="center">
-                  <Button size="large" variant="outlined" color="secondary" href="/contact" className={classes.button}>
-                    {t('common:mobile-landing.cta_btn')}
-                    <SendIcon className={classes.rightIcon} />
-                  </Button>
+                  <Link href="/contact">
+                    <Button size="large" variant="outlined" color="secondary" className={classes.button}>
+                      {t('common:mobile-landing.cta_btn')}
+                      <SendIcon className={classes.rightIcon} />
+                    </Button>
+                  </Link>
+
+
+                  <Link href="/contact">
+                    <Button>
+                      {t('common:mobile-landing.header_contact')}
+                    </Button>
+                  </Link>
+
                 </Grid>
               </Grid>
             </Grid>

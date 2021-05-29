@@ -72,7 +72,7 @@ function Settings(props) {
           clsx(
             classes.icon,
             open && classes.active,
-            invert && classes.invert
+            invert && classes.invert,
           )
         }
       >

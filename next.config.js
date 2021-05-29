@@ -8,6 +8,7 @@ module.exports = withImages(
       return {
         '/': { page: '/' },
         '/contact': { page: '/contact' },
+        '/blog': {page: '/blog' },
         '/blank-page': { page: '/blank-page' },
       };
     },
