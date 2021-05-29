@@ -1,8 +1,9 @@
 const link = {
   mobile: {
     home: '/',
-    contact: '/contact'
-  }
+    contact: '/contact',
+    blog: '/comingSoon',
+  },
 };
 
 export default link;

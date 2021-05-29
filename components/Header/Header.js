@@ -66,7 +66,7 @@ function Header(props) {
     createData(navMenu[0], '#' + navMenu[0]),
     createData(navMenu[1], '#' + navMenu[1]),
     createData(navMenu[2], '#' + navMenu[2]),
-    createData(navMenu[3], '#' + navMenu[3], -40),
+    createData(navMenu[3], '#' + navMenu[3]),
   ]);
   const [openDrawer, setOpenDrawer] = useState(false);
   const handleOpenDrawer = () => {
@@ -82,7 +82,7 @@ function Header(props) {
         className={clsx(
           classes.header,
           fixed && classes.fixed,
-          openDrawer && classes.openDrawer
+          openDrawer && classes.openDrawer,
         )}
       >
         <Container fixed={isDesktop}>
@@ -134,9 +134,16 @@ function Header(props) {
                     </li>
                   ))}
                   <li>
-                    <Link href={linkRouter.mobile.contact}>
+                    <Link href={linkRouter.mobile.contact} passHref>
                       <Button>
                         {t('common:mobile-landing.header_contact')}
+                      </Button>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href={linkRouter.mobile.blog} passHref>
+                      <Button>
+                        {t('common:mobile-landing.header_blog')}
                       </Button>
                     </Link>
                   </li>
@@ -162,7 +169,7 @@ Header.propTypes = {
 
 Header.defaultProps = {
   sticky: false,
-  invert: false
+  invert: false,
 };
 
 export default withTranslation(['mobile-landing'])(Header);

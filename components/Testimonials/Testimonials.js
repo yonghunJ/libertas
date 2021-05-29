@@ -110,13 +110,13 @@ function Testimonials(props) {
               </div>
             </Container>
             <div className={classes.carouselAvatar}>
-              <Carousel ref={sliderAvatar} asNavFor={slider.nav1} {...settingsAvatar}>
+              {/* <Carousel ref={sliderAvatar} asNavFor={slider.nav1} {...settingsAvatar}>
                 {testiContent.map((item, index) => (
                   <div className={classes.item} key={index.toString()}>
                     <Avatar alt={item.name} src={item.avatar} className={classes.avatar} />
                   </div>
                 ))}
-              </Carousel>
+              </Carousel> */}
             </div>
           </div>
         </ReactWOW>
@@ -127,7 +127,7 @@ function Testimonials(props) {
 }
 
 Testimonials.propTypes = {
-  t: PropTypes.func.isRequired
+  t: PropTypes.func.isRequired,
 };
 
 export default withTranslation(['mobile-landing'])(Testimonials);

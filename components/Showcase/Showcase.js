@@ -182,7 +182,7 @@ function Showcase(props) {
 }
 
 Showcase.propTypes = {
-  t: PropTypes.func.isRequired
+  t: PropTypes.func.isRequired,
 };
 
 export default withTranslation(['mobile-landing'])(Showcase);

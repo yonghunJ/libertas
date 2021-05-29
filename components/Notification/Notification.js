@@ -35,7 +35,7 @@ function Notification(props) {
       <SnackbarContent
         message={<Typography id="message-id">{t('common:notif_msg')}</Typography>}
         classes={{
-          action: classes.action
+          action: classes.action,
         }}
         action={(
           <Button color="secondary" variant="contained" className={classes.button} onClick={handleClose}>
