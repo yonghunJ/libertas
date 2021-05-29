@@ -11,7 +11,7 @@ const appTheme = (color, mode) => ({
   },
   typography: {
     fontFamily: [
-      'Open Sans',
+      'Roboto',
       'sans-serif',
     ].join(','),
     fontWeightRegular: 400,
