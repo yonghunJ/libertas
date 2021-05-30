@@ -9,7 +9,8 @@ const newsEventStyle = makeStyles(theme => ({
     backgroundImage: `linear-gradient(180deg, ${theme.palette.type === 'dark' ? theme.palette.background.default : theme.palette.background.paper} 40%, ${theme.palette.type === 'dark' ? darken(theme.palette.primary.light, 0.65) : fade(theme.palette.primary.light, 0.2)} 40%)`,
     margin: '0 auto',
     paddingBottom: theme.spacing(30),
-    marginBottom: theme.spacing(-40)
+    marginBottom: theme.spacing(-40),
+    paddingTop: theme.spacing(10)
   },
   decoBgTop: {
     background: `url(${theme.palette.type === 'dark' ? decoDarkBottom : decoLightTop}) no-repeat transparent`,

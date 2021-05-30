@@ -4,6 +4,7 @@ import { lighten, darken } from '@material-ui/core/styles/colorManipulator';
 const useStyles = makeStyles(theme => ({
   root: {
     position: 'relative',
+    paddingTop: theme.spacing(5),
   },
   background: {
     fill: theme.palette.type === 'dark' ? darken(theme.palette.primary.light, 0.8) : lighten(theme.palette.primary.light, 0.8),

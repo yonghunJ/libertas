@@ -20,7 +20,7 @@ function FooterWithDeco(props) {
       </svg>
       <div className={classes.decoration} />
       <div className={classes.action}>
-        <Typography variant="h4" className={text.subtitle}>
+        <Typography variant="h4" className={text.title2}>
           {t('common:mobile-landing.footer_text')}
         </Typography>
         <Link href="/en/contact">
