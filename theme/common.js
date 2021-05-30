@@ -1,4 +1,5 @@
 import { makeStyles } from '@material-ui/core/styles';
+import imgAPI from '~/public/images/imgAPI';
 
 export const useTextAlign = makeStyles({
   textCenter: {
@@ -24,14 +25,14 @@ export const useFloat = makeStyles({
 export const useText = makeStyles(theme => ({
   title: {
     fontWeight: theme.typography.fontWeightBold,
-    fontSize: 48,
+    fontSize: 46,
     lineHeight: '72px',
     [theme.breakpoints.down('md')]: {
-      fontSize: 38,
+      fontSize: 36,
       lineHeight: '60px'
     },
     [theme.breakpoints.down('xs')]: {
-      fontSize: 28,
+      fontSize: 30,
       lineHeight: '44px'
     },
   },
@@ -49,15 +50,15 @@ export const useText = makeStyles(theme => ({
     }
   },
   subtitle: {
-    fontWeight: theme.typography.fontWeightMedium,
-    fontSize: 28,
+    fontWeight: theme.typography.fontWeightRegular,
+    fontSize: 20,
     lineHeight: '44px',
     [theme.breakpoints.down('md')]: {
-      fontSize: 24,
+      fontSize: 16,
       lineHeight: '36px',
     },
     [theme.breakpoints.down('xs')]: {
-      fontSize: 18,
+      fontSize: 14,
       lineHeight: '28px',
     },
   },
