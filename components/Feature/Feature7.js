@@ -35,8 +35,8 @@ const Feature7 = (props) => {
               <Grid container>
                 <Grid item md={6} xs={12}>
                   <div className={classes.text}>
-                    <TitleSecondary align={isMobile ? 'center' : 'left'} text={t('common:mobile-landing.feature_title7')} />
-                    <Typography display="block" component="p" className={text.subtitle2}>
+                    <TitleSecondary align={isMobile ? 'center' : 'right'} text={t('common:mobile-landing.feature_title7')} />
+                    <Typography align={isMobile ? 'center' : 'right'} display="block" component="p" className={text.subtitle3}>
                       {t('common:mobile-landing.feature_desc7')}
                     </Typography>
                   </div>
