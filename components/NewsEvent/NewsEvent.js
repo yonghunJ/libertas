@@ -27,9 +27,9 @@ function NewsEvent(props) {
       <Title align="center">
         {t('common:mobile-landing.news_title')}
       </Title>
-      <Typography align="center" className={text.subtitle2}>
+      {/*<Typography align="center" className={text.subtitle2}>
         {t('common:mobile-landing.news_desc')}
-      </Typography>
+  </Typography>*/}
       <div className={classes.blogWrap}>
         <Container fixed>
           <Grid container spacing={6} className={classes.listNews}>
@@ -37,22 +37,22 @@ function NewsEvent(props) {
               <NewsCard
                 type="potrait"
                 img={imgAPI.photo[11]}
-                caption="headline"
-                text="Sed imperdiet enim ligula, vitae viverra justo."
+                caption="Tips"
+                text="How to Start a Business: A Step-by-Step Guide"
               />
             </Grid>
             <Grid item md={6}>
               <NewsCard
                 type={isMobile ? 'potrait' : 'landscape'}
                 img={imgAPI.photo[1]}
-                caption="news"
-                text="Sed imperdiet enim ligula, vitae viverra justo."
+                caption="Tips"
+                text="Productivity Tips for Small Business Owners"
               />
               <NewsCard
                 type="landscape"
                 img={imgAPI.photo[2]}
-                caption="news"
-                text="Sed imperdiet enim ligula, vitae viverra justo."
+                caption="News"
+                text="60% of Small Businesses Expect Revenue to Grow in 2021"
               />
             </Grid>
           </Grid>
