@@ -63,14 +63,14 @@ export const useText = makeStyles(theme => ({
   },
   subtitle2: {
     fontWeight: theme.typography.fontWeightRegular,
-    fontSize: 22,
+    fontSize: 20,
     lineHeight: '32px',
     [theme.breakpoints.down('md')]: {
-      fontSize: 20,
+      fontSize: 18,
       lineHeight: '32px',
     },
     [theme.breakpoints.down('xs')]: {
-      fontSize: 16,
+      fontSize: 14,
       lineHeight: '24px',
     },
   },

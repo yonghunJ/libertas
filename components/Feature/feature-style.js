@@ -77,6 +77,7 @@ const featureStyles = makeStyles(theme => ({
   text: {
     [theme.breakpoints.up('md')]: {
       paddingTop: theme.spacing(12),
+      Width:'80%',
     },
     [theme.breakpoints.down('sm')]: {
       textAlign: 'center',
