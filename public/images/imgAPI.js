@@ -52,13 +52,13 @@ const imgAPI = {
     '/images/mobile/widget_screen7-2.png',
   ],
   feature: [
-    '/images/mobile/tab-solution1.svg',
-    '/images/mobile/tab-solution2.png',
-    '/images/mobile/tab-solution3.png',
-    '/images/mobile/tab-solution4.png',
-    '/images/mobile/tab-solution5.png',
-    '/images/mobile/tab-solution6.png',
-    '/images/mobile/tab-solution7.png'
+    '/images/mobile/tab-solution1-1.png',
+    '/images/mobile/tab-solution2-2.png',
+    '/images/mobile/tab-solution3-2.png',
+    '/images/mobile/tab-solution4-2.png',
+    '/images/mobile/tab-solution5-2.png',
+    '/images/mobile/tab-solution6-2.png',
+    '/images/mobile/tab-solution7-2.png'
   ]
 };
 

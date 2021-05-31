@@ -95,7 +95,8 @@ const featureStyles = makeStyles(theme => ({
         margintop: '0 auto',
       },
     },
-    top: 120,
+    top: 100,
+    left: -10,
     [theme.breakpoints.down('sm')]: {
       top: 50,
     },
