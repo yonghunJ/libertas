@@ -58,7 +58,8 @@ const imgAPI = {
     '/images/mobile/tab-solution4-2.png',
     '/images/mobile/tab-solution5-2.png',
     '/images/mobile/tab-solution6-2.png',
-    '/images/mobile/tab-solution7-2.png'
+    '/images/mobile/tab-solution7-2.png',
+    '/images/mobile/main banner message.svg',
   ]
 };
 

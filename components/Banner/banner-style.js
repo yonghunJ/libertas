@@ -52,7 +52,7 @@ const bannerStyles = makeStyles(theme => ({
     height: 680,
     display: 'flex',
     flexDirection: 'column',
-    justifyContent: 'center',
+    //justifyContent: 'center',
     position: 'relative',
     zIndex: 10,
     [theme.breakpoints.up('sm')]: {
@@ -70,22 +70,32 @@ const bannerStyles = makeStyles(theme => ({
       },
       [theme.breakpoints.down('xs')]: {
         margin: theme.spacing(0, 5),
-        textAlign: 'center'
+        //textAlign: 'center'
       },
       '& strong': {
         fontWeight: theme.typography.fontWeightBold,
-        color: theme.palette.type === 'dark' ? theme.palette.primary.light : theme.palette.primary.main
+        color: '#fff',
+        background: '#FBB03B',
+      },
+      '& img': {
+        margin: theme.spacing(5, 10, 0, -7),
+        [theme.breakpoints.down('sm')]: {
+          margin: theme.spacing(0, 0, 0, -5),
+        },
+        [theme.breakpoints.down('xs')]: {
+          margin: theme.spacing(0, 0, 0,-5),
+        },
       }
     },
     '& h5': {
       color: theme.palette.text.secondary,
-      margin: theme.spacing(2, 10, 5, 0),
+      margin: theme.spacing(0, 10, 5, 0),
       [theme.breakpoints.down('sm')]: {
         margin: theme.spacing(0, 60, 5, 0),
       },
       [theme.breakpoints.down('xs')]: {
-        textAlign: 'center',
-        margin: theme.spacing(2, 5),
+        //textAlign: 'center',
+        margin: theme.spacing(0,0,2, 5),
       },
     },
   },
@@ -93,7 +103,7 @@ const bannerStyles = makeStyles(theme => ({
     textAlign: 'center',
     display: 'flex',
     [theme.breakpoints.down('xs')]: {
-      justifyContent: 'space-around'
+      marginLeft: theme.spacing(5),
     },
     '& a': {
       [theme.breakpoints.up('sm')]: {
@@ -152,7 +162,7 @@ const bannerStyles = makeStyles(theme => ({
     [theme.breakpoints.down('xs')]: {
       top: 200,
       right: theme.spacing(-10),
-      transform: 'scale(0.7)',
+      transform: 'scale(0.6)',
       //opacity: theme.palette.type === 'dark' ? 0.2 : 0.4
     },
     '& img': {
