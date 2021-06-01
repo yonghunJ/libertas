@@ -47,6 +47,15 @@ const Feature = (props) => {
                   <TitleSecondary align={isMobile ? 'center' : 'left'} text={t('common:mobile-landing.feature_title1')} />
                   <Typography display="block" component="p" className={text.subtitle2}>
                     {t('common:mobile-landing.feature_desc1')}
+                    <li>
+                      {t('common:mobile-landing.feature_list1')}
+                    </li>
+                    <li>
+                      {t('common:mobile-landing.feature_list2')}
+                    </li>
+                    <li>
+                      {t('common:mobile-landing.feature_list3')}
+                    </li>
                   </Typography>
                 </div>
               </Grid>
