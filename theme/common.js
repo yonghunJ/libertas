@@ -37,16 +37,32 @@ export const useText = makeStyles(theme => ({
     },
   },
   title2: {
-    fontSize: 36,
-    lineHeight: '56px',
+    fontSize: 32,
+    lineHeight: '48px',
     fontWeight: theme.typography.fontWeightBold,
     [theme.breakpoints.down('md')]: {
-      fontSize: 32,
+      fontSize: 30,
       lineHeight: '48px'
     },
     [theme.breakpoints.down('xs')]: {
       fontSize: 24,
       lineHeight: '36px',
+    }
+  },
+  title3: {
+    fontSize: 32,
+    lineHeight: '48px',
+    paddingLeft:'80px',
+    fontWeight: theme.typography.fontWeightBold,
+    [theme.breakpoints.down('md')]: {
+      fontSize: 30,
+      lineHeight: '48px',
+      paddingLeft:0,
+    },
+    [theme.breakpoints.down('xs')]: {
+      fontSize: 24,
+      lineHeight: '36px',
+      paddingLeft:0,
     }
   },
   subtitle: {
@@ -64,11 +80,11 @@ export const useText = makeStyles(theme => ({
   },
   subtitle2: {
     fontWeight: theme.typography.fontWeightRegular,
-    fontSize: 20,
+    fontSize: 18,
     lineHeight: '32px',
     paddingRight:'80px',
     [theme.breakpoints.down('md')]: {
-      fontSize: 18,
+      fontSize: 16,
       lineHeight: '32px',
       paddingRight:0,
     },
@@ -80,17 +96,54 @@ export const useText = makeStyles(theme => ({
   },
   subtitle3: {
     fontWeight: theme.typography.fontWeightRegular,
-    fontSize: 20,
+    fontSize: 18,
     lineHeight: '32px',
     paddingLeft:'80px',
     [theme.breakpoints.down('md')]: {
-      fontSize: 18,
+      fontSize: 16,
       lineHeight: '32px',
       paddingLeft:0,
     },
     [theme.breakpoints.down('xs')]: {
       fontSize: 14,
       lineHeight: '24px',
+      paddingLeft:0,
+    },
+  },
+  subtitle4: {
+    fontWeight: theme.typography.fontWeightMedium,
+    fontSize: 16,
+    lineHeight: '32px',
+    paddingTop: theme.spacing(2),
+    color: theme.palette.type === 'dark' ? theme.palette.primary.light : theme.palette.primary.dark,
+    [theme.breakpoints.down('md')]: {
+      fontSize: 14,
+      lineHeight: '32px',
+      textAlign: 'left',
+    },
+    [theme.breakpoints.down('xs')]: {
+      fontSize: 12,
+      lineHeight: '24px',
+      textAlign: 'left',
+    },
+  },
+  subtitle5: {
+    fontWeight: theme.typography.fontWeightMedium,
+    fontSize: 16,
+    lineHeight: '32px',
+    paddingTop: theme.spacing(2),
+    paddingLeft:'80px',
+    color: theme.palette.type === 'dark' ? theme.palette.primary.light : theme.palette.primary.dark,
+    [theme.breakpoints.down('md')]: {
+      fontSize: 14,
+      lineHeight: '32px',
+      textAlign: 'left',
+      paddingLeft:0,
+    },
+    [theme.breakpoints.down('xs')]: {
+      fontSize: 12,
+      lineHeight: '24px',
+      textAlign: 'left',
       paddingLeft:0,
     },
   },

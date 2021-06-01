@@ -11,14 +11,15 @@ const decoStyle = {
 const featureStyles = makeStyles(theme => ({
   root: {
     height: '100%',
-    minHeight: 580,
+    minHeight: 620,
   },
 
   /* First feature tab BG */
   decoPrimary: {
     fill: theme.palette.type === 'dark' ? theme.palette.primary.dark : theme.palette.primary.light,
+    transform: 'scale(0.9)',
     [theme.breakpoints.down('sm')]: {
-      top: -20,
+      top: -30,
       left: 20,
       transform: 'scale(0.7)',
     },
@@ -27,8 +28,9 @@ const featureStyles = makeStyles(theme => ({
  /* Second feature tab BG */
   decoSecondary: {
     fill: theme.palette.type === 'dark' ? theme.palette.secondary.dark : theme.palette.secondary.light,
+    transform: 'scale(0.9)',
     [theme.breakpoints.down('sm')]: {
-      top: -20,
+      top: -30,
       left: -20,
       transform: 'scale(0.7)',
     },

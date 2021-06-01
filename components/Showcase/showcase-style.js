@@ -13,10 +13,10 @@ const showcaseStyles = makeStyles(theme => ({
       paddingTop: theme.spacing(50),
     },
     [theme.breakpoints.down('xs')]: {
-      padding: theme.spacing(10, 3, 0),
+      padding: theme.spacing(20, 3, 0),
     },
     [theme.breakpoints.down(330)]: {
-      padding: theme.spacing(10, 0, 0),
+      padding: theme.spacing(20, 0, 0),
     },
   },
   decoTop: {
@@ -37,7 +37,7 @@ const showcaseStyles = makeStyles(theme => ({
     [theme.breakpoints.down('xs')]: {
       transform: 'scale(1.5, 0.5)',
       width:'100%',
-      top: -180,
+      top: -100,
     },
     [theme.breakpoints.down(330)]: {
       transform: 'scale(1.5, 0.5)',
