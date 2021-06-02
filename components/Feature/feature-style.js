@@ -12,6 +12,10 @@ const featureStyles = makeStyles(theme => ({
   root: {
     height: '100%',
     minHeight: 620,
+    marginTop: theme.spacing(-6),
+    [theme.breakpoints.down('sm')]: {
+      marginTop: theme.spacing(0),
+    },
   },
 
   /* First feature tab BG */
