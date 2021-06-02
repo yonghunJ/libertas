@@ -1,6 +1,6 @@
 {
-  "title": "A simple example",
-  "subtitle": "It's a blank-page. Start to build your'e page from here.",
+  "title": "LIBERTAS Solution",
+  "subtitle": "LIBERTAS Solution's Homepage",
   "error_with_status": "An error occurred on server",
   "404": "This page could not be found.",
   "404_subtitle": "You can either stay and chill here, or go back to the beginning.",
@@ -22,6 +22,7 @@
   "form_send": "Send Message",
   "accept": "Accept",
   "en": "English",
+  "kr": "한국어",
   "de": "Deutsch",
   "zh": "简体中文",
   "pt": "󠁥󠁮󠁧󠁿Português",
