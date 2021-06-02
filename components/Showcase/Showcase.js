@@ -38,7 +38,7 @@ function Showcase(props) {
 
   const settingsSide = {
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 3000,
     dots: false,
     infinite: true,
     speed: 500,

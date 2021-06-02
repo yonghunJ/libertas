@@ -1,8 +1,8 @@
 const imgAPI = {
   avatar: [
-    '/images/avatars/pp_girl.svg',
-    '/images/avatars/pp_girl2.svg',
-    '/images/avatars/pp_girl3.svg',
+    '/images/avatars/woman1.png',
+    '/images/avatars/man1.png',
+    '/images/avatars/woman2.png',
     '/images/avatars/pp_girl4.svg',
     '/images/avatars/pp_girl5.svg',
     '/images/avatars/pp_girl.svg',

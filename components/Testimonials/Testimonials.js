@@ -14,19 +14,19 @@ import CallAction from '../CallAction/CallAction';
 const testiContent = [
   {
     text: 'Vestibulum sit amet tortor sit amet libero lobortis semper at et odio. In eu tellus tellus. Pellentesque ullamcorper aliquet ultrices. Aenean facilisis vitae purus facilisis semper. Nam vitae scelerisque lorem, quis tempus libero.',
-    avatar: imgAPI.avatar[1],
+    avatar: imgAPI.avatar[0],
     name: 'Jean Doe',
     title: 'Chief Digital Officer',
   },
   {
     text: 'Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.',
-    avatar: imgAPI.avatar[2],
+    avatar: imgAPI.avatar[1],
     name: 'Jena Doe',
     title: 'Graphic Designer',
   },
   {
     text: 'Sed imperdiet enim ligula, vitae viverra justo porta vel.',
-    avatar: imgAPI.avatar[3],
+    avatar: imgAPI.avatar[2],
     name: 'Jovelin Doe',
     title: 'Senior Graphic Designer',
   },
@@ -66,7 +66,7 @@ function Testimonials(props) {
     autoplay: true,
     centerPadding: '2px',
     centerMode: true,
-    autoplaySpeed: 1500,
+    autoplaySpeed: 5000,
     slidesToShow: 3,
     pauseOnHover: false,
     arrows: false,
