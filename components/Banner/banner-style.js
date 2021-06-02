@@ -3,6 +3,8 @@ import decoWaveLight from '~/public/images/mobile/deco-wave-light.png';
 import decoWaveDark from '~/public/images/mobile/deco-wave-dark.png';
 import decoLineLight from '~/public/images/mobile/deco-line-light.png';
 import decoLineDark from '~/public/images/mobile/deco-line-dark.png';
+import MainMessageLight from '~/public/images/mobile/main-message-light.svg';
+import MainMessageDark from '~/public/images/mobile/main-message-dark.svg';
 
 const bannerStyles = makeStyles(theme => ({
   root: {
@@ -60,8 +62,8 @@ const bannerStyles = makeStyles(theme => ({
     },
     [theme.breakpoints.down('xs')]: {
       justifyContent: 'flex-start',
-      paddingTop: theme.spacing(20),
-      height: 560
+      paddingTop: theme.spacing(15),
+      height: 500
     },
     '& h3': {
       marginTop: theme.spacing(12),
@@ -77,33 +79,47 @@ const bannerStyles = makeStyles(theme => ({
         color: '#fff',
         background: '#FBB03B',
       },
-      '& img': {
-        margin: theme.spacing(5, 10, 0, -7),
-        [theme.breakpoints.down('sm')]: {
-          margin: theme.spacing(0, 0, 0, -5),
-        },
-        [theme.breakpoints.down('xs')]: {
-          margin: theme.spacing(0, 0, 0,-5),
-        },
-      }
+
     },
     '& h5': {
       color: theme.palette.text.secondary,
-      margin: theme.spacing(0, 10, 5, 0),
+      margin: theme.spacing(3, 5, 3, 0),
       [theme.breakpoints.down('sm')]: {
-        margin: theme.spacing(0, 60, 5, 0),
+        margin: theme.spacing(0, 5, 3, 0),
       },
       [theme.breakpoints.down('xs')]: {
         //textAlign: 'center',
-        margin: theme.spacing(0,0,2, 5),
+        margin: theme.spacing(-2,0,1,4),
       },
     },
   },
+
+
+  MainMessage: {
+    position: 'relative',
+    top: 90,
+    left: -1,
+    width: '100%',
+    height: '55%',
+    background: `url(${theme.palette.type === 'dark' ? MainMessageDark : MainMessageLight}) no-repeat 0 0`,
+    display: 'block',
+    margin: theme.spacing(5, 10, 0, -7),
+    [theme.breakpoints.down('sm')]: {
+      top: 60,
+      left: -10,
+      margin: theme.spacing(0),
+    },
+    [theme.breakpoints.down('xs')]: {
+      top: 10,
+      margin: theme.spacing(0),
+    },
+  },
+
   btnArea: {
     textAlign: 'center',
     display: 'flex',
     [theme.breakpoints.down('xs')]: {
-      marginLeft: theme.spacing(5),
+      marginLeft: theme.spacing(3),
     },
     '& a': {
       [theme.breakpoints.up('sm')]: {
@@ -148,6 +164,7 @@ const bannerStyles = makeStyles(theme => ({
     background: `url(${theme.palette.type === 'dark' ? decoLineDark : decoLineLight}) no-repeat 0 0`,
     backgroundSize: '100% 700px',
   },
+
   phoneIllustration: {
     position: 'relative',
     height: '100%',

@@ -49,18 +49,21 @@ function Banner(props) {
         <Grid container>
           <Grid item md={7} xs={12}>
 
-            <div className={classes.text}>
 
-              <Typography variant="h3" className={text.title} >
-            <img src={imgAPI.feature[7]} alt="Feature(1) Communication" />
-              {/*{t('common:mobile-landing.banner_title1')}
+
+            <div className={classes.text}>
+            <div className={classes.MainMessage}/>
+            
+
+              {/*<Typography variant="h3" className={text.title} >
+              {t('common:mobile-landing.banner_title1')}
                 &nbsp;
                 <strong>
                   {t('common:mobile-landing.banner_titlestrong')}
                 </strong>
                 &nbsp;
-  {t('common:mobile-landing.banner_title2')}*/}
-              </Typography>
+  {t('common:mobile-landing.banner_title2')}
+              </Typography>*/}
               <Typography variant="h5" className={text.subtitle}>
                 {t('common:mobile-landing.banner_desc')}
               </Typography>
