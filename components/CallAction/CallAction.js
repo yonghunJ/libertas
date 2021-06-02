@@ -26,7 +26,7 @@ function CallAction(props) {
         <div className={classes.root}>
           <Paper className={classes.paper}>
             <Grid container alignItems="center">
-              <Grid item md={9} xs={12}>
+              <Grid item md={8} xs={12}>
                 <Typography variant="h4" gutterBottom display="block">
                   {t('common:mobile-landing.cta_title')}
                 </Typography>
@@ -34,7 +34,7 @@ function CallAction(props) {
                   {t('common:mobile-landing.cta_subtitle')}
                 </Typography>
               </Grid>
-              <Grid item md={3} xs={12}>
+              <Grid item md={4} xs={12}>
                 <Grid container alignItems="center">
                   <Link href="/contact">
                     <Button size="large" variant="outlined" color="secondary" className={classes.button}>
