@@ -26,7 +26,7 @@ module.exports = withImages({
       // //          enforce: 'pre', 
       // //          test: /\.js?$/,
       // //          exclude: [/node_modules/],
-      // //          loader: 'eslint-loader',
+      // //          loader: 'eslint-loader', 
       // //          options: {
       // //            quiet: true,
       // //          }
