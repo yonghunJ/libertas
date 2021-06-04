@@ -37,8 +37,17 @@ function PageNav(props) {
     }
   };
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    const isWindowContext = typeof window !== 'undefined';
+
+    if (isWindowContext) {
+      window.addEventListener('scroll', handleScroll);
+    }
     console.log();
+    return () => {
+      if (isWindowContext) {
+        window.removeEventListener('scroll', handleScroll);
+      }
+    };
   }, []);
   const classes = useStyles();
   const [menuList] = useState([

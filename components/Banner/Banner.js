@@ -25,11 +25,15 @@ function Banner(props) {
   const elem = useRef(null);
 
   useEffect(() => {
-    interval.current = window.renderParticles();
+    const isWindowContext = typeof window !== 'undefined';
 
-    // return () => {
-    //   clearInterval(interval.current);
-    // };
+    interval.current = window.renderParticles && window.renderParticles();
+
+    return () => {
+      if (isWindowContext) {
+        window.removeEventListener('resize', interval.current);
+      }
+    };
   }, []);
 
   return (
@@ -61,7 +65,7 @@ function Banner(props) {
               </Typography>
               <div className={classes.btnArea}>
 
-                <Link href="/en/contact">
+                <Link href="/contact" passHref>
                   <Button variant="contained" color="primary">
                     Free Quote
                   </Button>

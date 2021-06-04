@@ -155,7 +155,7 @@ const featureStyles = makeStyles(theme => ({
     borderBottom: `1px solid ${theme.palette.text.disabled}`,
   },
 
-  /*Image+Graphic location*/
+  /* Image+Graphic location */
   illustrationLeft: {
     position: 'relative',
     '& $screen': {
