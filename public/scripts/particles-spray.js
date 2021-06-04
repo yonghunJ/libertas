@@ -126,11 +126,13 @@ function renderParticles() {
       }
   }
 
-  return setInterval(function() {
+  setInterval(function() {
       ctx.clearRect(0, 0, Canvas.width, Canvas.height);
 
       var time = new Date().getTime();
       for (var e in elements)
           elements[e].draw(ctx, time);
   }, 0.2);
+
+  return resize;
 }

@@ -34,12 +34,15 @@ const Feature = (props) => {
             <Grid container direction={isMobile ? 'column-reverse' : 'row'}>
               <Grid item md={6} xs={12}>
                 <div className={classes.illustrationLeft}>
-                  <svg className={classes.decoPrimary}>
+                  <svg className={classes.decoPrimary} viewBox="0 0 512 512">
                     <use xlinkHref="/images/mobile/deco-feature.svg#main" />
+                    <image
+                      className={classes.screen}
+                      xlinkHref={imgAPI.feature[0]}
+                      alt="Feature(1) Communication"
+                      style={{ height: '70%' }}
+                    />
                   </svg>
-                  <figure className={classes.screen}>
-                    <img src={imgAPI.feature[0]} alt="Feature(1) Communication" style={{ height: '100%' }} />
-                  </figure>
                 </div>
               </Grid>
               <Grid item md={6} xs={12}>

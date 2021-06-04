@@ -17,7 +17,7 @@ import logo from '~/public/images/mobile-logo.svg';
 import brand from '~/public/text/brand';
 import { withTranslation } from '~/i18n';
 import linkRouter from '~/public/text/link';
-import '~/vendors/hamburger-menu.css';
+
 import useStyles from './header-style';
 import navMenu from './menu';
 
@@ -49,8 +49,18 @@ function Header(props) {
     }
   };
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    const isWindowContext = typeof window !== 'undefined';
+
+    if (isWindowContext) {
+      window.addEventListener('scroll', handleScroll);
+    }
     console.log();
+
+    return () => {
+      if (isWindowContext) {
+        window.removeEventListener('scroll', handleScroll);
+      }
+    };
   }, []);
   const classes = useStyles();
   const theme = useTheme();
