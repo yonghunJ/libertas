@@ -60,6 +60,7 @@ const FloatingActionButtonZoom = (props) => {
       </Title>
       <AppBar position="static" color="default" style={{ width: '80%', margin: 'auto' }}>
         <Tabs
+          style={{backgroundColor: 'white'}}
           value={value}
           onChange={handleChange}
           indicatorColor="primary"
