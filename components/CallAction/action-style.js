@@ -4,6 +4,11 @@ import { lighten, darken } from '@material-ui/core/styles/colorManipulator';
 const useStyles = makeStyles(theme => ({
   root: {
     position: 'relative',
+    paddingTop: theme.spacing(5),
+    width:'70%',
+  [theme.breakpoints.down('sm')]: {
+    width:'100%',
+  },
   },
   background: {
     fill: theme.palette.type === 'dark' ? darken(theme.palette.primary.light, 0.8) : lighten(theme.palette.primary.light, 0.8),
@@ -21,17 +26,17 @@ const useStyles = makeStyles(theme => ({
       fontSize: 18,
     },
     [theme.breakpoints.down('sm')]: {
-      margin: '0 auto'
+      margin: '0 auto',
     }
   },
   paper: {
     padding: theme.spacing(4),
-    border: `2px solid ${theme.palette.secondary.main}`,
+    border: `2px solid ${theme.palette.primary.main}`,
     [theme.breakpoints.down('sm')]: {
       textAlign: 'center'
     },
     [theme.breakpoints.up('lg')]: {
-      padding: theme.spacing(4, 10),
+      padding: theme.spacing(4, 7),
       margin: theme.spacing(0, 4),
     },
     [theme.breakpoints.down('sm')]: {
@@ -43,7 +48,7 @@ const useStyles = makeStyles(theme => ({
     },
     '& h4': {
       fontWeight: 700,
-      color: theme.palette.type === 'dark' ? theme.palette.secondary.light : theme.palette.secondary.dark,
+      color: theme.palette.type === 'dark' ? theme.palette.primary.light : theme.palette.primary.dark,
       fontFamily: 'Roboto Condensed',
       [theme.breakpoints.down('xs')]: {
         fontSize: 28,

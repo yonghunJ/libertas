@@ -1,18 +1,18 @@
 import React, { useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
+import Link from 'next/link';
 import Container from '@material-ui/core/Container';
 import Hidden from '@material-ui/core/Hidden';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { useTheme } from '@material-ui/core/styles';
-import Link from 'next/link';
+import { Button } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import imgAPI from '~/public/images/imgAPI';
 import { withTranslation } from '~/i18n';
 import { useText } from '~/theme/common';
 import useStyles from './banner-style';
-import { Button } from '@material-ui/core';
 
 function Banner(props) {
   const classes = useStyles();
@@ -21,11 +21,19 @@ function Banner(props) {
 
   const theme = useTheme();
   const isDesktop = useMediaQuery(theme.breakpoints.up('lg'));
-
+  const interval = useRef();
   const elem = useRef(null);
 
   useEffect(() => {
-    window.renderParticles();
+    const isWindowContext = typeof window !== 'undefined';
+
+    interval.current = window.renderParticles && window.renderParticles();
+
+    return () => {
+      if (isWindowContext) {
+        window.removeEventListener('resize', interval.current);
+      }
+    };
   }, []);
 
   return (
@@ -44,20 +52,28 @@ function Banner(props) {
       <Container fixed={isDesktop}>
         <Grid container>
           <Grid item md={7} xs={12}>
+
+
+
             <div className={classes.text}>
-              <Typography variant="h3" className={text.title}>
-                {t('common:mobile-landing.banner_title')}
+            <div className={classes.MainMessage}/>
+            
+
+              {/*<Typography variant="h3" className={text.title} >
+              {t('common:mobile-landing.banner_title1')}
                 &nbsp;
                 <strong>
                   {t('common:mobile-landing.banner_titlestrong')}
                 </strong>
-              </Typography>
+                &nbsp;
+  {t('common:mobile-landing.banner_title2')}
+              </Typography>*/}
               <Typography variant="h5" className={text.subtitle}>
                 {t('common:mobile-landing.banner_desc')}
               </Typography>
               <div className={classes.btnArea}>
 
-                <Link href="/en/contact">
+                <Link href="/contact" passHref>
                   <Button variant="contained" color="primary">
                     Free Quote
                   </Button>

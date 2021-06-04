@@ -21,7 +21,8 @@ import '../vendors/animate-extends.css';
 import '../vendors/page-transition.css';
 import '../vendors/slick/slick.css';
 import '../vendors/slick/slick-theme.css';
-
+import '~/vendors/hamburger-menu.css';
+import '../public/scripts/particles-spray.js';
 let themeType = 'light';
 if (typeof Storage !== 'undefined') { // eslint-disable-line
   themeType = localStorage.getItem('luxiTheme') || 'light';

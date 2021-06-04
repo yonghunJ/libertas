@@ -1,8 +1,8 @@
 const menu = [
-  'feature',
+  'home',
   'showcase',
   'testimonials',
-  'faq'
+  'news',
 ];
 
 export default menu;

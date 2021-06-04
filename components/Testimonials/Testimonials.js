@@ -13,51 +13,22 @@ import CallAction from '../CallAction/CallAction';
 
 const testiContent = [
   {
-    text: 'Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam nec ex aliquet, aliquam neque non.',
-    avatar: imgAPI.avatar[10],
-    name: 'John Doe',
-    title: 'Chief Digital Officer',
-  },
-  {
     text: 'Vestibulum sit amet tortor sit amet libero lobortis semper at et odio. In eu tellus tellus. Pellentesque ullamcorper aliquet ultrices. Aenean facilisis vitae purus facilisis semper. Nam vitae scelerisque lorem, quis tempus libero.',
-    avatar: imgAPI.avatar[1],
+    avatar: imgAPI.avatar[0],
     name: 'Jean Doe',
     title: 'Chief Digital Officer',
   },
   {
     text: 'Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.',
-    avatar: imgAPI.avatar[2],
+    avatar: imgAPI.avatar[1],
     name: 'Jena Doe',
     title: 'Graphic Designer',
   },
   {
     text: 'Sed imperdiet enim ligula, vitae viverra justo porta vel.',
-    avatar: imgAPI.avatar[3],
+    avatar: imgAPI.avatar[2],
     name: 'Jovelin Doe',
     title: 'Senior Graphic Designer',
-  },
-  {
-    text: 'Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.',
-    avatar: imgAPI.avatar[4],
-    name: 'Jihan Doe',
-  },
-  {
-    text: 'Vestibulum sit amet tortor sit amet libero lobortis semper at et odio. In eu tellus tellus. Pellentesque ullamcorper aliquet ultrices. Aenean facilisis vitae purus facilisis semper. Nam vitae scelerisque lorem, quis tempus libero.',
-    avatar: imgAPI.avatar[6],
-    name: 'Jovelin Doe',
-    title: 'Senior Graphic Designer',
-  },
-  {
-    text: 'Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.',
-    avatar: imgAPI.avatar[7],
-    name: 'John Doe',
-    title: 'Senior Graphic Designer',
-  },
-  {
-    text: 'Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam nec ex aliquet, aliquam neque non.',
-    avatar: imgAPI.avatar[9],
-    name: 'John Doe',
-    title: 'Chief Digital Officer',
   },
 ];
 
@@ -96,21 +67,20 @@ function Testimonials(props) {
     centerPadding: '2px',
     centerMode: true,
     autoplaySpeed: 5000,
-    slidesToShow: 7,
+    slidesToShow: 3,
     pauseOnHover: false,
     arrows: false,
     responsive: [{
       breakpoint: 600,
       settings: {
         slidesToShow: 3,
-        slidesToScroll: 1
-      }
-    }]
+        slidesToScroll: 1,
+      },
+    }],
   };
 
   return (
     <div className={classes.root}>
-      <CallAction />
       <ReactWOW animation="fadeInUpShort" offset={-50} delay="0.3s" duration="0.5s">
         <div>
           <Title align="center">
@@ -157,7 +127,7 @@ function Testimonials(props) {
 }
 
 Testimonials.propTypes = {
-  t: PropTypes.func.isRequired
+  t: PropTypes.func.isRequired,
 };
 
 export default withTranslation(['mobile-landing'])(Testimonials);

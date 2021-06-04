@@ -1,11 +1,8 @@
-const withCSS = require('@zeit/next-css');
 const withImages = require('next-images');
 
-module.exports = withImages(
-  withCSS({
+module.exports = withImages({
     exportTrailingSlash: true,
-    exportPathMap: function() {
-      return {
+    exportPathMap: () => ({
         '/': { page: '/' },
         '/contact': { page: '/contact' },
         '/blank-page': { page: '/blank-page' },
@@ -17,20 +14,27 @@ module.exports = withImages(
         : 'none',
     },
     webpack: (config, options) => {
-      cssModules: true,
-      //      config.module.rules.push({
-      //          enforce: 'pre',
-      //          test: /\.js?$/,
-      //          exclude: [/node_modules/],
-      //          loader: 'eslint-loader',
-      //          options: {
-      //            quiet: true,
-      //          }
-      //      });
-      config.node = {
-        fs: 'empty'
-      }
-      return config;
+      const prod = process.env.NODE_ENV === 'production';
+      const plugins = [...config.plugins];
+      return {
+        ...config,
+        devtool: prod ? 'hidden-source-map' : 'eval',
+        mode: prod ? 'production' : 'development',
+        plugins,
+      };
+      // cssModules: true,
+      // //      config.module.rules.push({
+      // //          enforce: 'pre', 
+      // //          test: /\.js?$/,
+      // //          exclude: [/node_modules/],
+      // //          loader: 'eslint-loader',
+      // //          options: {
+      // //            quiet: true,
+      // //          }
+      // //      });
+      // config.node = {
+      //   fs: 'empty'
+      // }
+      // return config;
     },
-  })
-);
+});

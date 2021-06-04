@@ -3,9 +3,9 @@ import { lighten, darken } from '@material-ui/core/styles/colorManipulator';
 
 const showcaseStyles = makeStyles(theme => ({
   root: {
-    marginTop: -100,
+    marginTop: -140,
     backgroundImage: `linear-gradient(185deg, ${theme.palette.type === 'dark' ? theme.palette.primary.dark : theme.palette.primary.main} 50%, ${theme.palette.type === 'dark' ? theme.palette.secondary.dark : theme.palette.secondary.main} 100%)`,
-    paddingTop: theme.spacing(40),
+    paddingTop: theme.spacing(30),
     [theme.breakpoints.down('md')]: {
       paddingTop: theme.spacing(40),
     },
@@ -13,10 +13,10 @@ const showcaseStyles = makeStyles(theme => ({
       paddingTop: theme.spacing(50),
     },
     [theme.breakpoints.down('xs')]: {
-      padding: theme.spacing(10, 3, 0),
+      padding: theme.spacing(20, 3, 0),
     },
     [theme.breakpoints.down(330)]: {
-      padding: theme.spacing(10, 0, 0),
+      padding: theme.spacing(20, 0, 0),
     },
   },
   decoTop: {
@@ -37,7 +37,7 @@ const showcaseStyles = makeStyles(theme => ({
     [theme.breakpoints.down('xs')]: {
       transform: 'scale(1.5, 0.5)',
       width:'100%',
-      top: -180,
+      top: -100,
     },
     [theme.breakpoints.down(330)]: {
       transform: 'scale(1.5, 0.5)',

@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
     width: '100%',
     position: 'relative',
     minHeight: 470,
-    marginTop: 150,
+    marginTop: 130,
     [theme.breakpoints.down('sm')]: {
       marginTop: 300,
     },

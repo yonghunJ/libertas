@@ -17,7 +17,7 @@ import logo from '~/public/images/mobile-logo.svg';
 import brand from '~/public/text/brand';
 import { withTranslation } from '~/i18n';
 import linkRouter from '~/public/text/link';
-import '~/vendors/hamburger-menu.css';
+
 import useStyles from './header-style';
 import navMenu from './menu';
 
@@ -49,8 +49,18 @@ function Header(props) {
     }
   };
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    const isWindowContext = typeof window !== 'undefined';
+
+    if (isWindowContext) {
+      window.addEventListener('scroll', handleScroll);
+    }
     console.log();
+
+    return () => {
+      if (isWindowContext) {
+        window.removeEventListener('scroll', handleScroll);
+      }
+    };
   }, []);
   const classes = useStyles();
   const theme = useTheme();
@@ -66,7 +76,7 @@ function Header(props) {
     createData(navMenu[0], '#' + navMenu[0]),
     createData(navMenu[1], '#' + navMenu[1]),
     createData(navMenu[2], '#' + navMenu[2]),
-    createData(navMenu[3], '#' + navMenu[3], -40),
+    createData(navMenu[3], '#' + navMenu[3]),
   ]);
   const [openDrawer, setOpenDrawer] = useState(false);
   const handleOpenDrawer = () => {
@@ -82,7 +92,7 @@ function Header(props) {
         className={clsx(
           classes.header,
           fixed && classes.fixed,
-          openDrawer && classes.openDrawer
+          openDrawer && classes.openDrawer,
         )}
       >
         <Container fixed={isDesktop}>
@@ -134,9 +144,18 @@ function Header(props) {
                     </li>
                   ))}
                   <li>
-                    <Button href={linkRouter.mobile.contact}>
-                      {t('common:mobile-landing.header_contact')}
-                    </Button>
+                    <Link href={linkRouter.mobile.contact} passHref>
+                      <Button>
+                        {t('common:mobile-landing.header_contact')}
+                      </Button>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href={linkRouter.mobile.blog} passHref>
+                      <Button>
+                        {t('common:mobile-landing.header_blog')}
+                      </Button>
+                    </Link>
                   </li>
                 </Scrollspy>
               )}
@@ -160,7 +179,7 @@ Header.propTypes = {
 
 Header.defaultProps = {
   sticky: false,
-  invert: false
+  invert: false,
 };
 
 export default withTranslation(['mobile-landing'])(Header);

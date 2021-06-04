@@ -133,4 +133,6 @@ function renderParticles() {
       for (var e in elements)
           elements[e].draw(ctx, time);
   }, 0.2);
+
+  return resize;
 }
