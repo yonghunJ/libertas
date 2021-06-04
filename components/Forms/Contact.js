@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Hidden from '@material-ui/core/Hidden';
 import Button from '@material-ui/core/Button';
 import clsx from 'clsx';
+import Link from 'next/link';
 import IconButton from '@material-ui/core/IconButton';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Paper from '@material-ui/core/Paper';
@@ -84,19 +85,23 @@ function Contact(props) {
       />
       <Hidden mdUp>
         <div className={clsx(classes.logo, classes.logoHeader)}>
-          <a href={linkRouter.mobile.home}>
-            <img src={logo} alt="logo" />
-            <Typography component="span">
-              {brand.mobile.projectName}
-            </Typography>
-          </a>
+          <Link href={linkRouter.mobile.home}>
+            <a>
+              <img src={logo} alt="logo" />
+              <Typography component="span">
+                {brand.mobile.projectName}
+              </Typography>
+            </a>
+          </Link>
         </div>
       </Hidden>
       <Container maxWidth="md" className={classes.innerWrap}>
-        <IconButton href={linkRouter.mobile.home} className={classes.backtohome}>
-          <i className="ion-ios-home-outline" />
-          <i className="ion-ios-arrow-thin-left" />
-        </IconButton>
+        <Link href={linkRouter.mobile.home}>
+          <IconButton className={classes.backtohome}>
+            <i className="ion-ios-home-outline" />
+            <i className="ion-ios-arrow-thin-left" />
+          </IconButton>
+        </Link>
         <Paper className={clsx(classes.formBox, 'fragment-fadeUp')}>
           <div className={classes.fullFromWrap}>
             <Typography
@@ -189,9 +194,12 @@ function Contact(props) {
                       <span>
                         {t('common:form_terms')}
                         <br />
-                        <a href="#">
-                          {t('common:form_privacy')}
-                        </a>
+                        
+                        <Link href="#">
+                          <a>
+                            {t('common:form_privacy')}
+                          </a>
+                        </Link>
                       </span>
                     )}
                   />

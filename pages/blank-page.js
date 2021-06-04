@@ -20,17 +20,17 @@ const useStyles = makeStyles(theme => ({
     background: theme.palette.type === 'dark' ? theme.palette.background.dafault : theme.palette.background.paper,
   },
   spaceBottom: {
-    marginBottom: sectionMargin(theme.spacing())
+    marginBottom: sectionMargin(theme.spacing()),
   },
   spaceTop: {
-    paddingTop: sectionMargin(theme.spacing())
+    paddingTop: sectionMargin(theme.spacing()),
   },
   containerWrap: {
     marginTop: theme.spacing(10),
     padding: theme.spacing(4),
     '& > section': {
-      position: 'relative'
-    }
+      position: 'relative',
+    },
   },
 }));
 

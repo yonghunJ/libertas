@@ -16,6 +16,8 @@ import TabPanelView from '../components/TabPanelView';
 import TabPanelView2 from '../components/TabPanelView2';
 import brand from '../public/text/brand';
 import CallAction from '../components/CallAction/CallAction';
+import Services from '../components/Services';
+// import AppLayout from '../components/AppLayout';
 
 const sectionMargin = margin => (margin * 20);
 const useStyles = makeStyles(theme => ({
@@ -101,7 +103,10 @@ function Landing(props) {
           <section id="testimonials">
             <Testimonials />
           </section>
-          <section id="callAction">
+          <section id="service" className={classes.spaceTopShort}>
+            <Services />
+          </section>
+          <section id="callAction" className={classes.spaceTopShort}>
             <CallAction />
           </section>
           <section id="news" className={classes.spaceTopShort}>

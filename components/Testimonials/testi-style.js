@@ -7,7 +7,7 @@ const testiStyles = makeStyles(theme => ({
   root: {
     background: theme.palette.type === 'dark' ? darken(theme.palette.primary.light, 0.6) : lighten(theme.palette.primary.light, 0.8),
     minHeight: 400,
-    paddingTop: theme.spacing(20)
+    paddingTop: theme.spacing(30)
   },
   carouselWrap: {
     position: 'relative',
@@ -30,30 +30,30 @@ const testiStyles = makeStyles(theme => ({
     color: theme.palette.type === 'dark' ? theme.palette.primary.light : theme.palette.primary.main,
     margin: theme.spacing(2, 0, 4),
     '& strong': {
-      fontWeight: theme.typography.fontWeightBold
+      fontWeight: theme.typography.fontWeightBold,
     }
   },
   carouselText: {
     '& $item': {
-      position: 'relative'
-    }
+      position: 'relative',
+    },
   },
   carouselAvatar: {
     margin: '0 auto',
     [theme.breakpoints.up('sm')]: {
-      width: 768,
+      width: 400,
     },
     '& $item': {
       cursor: 'pointer',
       height: 140,
-      paddingTop: theme.spacing(2)
+      paddingTop: theme.spacing(2),
     },
     '& div[class*="slick-center"]': {
       '& $avatar': {
         opacity: 1,
-        transform: 'scale(1.4)'
-      }
-    }
+        transform: 'scale(1.4)',
+      },
+    },
   },
   avatar: {
     border: '4px solid white',

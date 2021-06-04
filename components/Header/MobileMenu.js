@@ -41,6 +41,7 @@ function MobileMenu(props) {
             button
             component="a"
             href={linkRouter.mobile.contact}
+            index="4"
             style={{ animationDuration: navMenu.length * 0.15 + 's' }}
           >
             <ListItemText
@@ -48,6 +49,18 @@ function MobileMenu(props) {
               className={classes.menuList}
             />
           </ListItem>
+          {/* <ListItem
+            button
+            component="a"
+            href={linkRouter.mobile.blog}
+            index="5"
+            style={{ animationDuration: navMenu.length * 0.15 + 's' }}
+          >
+            <ListItemText
+              primary={t('common:mobile-landing.header_blog')}
+              className={classes.menuList}
+            />
+          </ListItem> */}
         </List>
       </div>
     </div>

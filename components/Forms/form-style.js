@@ -4,6 +4,7 @@ import decoWaveLight from '~/public/images/mobile/deco-wave-light.png';
 import decoWaveDark from '~/public/images/mobile/deco-wave-dark.png';
 import decoLineLight from '~/public/images/mobile/deco-line-light.png';
 import decoLineDark from '~/public/images/mobile/deco-line-dark.png';
+import { PlayCircleFilledWhite } from '@material-ui/icons';
 
 const contactStyles = makeStyles(theme => ({
   title: {},
@@ -150,7 +151,7 @@ const contactStyles = makeStyles(theme => ({
     padding: theme.spacing(0, 15, 10),
     marginTop: theme.spacing(8),
     [theme.breakpoints.down('sm')]: {
-      padding: theme.spacing(0, 4, 10)
+      padding: theme.spacing(0, 4, 10),
     },
     [theme.breakpoints.down('xs')]: {
       padding: theme.spacing(2, 1),
@@ -165,9 +166,9 @@ const contactStyles = makeStyles(theme => ({
   },
   btnArea: {
     marginTop: theme.spacing(5),
-    justifyContent: 'space-between',
+    justifyContent: 'center',
     '& label': {
-      position: 'relative'
+      position: 'relative',
     },
     '& button': {
       minWidth: 240,

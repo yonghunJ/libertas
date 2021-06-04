@@ -11,11 +11,11 @@ const appTheme = (color, mode) => ({
   },
   typography: {
     fontFamily: [
-      'Open Sans',
+      'Roboto',
       'sans-serif',
     ].join(','),
     fontWeightRegular: 400,
-    fontWeightMedium: 600,
+    fontWeightMedium: 700,
     fontWeightBold: 700,
   },
   shade: {

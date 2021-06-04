@@ -11,14 +11,21 @@ const decoStyle = {
 const featureStyles = makeStyles(theme => ({
   root: {
     height: '100%',
-    minHeight: 580,
+    minHeight: 620,
+    marginTop: theme.spacing(-6),
+    [theme.breakpoints.down('sm')]: {
+      marginTop: theme.spacing(0),
+    },
   },
-
+  liStyle: {
+    listStyleType: 'none',
+  },
   /* First feature tab BG */
   decoPrimary: {
     fill: theme.palette.type === 'dark' ? theme.palette.primary.dark : theme.palette.primary.light,
+    transform: 'scale(0.9)',
     [theme.breakpoints.down('sm')]: {
-      top: -20,
+      top: -30,
       left: 20,
       transform: 'scale(0.7)',
     },
@@ -27,8 +34,9 @@ const featureStyles = makeStyles(theme => ({
  /* Second feature tab BG */
   decoSecondary: {
     fill: theme.palette.type === 'dark' ? theme.palette.secondary.dark : theme.palette.secondary.light,
+    transform: 'scale(0.9)',
     [theme.breakpoints.down('sm')]: {
-      top: -20,
+      top: -30,
       left: -20,
       transform: 'scale(0.7)',
     },
@@ -77,6 +85,7 @@ const featureStyles = makeStyles(theme => ({
   text: {
     [theme.breakpoints.up('md')]: {
       paddingTop: theme.spacing(12),
+      Width:'80%',
     },
     [theme.breakpoints.down('sm')]: {
       textAlign: 'center',
@@ -94,7 +103,8 @@ const featureStyles = makeStyles(theme => ({
         margintop: '0 auto',
       },
     },
-    top: 120,
+    top: 100,
+    left: -10,
     [theme.breakpoints.down('sm')]: {
       top: 50,
     },
@@ -155,7 +165,7 @@ const featureStyles = makeStyles(theme => ({
     borderBottom: `1px solid ${theme.palette.text.disabled}`,
   },
 
-  /*Image+Graphic location*/
+  /* Image+Graphic location */
   illustrationLeft: {
     position: 'relative',
     '& $screen': {
