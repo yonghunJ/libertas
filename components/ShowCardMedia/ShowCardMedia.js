@@ -5,7 +5,6 @@ import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 
-// import waveImg from './wave.png';
 
 const useStyles = makeStyles({
   root: {
@@ -23,7 +22,7 @@ export default function ImgMediaCard() {
     <Card className={classes.root}>
       <CardMedia
         className={classes.media}
-        // image={waveImg}
+        image="https://i.pinimg.com/originals/8d/f7/42/8df742ad90ca58d3068fb3d7d2ba250f.png"
         title="Paella dish"
       />
       <CardContent>

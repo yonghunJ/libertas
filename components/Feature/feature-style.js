@@ -17,7 +17,9 @@ const featureStyles = makeStyles(theme => ({
       marginTop: theme.spacing(0),
     },
   },
-
+  liStyle: {
+    listStyleType: 'none',
+  },
   /* First feature tab BG */
   decoPrimary: {
     fill: theme.palette.type === 'dark' ? theme.palette.primary.dark : theme.palette.primary.light,
