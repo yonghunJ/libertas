@@ -69,9 +69,6 @@ function Showcase(props) {
           {t('common:mobile-landing.showcase_title')}
         </Title>
         <div className={classes.carouselWrap}>
-          <div className={classes.invertParallax}>
-            <ParallaxLarge />
-          </div>
           <div className={classes.carouselSide}>
             <Carousel ref={sliderSide} asNavFor={slider.nav2} {...settingsSide}>
               <div className={classes.item}>

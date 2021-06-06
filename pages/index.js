@@ -61,6 +61,12 @@ const useStyles = makeStyles(theme => ({
       marginTop: sectionMargin(2),
     },
   },
+  services: {
+    display: 'flex',
+    justifyContent: 'center',
+    width: '70%',
+    margin: 'auto',
+  },
   containerWrap: {
     marginTop: -40,
     '& > section': {
@@ -97,14 +103,14 @@ function Landing(props) {
           <section id="tabPanel2" className={classes.spaceMiddle}>
             <TabPanelView2 />
           </section>
-          <section id="showcase">
+          <section id="service" className={classes.services}>
+            <Services />
+          </section>
+          <section id="showcase" className={classes.spaceTopShort}>
             <Showcase />
           </section>
           <section id="testimonials">
             <Testimonials />
-          </section>
-          <section id="service" className={classes.spaceTopShort}>
-            <Services />
           </section>
           <section id="callAction" className={classes.spaceTopShort}>
             <CallAction />

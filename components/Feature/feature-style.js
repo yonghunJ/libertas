@@ -187,8 +187,6 @@ const featureStyles = makeStyles(theme => ({
     position: 'relative',
     '& $screen': {
       [theme.breakpoints.up('md')]: {
-        //left: 20,
-        // top: -40,
         marginTop: -50,
       },
       [theme.breakpoints.down('sm')]: {

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
@@ -8,30 +8,30 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 345,
+    padding: '12px 20px',
   },
   media: {
     height: '100px',
   },
 });
 
-export default function ImgMediaCard() {
+export default function ImgMediaCard(props) {
+  const [itemObj, setItemObj] = useState(props.item)
+  
   const classes = useStyles();
-
   return (
     <Card className={classes.root}>
       <CardMedia
         className={classes.media}
-        image="https://i.pinimg.com/originals/8d/f7/42/8df742ad90ca58d3068fb3d7d2ba250f.png"
-        title="Paella dish"
+        image={itemObj?.imageUrl}
+        title={itemObj?.imageTitle}
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="h2">
-          CardMedia Example
+          {itemObj?.title}
         </Typography>
         <Typography variant="body2" color="textSecondary" component="p">
-          The CardMedia component sets a background image to cover available
-          space.
+          {itemObj?.content}
         </Typography>
       </CardContent>
     </Card>

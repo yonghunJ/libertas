@@ -6,7 +6,7 @@ module.exports = withImages({
         '/': { page: '/' },
         '/contact': { page: '/contact' },
         '/blank-page': { page: '/blank-page' },
-      }), 
+      }),
     publicRuntimeConfig: {
       localeSubpaths: typeof process.env.LOCALE_SUBPATHS === 'string'
         ? process.env.LOCALE_SUBPATHS

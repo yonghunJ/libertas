@@ -20,10 +20,12 @@ const useStyles = makeStyles(theme => ({
     transform: 'scale(3)'
   },
   button: {
+    color: 'black',
     [theme.breakpoints.up('md')]: {
       width: 240,
       height: 64,
-      fontSize: 18,
+      fontSize: 14,
+      color: 'black',
     },
     [theme.breakpoints.down('sm')]: {
       margin: '0 auto',
