@@ -36,12 +36,12 @@ const Feature = (props) => {
               <Grid item md={6} xs={12}>
                 <div className={classes.illustrationLeft}>
                   <svg className={classes.decoPrimary} viewBox="0 0 512 512">
-                    <use xlinkHref="/images/mobile/deco-feature.svg#main" />
+                    <use xlinkHref="/images/mobile/deco-feature.svg#main" transform="translate(50 -20)"/>
                     <image
                       className={classes.screen}
                       xlinkHref={imgAPI.feature[0]}
                       alt="Feature(1) Communication"
-                      style={{ height: '70%' }}
+                      style={{ height: '90%' }}
                     />
                   </svg>
                 </div>
@@ -54,15 +54,15 @@ const Feature = (props) => {
                   </Typography>
                   <Typography display="block" component="div" className={text.subtitle4}>
                     <li className={classes.liStyle}>
-                      <CheckIcon fontSize="small" />
+                      <CheckIcon fontSize="small"/>
                       {t('common:mobile-landing.feature_list1-1')}
                     </li>
                     <li className={classes.liStyle}>
-                      <CheckIcon />
+                      <CheckIcon fontSize="small"/>
                       {t('common:mobile-landing.feature_list1-2')}
                     </li>
                     <li className={classes.liStyle}>
-                      <CheckIcon />
+                      <CheckIcon fontSize="small"/>
                       {t('common:mobile-landing.feature_list1-3')}
                     </li>
                   </Typography>
