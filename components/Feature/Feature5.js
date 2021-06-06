@@ -52,12 +52,15 @@ const Feature5 = (props) => {
                 </Grid>
                 <Grid item md={6} xs={12}>
                   <div className={classes.illustrationRight}>
-                    <svg className={classes.decoSecondary}>
+                    <svg className={classes.decoSecondary} viewBox="0 0 512 512">
                       <use xlinkHref="/images/mobile/deco-feature.svg#main" />
+                      <image
+                        className={classes.screen}
+                        xlinkHref={imgAPI.feature[4]}
+                        alt="Feature(5) Web Design"
+                        style={{ height: '70%' }}
+                      />
                     </svg>
-                    <figure className={classes.screen}>
-                      <img src={imgAPI.feature[4]} alt="Feature(5) Web Design" />
-                    </figure>
                   </div>
                 </Grid>
               </Grid>

@@ -3,16 +3,39 @@ import { lighten, darken } from '@material-ui/core/styles/colorManipulator';
 
 const serviceStyles = makeStyles(theme => ({
   root: {
-    backgroundColor: 'black',
+    // backgroundImage: `linear-gradient(185deg, ${theme.palette.type === 'dark' ? theme.palette.primary.dark : theme.palette.primary.main} 50%, ${theme.palette.type === 'dark' ? theme.palette.secondary.dark : theme.palette.secondary.main} 100%)`,
+    
+    paddingTop: theme.spacing(30),
+    [theme.breakpoints.down('md')]: {
+      paddingTop: theme.spacing(40),
+    },
+    [theme.breakpoints.up('xl')]: {
+      paddingTop: theme.spacing(50),
+    },
+    [theme.breakpoints.down('xs')]: {
+      padding: theme.spacing(20, 3, 0),
+    },
+    [theme.breakpoints.down(330)]: {
+      padding: theme.spacing(20, 0, 0),
+    },
   },
+  root1: {
+    flexGrow: 1,
+  },
+  paper: {
+    padding: theme.spacing(2),
+    textAlign: 'center',
+    color: theme.palette.text.secondary,
+  },
+
   wrapper: {
     width: '100%',
     height: '100%',
-    background: 'white',
+    backgroundColor: 'rgb(245, 243, 250)',
     padding: '20px',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
+    // display: 'flex',
+    // alignItems: 'center',
+    // justifyContent: 'center',
     borderRadius: '50px 10px',
   },
   container: {
