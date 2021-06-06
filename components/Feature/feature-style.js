@@ -26,7 +26,7 @@ const featureStyles = makeStyles(theme => ({
     transform: 'scale(0.9)',
     [theme.breakpoints.down('sm')]: {
       top: -30,
-      left: 20,
+      left: 0,
       transform: 'scale(0.7)',
     },
     ...decoStyle,
@@ -168,27 +168,25 @@ const featureStyles = makeStyles(theme => ({
   /* Image+Graphic location */
   illustrationLeft: {
     position: 'relative',
+    marginTop: -50,
     '& $screen': {
       margin: 0,
       [theme.breakpoints.up('md')]: {
         marginTop: -50,
       },
       [theme.breakpoints.down('sm')]: {
-        marginLeft: theme.spacing(),
         marginTop: -40,
       },
       [theme.breakpoints.down('xs')]: {
-        marginLeft: theme.spacing(),
         marginTop: -40,
       },
     },
+
   },
   illustrationRight: {
     position: 'relative',
     '& $screen': {
       [theme.breakpoints.up('md')]: {
-        //left: 20,
-        // top: -40,
         marginTop: -50,
       },
       [theme.breakpoints.down('sm')]: {

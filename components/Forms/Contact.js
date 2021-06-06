@@ -194,7 +194,6 @@ function Contact(props) {
                       <span>
                         {t('common:form_terms')}
                         <br />
-                        
                         <Link href="#">
                           <a>
                             {t('common:form_privacy')}
@@ -219,7 +218,7 @@ function Contact(props) {
 
 
 Contact.propTypes = {
-  t: PropTypes.func.isRequired
+  t: PropTypes.func.isRequired,
 };
 
 export default withTranslation(['common'])(Contact);

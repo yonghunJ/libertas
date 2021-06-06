@@ -1,75 +1,76 @@
-import React, { useState, useEffect, useRef } from 'react';
-import {
-  useTransition,
-  useSpring,
-  useChain,
-  config,
-  animated,
-  useSpringRef,
-} from '@react-spring/web';
+import React from 'react';
+import ReactWOW from 'react-wow'
 import PropTypes from 'prop-types';
+import { Grid } from '@material-ui/core';
 import { withTranslation } from '~/i18n';
-import Container from '@material-ui/core/Container';
 
 import useStyles from './services-style';
-import data from './data';
 import ShowCardMedia from '../ShowCardMedia';
+import Title from '../Title';
+
+const testiContent = [
+  {
+    imageUrl: 'https://i.pinimg.com/originals/8d/f7/42/8df742ad90ca58d3068fb3d7d2ba250f.png',
+    imageTitle: 'hello',
+    title: 'title1',
+    content: 'content1',
+  },
+  {
+    imageUrl: 'https://i.pinimg.com/originals/8d/f7/42/8df742ad90ca58d3068fb3d7d2ba250f.png',
+    imageTitle: 'hello2',
+    title: 'title2',
+    content: 'content3',
+  },
+  {
+    imageUrl: 'https://i.pinimg.com/originals/8d/f7/42/8df742ad90ca58d3068fb3d7d2ba250f.png',
+    imageTitle: 'hello3',
+    title: 'title3',
+    content: 'content3',
+  },
+  {
+    imageUrl: 'https://i.pinimg.com/originals/8d/f7/42/8df742ad90ca58d3068fb3d7d2ba250f.png',
+    imageTitle: 'hello3',
+    title: 'title4',
+    content: 'content3',
+  },
+  {
+    imageUrl: 'https://i.pinimg.com/originals/8d/f7/42/8df742ad90ca58d3068fb3d7d2ba250f.png',
+    imageTitle: 'hello3',
+    title: 'title5',
+    content: 'content3',
+  },
+
+];
+
 
 function Services(props) {
   const classes = useStyles();
   const { t } = props;
 
-  const [open, setOpen] = useState(false);
-  const [serviceTitle, setServiceTitle] = useState('CLICK HERE');
-
-  const springApi = useSpringRef();
-  const { size, ...rest } = useSpring({
-    ref: springApi,
-    config: config.stiff,
-    from: { size: '20%', background: 'hotpink' },
-    to: {
-      size: open ? '100%' : '20%',
-      background: open ? 'pink' : 'hotpink',
-    },
-  });
-
-  const transApi = useSpringRef();
-  const transition = useTransition(open ? data : [], {
-    ref: transApi,
-    trail: 400 / data.length,
-    from: { opacity: 0, scale: 0 },
-    enter: { opacity: 1, scale: 1 },
-    leave: { opacity: 0, scale: 0 },
-  });
-
-  // This will orchestrate the two animations above, comment the last arg and it creates a sequence
-  useChain(open ? [springApi, transApi] : [transApi, springApi], [
-    0,
-    open ? 0.6 : 0.2,
-  ]);
-
   return (
     <>
-      <Container>
-        <animated.div
-          style={{ ...rest, width: size, height: size }}
-          className={classes.container}
-          onClick={() => setOpen(prevOpen => !prevOpen)}
-        >
-          {open ? 'CORE' : serviceTitle }
-        </animated.div>
-        <div className={classes.wrapper}>
-          {transition((style, item) => (
-            <animated.div
-              className={classes.item}
-              style={{ ...style, background: item.css, height: item.height }}
+      <div className={classes.root}>
+        <ReactWOW animation="fadeInUpShort" offset={-150} delay="0.4s" duration="0.5s">
+          <div className={classes.root1}>
+            <Title align="center">
+              Features
+            </Title>
+            <Grid
+              container
+              spacing={3}
+              direction="row"
+              justify="center"
+              alignItems="center"
             >
-              {/* <h1>{item.name}</h1> */}
-              <ShowCardMedia />
-            </animated.div>
-          ))}
-        </div>
-      </Container>
+              {testiContent.map((item) => (
+                <Grid item xs={12} sm={4} key={`showCard-${item.title}`}>
+                  <ShowCardMedia item={item} />
+                </Grid>
+              ))}
+            </Grid>
+          </div>
+        </ReactWOW>
+      </div>
     </>
   );
 }
