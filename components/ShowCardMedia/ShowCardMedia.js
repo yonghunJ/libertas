@@ -4,6 +4,8 @@ import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
+import { useText } from '~/theme/common';
+
 
 
 const useStyles = makeStyles({
@@ -17,7 +19,7 @@ const useStyles = makeStyles({
 
 export default function ImgMediaCard(props) {
   const [itemObj, setItemObj] = useState(props.item)
-  
+  const text = useText();
   const classes = useStyles();
   return (
     <Card className={classes.root}>
@@ -27,10 +29,10 @@ export default function ImgMediaCard(props) {
         title={itemObj?.imageTitle}
       />
       <CardContent>
-        <Typography gutterBottom variant="h5" component="h2">
+        <Typography gutterBottom display="block" className={text.title4}>
           {itemObj?.title}
         </Typography>
-        <Typography variant="body2" color="textSecondary" component="p">
+        <Typography display="block" className={text.subtitle6}>
           {itemObj?.content}
         </Typography>
       </CardContent>

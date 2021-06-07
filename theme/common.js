@@ -65,6 +65,20 @@ export const useText = makeStyles(theme => ({
       paddingLeft:0,
     }
   },
+  title4: {
+    fontSize: 24,
+    lineHeight: '32px',
+    textAlign: 'center',
+    fontWeight: theme.typography.fontWeightBold,
+    [theme.breakpoints.down('md')]: {
+      fontSize: 22,
+      lineHeight: '32px'
+    },
+    [theme.breakpoints.down('xs')]: {
+      fontSize: 20,
+      lineHeight: '28px',
+    },
+  },
   subtitle: {
     fontWeight: theme.typography.fontWeightRegular,
     fontSize: 20,
@@ -86,7 +100,7 @@ export const useText = makeStyles(theme => ({
     [theme.breakpoints.down('md')]: {
       fontSize: 16,
       lineHeight: '32px',
-      paddingRight:0,
+      paddingRight:'40px',
     },
     [theme.breakpoints.down('xs')]: {
       fontSize: 14,
@@ -145,6 +159,22 @@ export const useText = makeStyles(theme => ({
       lineHeight: '24px',
       textAlign: 'left',
       paddingLeft:0,
+    },
+  },
+  subtitle6: {
+    fontWeight: theme.typography.fontWeightRegular,
+    fontSize: 16,
+    lineHeight: '32px',
+    textAlign: 'center',
+    [theme.breakpoints.down('md')]: {
+      fontSize: 14,
+      lineHeight: '32px',
+      paddingRight:0,
+    },
+    [theme.breakpoints.down('xs')]: {
+      fontSize: 12,
+      lineHeight: '24px',
+      paddingRight:0,
     },
   },
   paragraph: {

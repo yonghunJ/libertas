@@ -4,7 +4,6 @@ import { lighten, darken } from '@material-ui/core/styles/colorManipulator';
 const serviceStyles = makeStyles(theme => ({
   root: {
     // backgroundImage: `linear-gradient(185deg, ${theme.palette.type === 'dark' ? theme.palette.primary.dark : theme.palette.primary.main} 50%, ${theme.palette.type === 'dark' ? theme.palette.secondary.dark : theme.palette.secondary.main} 100%)`,
-    
     paddingTop: theme.spacing(30),
     [theme.breakpoints.down('md')]: {
       paddingTop: theme.spacing(40),
@@ -13,10 +12,10 @@ const serviceStyles = makeStyles(theme => ({
       paddingTop: theme.spacing(50),
     },
     [theme.breakpoints.down('xs')]: {
-      padding: theme.spacing(20, 3, 0),
+      Margin: theme.spacing(2, -10, 2, -10),
     },
     [theme.breakpoints.down(330)]: {
-      padding: theme.spacing(20, 0, 0),
+      Margin: theme.spacing(2, -10, 2, -10),
     },
   },
   root1: {
@@ -33,9 +32,9 @@ const serviceStyles = makeStyles(theme => ({
     height: '100%',
     backgroundColor: 'rgb(245, 243, 250)',
     padding: '20px',
-    // display: 'flex',
-    // alignItems: 'center',
-    // justifyContent: 'center',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
     borderRadius: '50px 10px',
   },
   container: {
