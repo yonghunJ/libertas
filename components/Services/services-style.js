@@ -22,9 +22,11 @@ const serviceStyles = makeStyles(theme => ({
   },
   root1: {
     flexGrow: 1,
-    padding: theme.spacing(20, 20, 0, 20),
+    padding: theme.spacing(30, 20, 0, 20),
+    marginTop: theme.spacing(-10),
     [theme.breakpoints.down('sm')]: {
-      padding: theme.spacing(2),
+      padding: theme.spacing(20, 2, 0, 2),
+      marginTop: theme.spacing(-5),
     },
   },
   paper: {
@@ -67,7 +69,10 @@ const serviceStyles = makeStyles(theme => ({
     background: theme.palette.type === 'dark' ? darken(theme.palette.primary.light, 0.65) : fade(theme.palette.primary.light, 0.2),
     backgroundSize: '100% auto',
     //paddingTop: theme.spacing(10),
-    marginTop: theme.spacing(-25),
+    marginTop: theme.spacing(-30),
+    [theme.breakpoints.down('md')]: {
+      marginTop: theme.spacing(-10),
+    },
     [theme.breakpoints.down('xs')]: {
       marginTop: theme.spacing(-5),
     },
@@ -77,7 +82,10 @@ const serviceStyles = makeStyles(theme => ({
     background: `url(${theme.palette.type === 'dark' ? decoDarkTop : decoLightTop}) no-repeat transparent`,
     backgroundSize: '100% auto',
     transform: 'scale(1.5, 0.5)',
-    marginTop: theme.spacing(-22),
+    marginTop: theme.spacing(-20),
+    [theme.breakpoints.down('md')]: {
+      marginTop: theme.spacing(-23),
+    },
     [theme.breakpoints.down('xs')]: {
       marginTop: theme.spacing(-31),
     },
@@ -85,7 +93,7 @@ const serviceStyles = makeStyles(theme => ({
     width: '100%',
     height: '100%',
     left: 0,
-    top: -80,
+    top: -100,
     '&:after': {
       content: '""',
       background: `url(${theme.palette.type === 'dark' ? decoDarkTop : decoLightTop}) no-repeat transparent`,
@@ -94,8 +102,16 @@ const serviceStyles = makeStyles(theme => ({
       width: '100%',
       height: '100%',
       opacity: 0.5,
-      left: 20,
-      top: 10,
+      left: 50,
+      top: 30,
+      [theme.breakpoints.down('xs')]: {
+        left: 50,
+        top: 10,
+      },
+      [theme.breakpoints.down('md')]: {
+        left: 50,
+        top: 10,
+      },
     },
   },
 }));

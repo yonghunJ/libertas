@@ -17,9 +17,9 @@ const useStyles = makeStyles((theme) => ({
     position: 'relative',
     backgroundSize: '100% auto',
     //paddingTop: theme.spacing(10),
-    marginTop: theme.spacing(2),
-    
+    marginTop: theme.spacing(2), 
   },
+
   fab: {
     position: 'absolute',
     bottom: theme.spacing(2),

@@ -12,6 +12,7 @@ import { withTranslation } from '~/i18n';
 import AddIcon from '@material-ui/icons/Add';
 import EditIcon from '@material-ui/icons/Edit';
 import UpIcon from '@material-ui/icons/KeyboardArrowUp';
+import { fade, darken } from '@material-ui/core/styles/colorManipulator';
 import TabPanel from './TabPanel';
 import useStyles from './css';
 import Feature5 from '../Feature/Feature5';
@@ -84,6 +85,7 @@ const FloatingActionButtonZoom = (props) => {
       </Title>
       <AppBar position="static" color="default" style={{ width: '80%', margin: 'auto' }}>
         <Tabs
+          style={{backgroundColor: theme.palette.type === 'dark' ? darken(theme.palette.primary.light, 0.80): 'White'}}
           value={value}
           onChange={handleChange}
           indicatorColor="primary"
