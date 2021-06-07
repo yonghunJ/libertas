@@ -6,6 +6,7 @@ import { useTheme } from '@material-ui/core/styles';
 import Zoom from '@material-ui/core/Zoom';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
+import CheckIcon from '@material-ui/icons/Check';
 import imgAPI from '~/public/images/imgAPI';
 import { withTranslation } from '~/i18n';
 import { useText } from '~/theme/common';
@@ -38,13 +39,16 @@ const Feature5 = (props) => {
                       {t('common:mobile-landing.feature_desc5')}
                     </Typography>
                     <Typography display="block" component="p" className={text.subtitle5}>
-                    <li>
+                    <li className={classes.liStyle}>
+                      <CheckIcon fontSize="small"/>
                       {t('common:mobile-landing.feature_list5-1')}
                     </li>
-                    <li>
+                    <li className={classes.liStyle}>
+                      <CheckIcon fontSize="small"/>
                       {t('common:mobile-landing.feature_list5-2')}
                     </li>
-                    <li>
+                    <li className={classes.liStyle}>
+                      <CheckIcon fontSize="small"/>
                       {t('common:mobile-landing.feature_list5-3')}
                     </li>
                     </Typography>
@@ -53,12 +57,13 @@ const Feature5 = (props) => {
                 <Grid item md={6} xs={12}>
                   <div className={classes.illustrationRight}>
                     <svg className={classes.decoSecondary} viewBox="0 0 512 512">
-                      <use xlinkHref="/images/mobile/deco-feature.svg#main" />
+                      <use xlinkHref="/images/mobile/deco-feature.svg#main" transform="translate(20 -20)"/>
                       <image
                         className={classes.screen}
                         xlinkHref={imgAPI.feature[4]}
                         alt="Feature(5) Web Design"
-                        style={{ height: '70%' }}
+                        style={{ height: '90%' }}
+                        transform="translate(-30 0)"
                       />
                     </svg>
                   </div>

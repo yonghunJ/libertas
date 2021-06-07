@@ -64,7 +64,7 @@ const useStyles = makeStyles(theme => ({
   services: {
     display: 'flex',
     justifyContent: 'center',
-    width: '70%',
+    width: '100%',
     margin: 'auto',
   },
   containerWrap: {
@@ -97,13 +97,13 @@ function Landing(props) {
           <section id="home">
             <Banner />
           </section>
-          <section id="tabPanel" className={classes.spaceMiddle}>
+          <section id="feature" className={classes.spaceMiddle}>
             <TabPanelView />
           </section>
-          <section id="tabPanel2" className={classes.spaceMiddle}>
+          <section id="feature2" className={classes.spaceMiddle}>
             <TabPanelView2 />
           </section>
-          <section id="service" className={classes.services}>
+          <section id="services" className={classes.services}>
             <Services />
           </section>
           <section id="showcase" className={classes.spaceTopShort}>
@@ -115,7 +115,7 @@ function Landing(props) {
           <section id="callAction" className={classes.spaceTopShort}>
             <CallAction />
           </section>
-          <section id="news" className={classes.spaceTopShort}>
+          <section id="blog" className={classes.spaceTopShort}>
             <NewsEvent />
           </section>
         </main>

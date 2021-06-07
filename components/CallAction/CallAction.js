@@ -22,8 +22,8 @@ function CallAction(props) {
 
   const classes = useStyles();
   return (
-    <div style={{ marginBottom: 100 }}>
-      <Container fixed={isDesktop}>
+    <div>
+      <Container>
         <div className={classes.root}>
           <Paper className={classes.paper}>
             <Grid container alignItems="center">
@@ -38,7 +38,7 @@ function CallAction(props) {
               <Grid item md={4} xs={12}>
                 <Grid container alignItems="center">
                   <Link href="contact" passHref>
-                    <Button size="large" variant="outlined" color="default" className={classes.button}>
+                    <Button variant="contained" color="primary">
                       {t('common:mobile-landing.cta_btn')}
                       <SendIcon className={classes.rightIcon} />
                     </Button>

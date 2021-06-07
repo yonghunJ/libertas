@@ -12,6 +12,7 @@ import Fab from '@material-ui/core/Fab';
 import AddIcon from '@material-ui/icons/Add';
 import EditIcon from '@material-ui/icons/Edit';
 import UpIcon from '@material-ui/icons/KeyboardArrowUp';
+import { fade, darken } from '@material-ui/core/styles/colorManipulator';
 import TabPanel from './TabPanel';
 import useStyles from './css';
 import Feature1 from '../Feature/Feature1';
@@ -19,6 +20,7 @@ import Feature2 from '../Feature/Feature2';
 import Feature3 from '../Feature/Feature3';
 import Feature4 from '../Feature/Feature4';
 import Title from '../Title';
+
 
 const a11yProps = (index) => {
   return {
@@ -60,7 +62,7 @@ const FloatingActionButtonZoom = (props) => {
       </Title>
       <AppBar position="static" color="default" style={{ width: '80%', margin: 'auto' }}>
         <Tabs
-          style={{backgroundColor: 'white'}}
+          style={{backgroundColor: theme.palette.type === 'dark' ? darken(theme.palette.primary.light, 0.80): 'White'}}
           value={value}
           onChange={handleChange}
           indicatorColor="primary"

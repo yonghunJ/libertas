@@ -7,6 +7,7 @@ import Zoom from '@material-ui/core/Zoom';
 import clsx from 'clsx';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
+import CheckIcon from '@material-ui/icons/Check';
 import imgAPI from '~/public/images/imgAPI';
 import { withTranslation } from '~/i18n';
 import { useText } from '~/theme/common';
@@ -35,12 +36,16 @@ const Feature4 = (props) => {
             <Grid container direction={isMobile ? 'column-reverse' : 'row'}>
               <Grid item md={6} xs={12}>
                 <div className={classes.illustrationLeft}>
-                  <svg className={classes.decoPrimary}>
-                    <use xlinkHref="/images/mobile/deco-feature.svg#main" />
+                  <svg className={classes.decoPrimary} viewBox="0 0 512 512">
+                    <use xlinkHref="/images/mobile/deco-feature.svg#main" transform="translate(50 -20)"/>
+                    <image
+                      className={classes.screen}
+                      xlinkHref={imgAPI.feature[3]}
+                      alt="Feature(4) Tracking"
+                      style={{ height: '90%' }}
+                      transform="translate(-10 0)"
+                    />
                   </svg>
-                  <figure className={classes.screen}>
-                    <img src={imgAPI.feature[3]} alt="Feature(4) Tracking" style={{ height: '100%' }} />
-                  </figure>
                 </div>
               </Grid>
               <Grid item md={6} xs={12}>
@@ -50,13 +55,16 @@ const Feature4 = (props) => {
                     {t('common:mobile-landing.feature_desc4')}
                   </Typography>
                   <Typography display="block" component="p" className={text.subtitle4}>
-                    <li>
+                    <li className={classes.liStyle}>
+                      <CheckIcon fontSize="small"/>
                       {t('common:mobile-landing.feature_list4-1')}
                     </li>
-                    <li>
+                    <li className={classes.liStyle}>
+                      <CheckIcon fontSize="small"/>
                       {t('common:mobile-landing.feature_list4-2')}
                     </li>
-                    <li>
+                    <li className={classes.liStyle}>
+                      <CheckIcon fontSize="small"/>
                       {t('common:mobile-landing.feature_list4-3')}
                     </li>
                     </Typography>

@@ -6,6 +6,7 @@ import { useTheme } from '@material-ui/core/styles';
 import Zoom from '@material-ui/core/Zoom';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
+import CheckIcon from '@material-ui/icons/Check';
 import imgAPI from '~/public/images/imgAPI';
 import { withTranslation } from '~/i18n';
 import { useText } from '~/theme/common';
@@ -40,13 +41,16 @@ const Feature7 = (props) => {
                       {t('common:mobile-landing.feature_desc7')}
                     </Typography>
                     <Typography display="block" component="p" className={text.subtitle5}>
-                    <li>
+                    <li className={classes.liStyle}>
+                      <CheckIcon fontSize="small"/>
                       {t('common:mobile-landing.feature_list7-1')}
                     </li>
-                    <li>
+                    <li className={classes.liStyle}>
+                      <CheckIcon fontSize="small"/>
                       {t('common:mobile-landing.feature_list7-2')}
                     </li>
-                    <li>
+                    <li className={classes.liStyle}>
+                      <CheckIcon fontSize="small"/>
                       {t('common:mobile-landing.feature_list7-3')}
                     </li>
                     </Typography>
@@ -54,12 +58,16 @@ const Feature7 = (props) => {
                 </Grid>
                 <Grid item md={6} xs={12}>
                   <div className={classes.illustrationRight}>
-                    <svg className={classes.decoSecondary}>
-                      <use xlinkHref="/images/mobile/deco-feature.svg#main" />
+                    <svg className={classes.decoSecondary} viewBox="0 0 512 512">
+                      <use xlinkHref="/images/mobile/deco-feature.svg#main" transform="translate(20 -20)"/>
+                      <image
+                        className={classes.screen}
+                        xlinkHref={imgAPI.feature[3]}
+                        alt="Feature(7) Tracking"
+                        style={{ height: '90%' }}
+                        transform="translate(-30 0)"
+                      />
                     </svg>
-                    <figure className={classes.screen}>
-                      <img src={imgAPI.feature[3]} alt="Feature(7) Tracking" />
-                    </figure>
                   </div>
                 </Grid>
               </Grid>

@@ -13,8 +13,6 @@ const TabPanel = (props) => {
   return (
     <>
       <div className={classes.root}>
-        <div className={classes.bgColor}>
-          <div className={classes.decoBgTop} />
     <Typography
       component="div"
       role="tabpanel"
@@ -25,7 +23,6 @@ const TabPanel = (props) => {
     >
       {value === index && <Box p={3}>{children}</Box>}
     </Typography>
-    </div>
       </div>
     </>
   );

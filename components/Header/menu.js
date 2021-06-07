@@ -1,8 +1,10 @@
 const menu = [
   'home',
+  'feature',
+  'services',
   'showcase',
   'testimonials',
-  'news',
+  'blog',
 ];
 
 export default menu;

@@ -42,6 +42,7 @@ const Feature = (props) => {
                       xlinkHref={imgAPI.feature[0]}
                       alt="Feature(1) Communication"
                       style={{ height: '90%' }}
+                      transform="translate(-10 0)"
                     />
                   </svg>
                 </div>

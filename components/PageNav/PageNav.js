@@ -55,6 +55,8 @@ function PageNav(props) {
     createData(2, navMenu[1], '#' + navMenu[1].replace(/ /g, '_')),
     createData(3, navMenu[2], '#' + navMenu[2].replace(/ /g, '_')),
     createData(4, navMenu[3], '#' + navMenu[3].replace(/ /g, '_')),
+    createData(5, navMenu[4], '#' + navMenu[4].replace(/ /g, '_')),
+    createData(6, navMenu[5], '#' + navMenu[5].replace(/ /g, '_')),
   ]);
   return (
     <div className={clsx(classes.pageNav, show && classes.show)}>
@@ -73,7 +75,7 @@ function PageNav(props) {
                 title={t('common:mobile-landing.header_' + item.name)}
                 placement="left"
                 classes={{
-                  tooltip: classes.tooltip
+                  tooltip: classes.tooltip,
                 }}
               >
                 <AnchorLink href={item.url} />
@@ -86,7 +88,7 @@ function PageNav(props) {
         title="To Top"
         placement="left"
         classes={{
-          tooltip: classes.tooltip
+          tooltip: classes.tooltip,
         }}
       >
         <Fab
