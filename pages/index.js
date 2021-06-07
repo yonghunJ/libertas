@@ -115,7 +115,7 @@ function Landing(props) {
           <section id="callAction" className={classes.spaceTopShort}>
             <CallAction />
           </section>
-          <section id="news" className={classes.spaceTopShort}>
+          <section id="blog" className={classes.spaceTopShort}>
             <NewsEvent />
           </section>
         </main>
