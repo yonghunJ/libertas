@@ -1,28 +1,34 @@
 import { makeStyles } from '@material-ui/core/styles';
-import { lighten, darken } from '@material-ui/core/styles/colorManipulator';
+import { fade, darken } from '@material-ui/core/styles/colorManipulator';
+import decoLightTop from '~/public/images/mobile/deco-light-top.svg';
+import decoDarkTop from '~/public/images/mobile/deco-dark-top.svg';
 
 const serviceStyles = makeStyles(theme => ({
   root: {
-    // backgroundImage: `linear-gradient(185deg, ${theme.palette.type === 'dark' ? theme.palette.primary.dark : theme.palette.primary.main} 50%, ${theme.palette.type === 'dark' ? theme.palette.secondary.dark : theme.palette.secondary.main} 100%)`,
-    paddingTop: theme.spacing(30),
+    paddingTop: theme.spacing(10),
+    paddingBottom: theme.spacing(10),
     [theme.breakpoints.down('md')]: {
-      paddingTop: theme.spacing(40),
+      paddingTop: theme.spacing(10),
     },
     [theme.breakpoints.up('xl')]: {
-      paddingTop: theme.spacing(50),
+      paddingTop: theme.spacing(20),
     },
     [theme.breakpoints.down('xs')]: {
-      Margin: theme.spacing(2, -10, 2, -10),
+      Margin: theme.spacing(20, -10, 2, -10),
     },
     [theme.breakpoints.down(330)]: {
-      Margin: theme.spacing(2, -10, 2, -10),
+      Margin: theme.spacing(20, -10, 2, -10),
     },
   },
   root1: {
     flexGrow: 1,
+    padding: theme.spacing(20, 20, 0, 20),
+    [theme.breakpoints.down('sm')]: {
+      padding: theme.spacing(2),
+    },
   },
   paper: {
-    padding: theme.spacing(2),
+    padding: theme.spacing(1),
     textAlign: 'center',
     color: theme.palette.text.secondary,
   },
@@ -31,7 +37,7 @@ const serviceStyles = makeStyles(theme => ({
     width: '100%',
     height: '100%',
     backgroundColor: 'rgb(245, 243, 250)',
-    padding: '20px',
+    padding: '10px',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
@@ -42,7 +48,7 @@ const serviceStyles = makeStyles(theme => ({
     display: 'grid',
     gridTemplateColumns: 'repeat(4, minmax(100px, 1fr))',
     gridGap: '25px',
-    padding: '25px',
+    padding: '10px',
     background: 'white',
     borderRadius: '5px',
     cursor: 'pointer',
@@ -55,6 +61,42 @@ const serviceStyles = makeStyles(theme => ({
     background: 'white',
     borderRadius: '5px',
     willChange: 'transform, opacity',
+  },
+  bgColor: {
+    position: 'relative',
+    background: theme.palette.type === 'dark' ? darken(theme.palette.primary.light, 0.65) : fade(theme.palette.primary.light, 0.2),
+    backgroundSize: '100% auto',
+    //paddingTop: theme.spacing(10),
+    marginTop: theme.spacing(-25),
+    [theme.breakpoints.down('xs')]: {
+      marginTop: theme.spacing(-5),
+    },
+    
+  },
+  decoBgTop: {
+    background: `url(${theme.palette.type === 'dark' ? decoDarkTop : decoLightTop}) no-repeat transparent`,
+    backgroundSize: '100% auto',
+    transform: 'scale(1.5, 0.5)',
+    marginTop: theme.spacing(-22),
+    [theme.breakpoints.down('xs')]: {
+      marginTop: theme.spacing(-31),
+    },
+    position: 'absolute',
+    width: '100%',
+    height: '100%',
+    left: 0,
+    top: -80,
+    '&:after': {
+      content: '""',
+      background: `url(${theme.palette.type === 'dark' ? decoDarkTop : decoLightTop}) no-repeat transparent`,
+      backgroundSize: '100% auto',
+      position: 'absolute',
+      width: '100%',
+      height: '100%',
+      opacity: 0.5,
+      left: 20,
+      top: 10,
+    },
   },
 }));
 

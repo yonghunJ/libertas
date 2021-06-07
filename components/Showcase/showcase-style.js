@@ -5,6 +5,7 @@ const showcaseStyles = makeStyles(theme => ({
   root: {
     backgroundImage: `linear-gradient(185deg, ${theme.palette.type === 'dark' ? theme.palette.primary.dark : theme.palette.primary.main} 50%, ${theme.palette.type === 'dark' ? theme.palette.secondary.dark : theme.palette.secondary.main} 100%)`,
     paddingTop: theme.spacing(30),
+    marginTop: theme.spacing(-10),
     [theme.breakpoints.down('md')]: {
       paddingTop: theme.spacing(40),
     },

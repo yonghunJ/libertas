@@ -183,18 +183,18 @@ const featureStyles = makeStyles(theme => ({
   },
   illustrationRight: {
     position: 'relative',
-    marginTop: -50,
+    marginTop: -40,
     '& $screen': {
       [theme.breakpoints.up('md')]: {
-        marginTop: -50,
+        marginTop: -40,
       },
       [theme.breakpoints.down('sm')]: {
         marginLeft: theme.spacing(),
-        marginTop: -40,
+        marginTop: -30,
       },
       [theme.breakpoints.down('xs')]: {
         marginLeft: theme.spacing(),
-        marginTop: -40,
+        marginTop: -30,
       },
     },
   },

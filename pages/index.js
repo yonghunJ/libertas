@@ -64,7 +64,7 @@ const useStyles = makeStyles(theme => ({
   services: {
     display: 'flex',
     justifyContent: 'center',
-    width: '70%',
+    width: '100%',
     margin: 'auto',
   },
   containerWrap: {

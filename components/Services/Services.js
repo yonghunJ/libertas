@@ -54,6 +54,8 @@ function Services(props) {
 
   return (
     <>
+  <div className={classes.bgColor}>
+    <div className={classes.decoBgTop} />
       <div className={classes.root}>
         <ReactWOW animation="fadeInUpShort" offset={-150} delay="0.4s" duration="0.5s">
           <div className={classes.root1}>
@@ -65,7 +67,7 @@ function Services(props) {
               spacing={3}
               direction="row"
               justify="center"
-              alignItems="center"
+              alignItems="flex-start"
             >
               {testiContent.map((item) => (
                 <Grid item xs={6} sm={4} key={`showCard-${item.title}`}>
@@ -75,6 +77,7 @@ function Services(props) {
             </Grid>
           </div>
         </ReactWOW>
+        </div>
       </div>
     </>
   );
