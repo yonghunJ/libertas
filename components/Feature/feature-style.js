@@ -23,7 +23,6 @@ const featureStyles = makeStyles(theme => ({
   /* First feature tab BG */
   decoPrimary: {
     fill: theme.palette.type === 'dark' ? theme.palette.primary.dark : theme.palette.primary.light,
-    transform: 'scale(0.9)',
     [theme.breakpoints.down('sm')]: {
       top: -30,
       left: 0,
@@ -34,10 +33,9 @@ const featureStyles = makeStyles(theme => ({
  /* Second feature tab BG */
   decoSecondary: {
     fill: theme.palette.type === 'dark' ? theme.palette.secondary.dark : theme.palette.secondary.light,
-    transform: 'scale(0.9)',
     [theme.breakpoints.down('sm')]: {
       top: -30,
-      left: -20,
+      left: 0,
       transform: 'scale(0.7)',
     },
     ...decoStyle,
@@ -185,6 +183,7 @@ const featureStyles = makeStyles(theme => ({
   },
   illustrationRight: {
     position: 'relative',
+    marginTop: -50,
     '& $screen': {
       [theme.breakpoints.up('md')]: {
         marginTop: -50,
