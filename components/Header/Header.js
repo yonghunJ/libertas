@@ -150,13 +150,6 @@ function Header(props) {
                       </Button>
                     </Link>
                   </li>
-                  <li>
-                    <Link href={linkRouter.mobile.blog} passHref>
-                      <Button>
-                        {t('common:mobile-landing.header_blog')}
-                      </Button>
-                    </Link>
-                  </li>
                 </Scrollspy>
               )}
             </nav>

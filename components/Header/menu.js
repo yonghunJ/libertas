@@ -2,7 +2,7 @@ const menu = [
   'home',
   'showcase',
   'testimonials',
-  'news',
+  'blog',
 ];
 
 export default menu;
