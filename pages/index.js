@@ -97,13 +97,13 @@ function Landing(props) {
           <section id="home">
             <Banner />
           </section>
-          <section id="tabPanel" className={classes.spaceMiddle}>
+          <section id="feature" className={classes.spaceMiddle}>
             <TabPanelView />
           </section>
-          <section id="tabPanel2" className={classes.spaceMiddle}>
+          <section id="feature2" className={classes.spaceMiddle}>
             <TabPanelView2 />
           </section>
-          <section id="service" className={classes.services}>
+          <section id="services" className={classes.services}>
             <Services />
           </section>
           <section id="showcase" className={classes.spaceTopShort}>
