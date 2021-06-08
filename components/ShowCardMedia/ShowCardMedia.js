@@ -10,7 +10,7 @@ import { useText } from '~/theme/common';
 
 const useStyles = makeStyles({
   root: {
-    padding: '12px 20px',
+    padding: '12px 12px',
   },
   media: {
     height: '100px',

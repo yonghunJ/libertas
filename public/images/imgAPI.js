@@ -60,6 +60,15 @@ const imgAPI = {
     '/images/mobile/tab-solution6-2.png',
     '/images/mobile/tab-solution7-2.png',
     '/images/mobile/main banner message.svg',
+  ],
+
+  service: [
+    '/images/mobile/service 1.svg',
+    '/images/mobile/service 2.svg',
+    '/images/mobile/service 3.svg',
+    '/images/mobile/service 4.svg',
+    '/images/mobile/service 5.svg',
+    '/images/mobile/service 6.svg',
   ]
 };
 
