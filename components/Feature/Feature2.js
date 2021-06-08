@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactWOW from 'react-wow'
 import Container from '@material-ui/core/Container';
 import PropTypes from 'prop-types';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
@@ -45,6 +46,20 @@ const Feature2 = (props) => {
                       style={{ height: '90%' }}
                       transform="translate(-10 0)"
                     />
+                    <ReactWOW animation="fadeInUpShort" delay="0.5s" duration="0.5s">
+                    <image
+                      xlinkHref={imgAPI.service[6]}
+                      style={{ height: '20%' }}
+                      transform="translate(10 0)"
+                    />
+                    </ReactWOW>
+                    <ReactWOW animation="fadeInUpShort" delay="0.7s" duration="0.5s">
+                    <image
+                      xlinkHref={imgAPI.service[8]}
+                      style={{ height: '20%' }}
+                      transform="translate(350 100)"
+                    />
+                    </ReactWOW>
                   </svg>
                 </div>
               </Grid>

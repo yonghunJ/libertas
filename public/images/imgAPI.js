@@ -69,6 +69,11 @@ const imgAPI = {
     '/images/mobile/service 4.svg',
     '/images/mobile/service 5.svg',
     '/images/mobile/service 6.svg',
+    '/images/mobile/feature-service1.svg',
+    '/images/mobile/feature-service2.svg',
+    '/images/mobile/feature-service3.svg',
+    '/images/mobile/feature-service4.svg',
+    '/images/mobile/feature-service5.svg',
   ]
 };
 

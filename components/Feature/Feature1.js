@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactWOW from 'react-wow'
 import Container from '@material-ui/core/Container';
 import PropTypes from 'prop-types';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
@@ -29,6 +30,7 @@ const Feature = (props) => {
 
   return (
     <>
+    
       <div className={classes.root}>
         <Container>
           <div className={clsx(classes.item, classes.first)}>
@@ -44,8 +46,23 @@ const Feature = (props) => {
                       style={{ height: '90%' }}
                       transform="translate(-10 0)"
                     />
+                    <ReactWOW animation="fadeInUpShort" delay="0.5s" duration="0.5s">
+                    <image
+                      xlinkHref={imgAPI.service[6]}
+                      style={{ height: '20%' }}
+                      transform="translate(10 0)"
+                    />
+                    </ReactWOW>
+                    <ReactWOW animation="fadeInUpShort" delay="0.7s" duration="0.5s">
+                    <image
+                      xlinkHref={imgAPI.service[7]}
+                      style={{ height: '15%' }}
+                      transform="translate(290 70)"
+                    />
+                    </ReactWOW>
                   </svg>
                 </div>
+
               </Grid>
               <Grid item md={6} xs={12}>
                 <div className={classes.text}>
