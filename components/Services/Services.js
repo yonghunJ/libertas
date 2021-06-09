@@ -7,6 +7,7 @@ import imgAPI from '~/public/images/imgAPI';
 import useStyles from './services-style';
 import ShowCardMedia from '../ShowCardMedia';
 import Title from '../Title';
+import CardAnimation from '../CardAnimation';
 
 const testiContent = [
   {
@@ -54,29 +55,31 @@ function Services(props) {
 
   return (
     <>
-  <div className={classes.bgColor}>
-    <div className={classes.decoBgTop} />
-      <div className={classes.root}>
-        <ReactWOW animation="fadeInUpShort" offset={-150} delay="0.4s" duration="0.5s">
-          <div className={classes.root1}>
-            <Title align="center">
-              Our Services
-            </Title>
-            <Grid
-              container
-              spacing={3}
-              direction="row"
-              justify="center"
-              alignItems="flex-start"
-            >
-              {testiContent.map((item) => (
-                <Grid item xs={6} sm={4} key={`showCard-${item.title}`}>
-                  <ShowCardMedia item={item} />
-                </Grid>
-              ))}
-            </Grid>
-          </div>
-        </ReactWOW>
+      <div className={classes.bgColor}>
+        <div className={classes.decoBgTop} />
+        <div className={classes.root}>
+          <ReactWOW animation="fadeInUpShort" offset={-150} delay="0.4s" duration="0.5s">
+            <div className={classes.root1}>
+              <Title align="center">
+                Our Services
+              </Title>
+              <Grid
+                container
+                spacing={3}
+                direction="row"
+                justify="center"
+                alignItems="flex-start"
+              >
+                {testiContent.map((item) => (
+                  <Grid item xs={6} sm={4} key={`showCard-${item.title}`}>
+                    <CardAnimation>
+                      <ShowCardMedia item={item} />
+                    </CardAnimation>
+                  </Grid>
+                ))}
+              </Grid>
+            </div>
+          </ReactWOW>
         </div>
       </div>
     </>

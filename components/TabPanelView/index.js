@@ -21,7 +21,6 @@ import Feature3 from '../Feature/Feature3';
 import Feature4 from '../Feature/Feature4';
 import Title from '../Title';
 
-
 const a11yProps = (index) => {
   return {
     id: `action-tab-${index}`,

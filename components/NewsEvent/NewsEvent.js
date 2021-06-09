@@ -27,9 +27,9 @@ function NewsEvent(props) {
       <Title align="center">
         {t('common:mobile-landing.news_title')}
       </Title>
-      {/*<Typography align="center" className={text.subtitle2}>
+      {/* `<Typography align="center" className={text.subtitle2}>
         {t('common:mobile-landing.news_desc')}
-  </Typography>*/}
+      //#region `</Typography> */}
       <div className={classes.blogWrap}>
         <Container fixed>
           <Grid container spacing={6} className={classes.listNews}>
