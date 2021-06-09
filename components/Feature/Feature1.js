@@ -47,18 +47,16 @@ const Feature = (props) => {
                       transform="translate(-10 0)"
                     />
                     <ReactWOW animation="fadeInUpShort" delay="0.5s" duration="0.5s">
-                    <image
-                      xlinkHref={imgAPI.service[6]}
-                      style={{ height: '20%' }}
-                      transform="translate(10 0)"
-                    />
+                      <image
+                        xlinkHref={imgAPI.service[6]}
+                        style={{ x: '30', y: '10', height: '20%' }}
+                      />
                     </ReactWOW>
-                    <ReactWOW animation="fadeInUpShort" delay="0.7s" duration="0.5s">
-                    <image
-                      xlinkHref={imgAPI.service[7]}
-                      style={{ height: '15%' }}
-                      transform="translate(290 70)"
-                    />
+                    <ReactWOW animation="fadeInUpShort" delay="0.7s" duration="0.5s" offset="12">
+                      <image
+                        xlinkHref={imgAPI.service[7]}
+                        style={{ x: '50%', y: '20%', height: '15%' }}
+                      />
                     </ReactWOW>
                   </svg>
                 </div>
