@@ -40,10 +40,10 @@ const CardAnimation = ({ children }) => {
         const y = clientY - (ref.current.offsetTop - (window.scrollY || window.pageYOffset || document.body.scrollTop));
 
         // Set animated values based on mouse position and card dimensions
-        const dampen = 50; // Lower the number the less rotation
-        const xys = [
-                      (x - ref.current.clientWidth / 2) / dampen, // rotateY
-                      -(y - ref.current.clientHeight / 2) / dampen, // rotateX
+        const dampen = 200; // Lower the number the less rotation
+        const xys = [0,0,
+                    //(y - ref.current.clientHeight / 3) / dampen, // rotateX
+                    //(x - ref.current.clientWidth / 3) / dampen, // rotateY
                       1.07,
                     ]; // Scale
 
