@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'next/link';
+import ReactWOW from 'react-wow';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { useTheme } from '@material-ui/core/styles';
 import { Typography } from '@material-ui/core';
@@ -22,23 +23,24 @@ function CallAction(props) {
 
   const classes = useStyles();
   return (
-    <div>
+    <div className={classes.background}>
       <Container>
         <div className={classes.root}>
+        <ReactWOW animation="fadeInUpShort" offset={-50} delay="0.3s" duration="0.5s">
           <Paper className={classes.paper}>
             <Grid container alignItems="center">
-              <Grid item md={8} xs={12}>
-                <Typography variant="h4" gutterBottom display="block">
+              <Grid item md={9} xs={12}>
+                <Typography variant="h4" display="block">
                   {t('common:mobile-landing.cta_title')}
                 </Typography>
-                <Typography display="block" component="div">
+                <Typography variant="p" display="block">
                   {t('common:mobile-landing.cta_subtitle')}
                 </Typography>
               </Grid>
-              <Grid item md={4} xs={12}>
-                <Grid container alignItems="center">
+              <Grid item md={3} xs={12}>
+                <Grid justifyContent="center">
                   <Link href="contact" passHref>
-                    <Button variant="contained" color="primary">
+                    <Button className={classes.button} variant="contained" color="primary">
                       {t('common:mobile-landing.cta_btn')}
                       <SendIcon className={classes.rightIcon} />
                     </Button>
@@ -47,6 +49,7 @@ function CallAction(props) {
               </Grid>
             </Grid>
           </Paper>
+        </ReactWOW>
         </div>
       </Container>
     </div>
