@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ReactWOW from 'react-wow'
 import Container from '@material-ui/core/Container';
 import PropTypes from 'prop-types';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
