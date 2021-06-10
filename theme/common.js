@@ -97,11 +97,11 @@ export const useText = makeStyles(theme => ({
     fontWeight: theme.typography.fontWeightRegular,
     fontSize: 18,
     lineHeight: '32px',
-    paddingRight:'80px',
+    paddingRight:'10px',
     [theme.breakpoints.down('md')]: {
       fontSize: 16,
       lineHeight: '32px',
-      paddingRight:'40px',
+      paddingRight:'10px',
     },
     [theme.breakpoints.down('xs')]: {
       fontSize: 14,

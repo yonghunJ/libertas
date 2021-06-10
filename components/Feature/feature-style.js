@@ -82,7 +82,7 @@ const featureStyles = makeStyles(theme => ({
   },
   text: {
     [theme.breakpoints.up('md')]: {
-      paddingTop: theme.spacing(12),
+      paddingTop: theme.spacing(8),
       paddingRight: theme.spacing(5),
       Width:'80%',
     },
@@ -92,7 +92,7 @@ const featureStyles = makeStyles(theme => ({
   },
   textLeft: {
       [theme.breakpoints.up('md')]: {
-        paddingTop: theme.spacing(12),
+        paddingTop: theme.spacing(10),
         paddingLeft: theme.spacing(5),
         Width:'80%',
       },
