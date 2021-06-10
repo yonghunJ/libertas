@@ -102,6 +102,24 @@
     "footer_text": "저희 서비스에 대해 더 알고 싶으신가요?",
     "cta_title": "상담을 원하시나요?",
     "cta_subtitle": "리베르타스 솔루션과 함께 성공사례가 될 수 있습니다.",
-    "cta_btn": "신청하기"
+    "cta_btn": "신청하기",
+    "service_title_1": "Logo & Concept Design",
+    "service_title_2": "Website Development",
+    "service_title_3": "Integrated Chat System",
+    "service_title_4": "Appointment Scheduling",
+    "service_title_5": "Invoices & Payment",
+    "service_title_6": "Project Tracking",
+    "service_content_1": "kr_모든디자인에 쓰일 브랜드 Identity에 맞는 로고와 컨셉 디자인",
+    "service_content_2": "Animation Effect 를 이용한 impact 있는 웹사이트로 효과적인 내용전달",
+    "service_content_3": "kr_웹사이트 내 채팅 채널을 통한 상담내용을 관리자 페이지에서 Follow up",
+    "service_content_4": "Calendar 에서 상담, 미팅, Event 들을 관리",
+    "service_content_5": "kr_각각의 Estimates에 대한 invoice 발급 및 payment 진행",
+    "service_content_6": "Project의 진행상황을 각각의 Stage 별로 확인가능 & 업데이트 알림",
+    "service_iamge_title1": "'Logo & Concept Design'",
+    "service_iamge_title2": "Website Development",
+    "service_iamge_title3": "Integrated Chat System",
+    "service_iamge_title4": "Appointment Scheduling",
+    "service_iamge_title5": "Invoices & Payment",
+    "service_iamge_title6": "Project Tracking"
   }
 }

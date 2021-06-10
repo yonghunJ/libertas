@@ -37,35 +37,35 @@ const Feature7 = (props) => {
               <Grid container>
                 <Grid item md={6} xs={12}>
                   <div className={classes.textLeft}>
-                  <Typography display="block" className={text.title3}>{t('common:mobile-landing.feature_title7')} </Typography>
-                    <Typography  display="block" component="p" className={text.subtitle3}>
+                    <Typography display="block" className={text.title3}>{t('common:mobile-landing.feature_title7')} </Typography>
+                    <Typography  display="block" component="div" className={text.subtitle3}>
                       {t('common:mobile-landing.feature_desc7')}
                     </Typography>
-                    <Typography display="block" component="p" className={text.subtitle5}>
-                    <li className={classes.liStyle}>
-                      <CheckIcon fontSize="small"/>
-                      {t('common:mobile-landing.feature_list7-1')}
-                    </li>
-                    <li className={classes.liStyle}>
-                      <CheckIcon fontSize="small"/>
-                      {t('common:mobile-landing.feature_list7-2')}
-                    </li>
-                    <li className={classes.liStyle}>
-                      <CheckIcon fontSize="small"/>
-                      {t('common:mobile-landing.feature_list7-3')}
-                    </li>
+                    <Typography display="block" component="div" className={text.subtitle5}>
+                      <li className={classes.liStyle}>
+                        <CheckIcon fontSize="small"/>
+                        {t('common:mobile-landing.feature_list7-1')}
+                      </li>
+                      <li className={classes.liStyle}>
+                        <CheckIcon fontSize="small"/>
+                        {t('common:mobile-landing.feature_list7-2')}
+                      </li>
+                      <li className={classes.liStyle}>
+                        <CheckIcon fontSize="small" />
+                        {t('common:mobile-landing.feature_list7-3')}
+                      </li>
                     </Typography>
                   </div>
                 </Grid>
                 <Grid item md={6} xs={12}>
                   <div className={classes.illustrationRight}>
                     <svg className={classes.decoSecondary} viewBox="0 0 512 512">
-                    <ReactWOW animation="fadeInUpShort" delay="0.5s" duration="0.5s">
-                      <image
-                        xlinkHref={imgAPI.featureIcon[0]}
-                        style={{ x: '-5', y: '-15', height: '84%' }}
-                      />
-                    </ReactWOW>
+                      <ReactWOW animation="fadeInUpShort" delay="0.5s" duration="0.5s">
+                        <image
+                          xlinkHref={imgAPI.featureIcon[0]}
+                          style={{ x: '-5', y: '-15', height: '84%' }}
+                        />
+                      </ReactWOW>
                       <image
                         className={classes.screen}
                         xlinkHref={imgAPI.feature[3]}
@@ -73,12 +73,12 @@ const Feature7 = (props) => {
                         style={{ height: '90%' }}
                         transform="translate(5 0)"
                       />
-                    <ReactWOW animation="fadeInUpShort" delay="0.7s" duration="0.5s">
-                    <image
-                      xlinkHref={imgAPI.featureIcon[4]}
-                      style={{ x: '0', y: '-5', height: '28%' }}
-                    />
-                    </ReactWOW>
+                      <ReactWOW animation="fadeInUpShort" delay="0.7s" duration="0.5s">
+                        <image
+                          xlinkHref={imgAPI.featureIcon[4]}
+                          style={{ x: '0', y: '-5', height: '28%' }}
+                        />
+                      </ReactWOW>
                     </svg>
                   </div>
                 </Grid>

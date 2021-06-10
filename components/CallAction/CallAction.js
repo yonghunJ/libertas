@@ -26,30 +26,30 @@ function CallAction(props) {
     <div className={classes.background}>
       <Container>
         <div className={classes.root}>
-        <ReactWOW animation="fadeInUpShort" offset={-50} delay="0.3s" duration="0.5s">
-          <Paper className={classes.paper}>
-            <Grid container alignItems="center">
-              <Grid item md={9} xs={12}>
-                <Typography variant="h4" display="block">
-                  {t('common:mobile-landing.cta_title')}
-                </Typography>
-                <Typography variant="p" display="block">
-                  {t('common:mobile-landing.cta_subtitle')}
-                </Typography>
-              </Grid>
-              <Grid item md={3} xs={12}>
-                <Grid justifyContent="center">
-                  <Link href="contact" passHref>
-                    <Button className={classes.button} variant="contained" color="primary">
-                      {t('common:mobile-landing.cta_btn')}
-                      <SendIcon className={classes.rightIcon} />
-                    </Button>
-                  </Link>
+          <ReactWOW animation="fadeInUpShort" fdelay="0.3s" duration="0.5s">
+            <Paper className={classes.paper}>
+              <Grid container alignItems="center">
+                <Grid item md={9} xs={12}>
+                  <Typography variant="h4" display="block">
+                    {t('common:mobile-landing.cta_title')}
+                  </Typography>
+                  <Typography variant="h6" display="block">
+                    {t('common:mobile-landing.cta_subtitle')}
+                  </Typography>
+                </Grid>
+                <Grid item md={3} xs={12}>
+                  <Grid style={{ justifyContent: 'center' }}>
+                    <Link href="contact" passHref>
+                      <Button className={classes.button} variant="contained" color="primary">
+                        {t('common:mobile-landing.cta_btn')}
+                        <SendIcon className={classes.rightIcon} />
+                      </Button>
+                    </Link>
+                  </Grid>
                 </Grid>
               </Grid>
-            </Grid>
-          </Paper>
-        </ReactWOW>
+            </Paper>
+          </ReactWOW>
         </div>
       </Container>
     </div>

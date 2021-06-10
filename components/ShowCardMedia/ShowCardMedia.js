@@ -6,8 +6,6 @@ import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import { useText } from '~/theme/common';
 
-
-
 const useStyles = makeStyles({
   root: {
     padding: '12px 12px',
@@ -17,23 +15,22 @@ const useStyles = makeStyles({
   },
 });
 
-export default function ImgMediaCard(props) {
-  const [itemObj, setItemObj] = useState(props.item)
+export default function ImgMediaCard({title, content, imageUrl, imageTitle}) {
   const text = useText();
   const classes = useStyles();
   return (
     <Card className={classes.root}>
       <CardMedia
         className={classes.media}
-        image={itemObj?.imageUrl}
-        title={itemObj?.imageTitle}
+        image={imageUrl}
+        title={imageTitle}
       />
       <CardContent>
         <Typography gutterBottom display="block" className={text.title4}>
-          {itemObj?.title}
+          {title}
         </Typography>
         <Typography display="block" className={text.subtitle6}>
-          {itemObj?.content}
+          {content}
         </Typography>
       </CardContent>
     </Card>

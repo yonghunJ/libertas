@@ -53,7 +53,7 @@ const Feature = (props) => {
                       transform="translate(10 0)"
                     />
 
-                    <ReactWOW animation="fadeInUpShort" delay="0.7s" duration="0.5s" offset="12">
+                    <ReactWOW animation="fadeInUpShort" delay="0.7s" duration="0.5s">
                       <image
                         xlinkHref={imgAPI.featureIcon[1]}
                         style={{ x: '0', y: '-5', height: '28%' }}
