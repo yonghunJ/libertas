@@ -38,24 +38,25 @@ const Feature = (props) => {
               <Grid item md={6} xs={12}>
                 <div className={classes.illustrationLeft}>
                   <svg className={classes.decoPrimary} viewBox="0 0 512 512">
-                    <use xlinkHref="/images/mobile/deco-feature.svg#main" transform="translate(50 -20)"/>
+                    <ReactWOW animation="fadeInUpShort" delay="0.5s" duration="0.5s">
+                      <image
+                        xlinkHref={imgAPI.featureIcon[0]}
+                        style={{ x: '0', y: '-15', height: '84%' }}
+                      />
+                    </ReactWOW>
+
                     <image
                       className={classes.screen}
                       xlinkHref={imgAPI.feature[0]}
                       alt="Feature(1) Communication"
                       style={{ height: '90%' }}
-                      transform="translate(-10 0)"
+                      transform="translate(10 0)"
                     />
-                    <ReactWOW animation="fadeInUpShort" delay="0.5s" duration="0.5s">
-                      <image
-                        xlinkHref={imgAPI.service[6]}
-                        style={{ x: '30', y: '10', height: '20%' }}
-                      />
-                    </ReactWOW>
+
                     <ReactWOW animation="fadeInUpShort" delay="0.7s" duration="0.5s" offset="12">
                       <image
-                        xlinkHref={imgAPI.service[7]}
-                        style={{ x: '50%', y: '20%', height: '15%' }}
+                        xlinkHref={imgAPI.featureIcon[1]}
+                        style={{ x: '0', y: '-5', height: '28%' }}
                       />
                     </ReactWOW>
                   </svg>
