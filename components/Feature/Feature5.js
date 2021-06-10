@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-git 
+import ReactWOW from 'react-wow'
 import Container from '@material-ui/core/Container';
 import PropTypes from 'prop-types';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
@@ -73,7 +73,7 @@ const Feature5 = (props) => {
                       />
                     <ReactWOW animation="fadeInUpShort" delay="0.7s" duration="0.5s">
                     <image
-                      xlinkHref={imgAPI.featureIcon[4]}
+                      xlinkHref={imgAPI.featureIcon[5]}
                       style={{ x: '0', y: '-5', height: '28%' }}
                     />
                     </ReactWOW>
