@@ -15,6 +15,8 @@ const featureStyles = makeStyles(theme => ({
     marginTop: theme.spacing(-6),
     [theme.breakpoints.down('sm')]: {
       marginTop: theme.spacing(0),
+      height: '100%',
+      minHeight: 850,
     },
   },
 
@@ -33,8 +35,9 @@ const featureStyles = makeStyles(theme => ({
   decoPrimary: {
     fill: theme.palette.type === 'dark' ? theme.palette.primary.dark : theme.palette.primary.light,
     [theme.breakpoints.down('sm')]: {
+      position: 'relative',
+      margin:'auto',
       top: -30,
-      left: 0,
       transform: 'scale(0.7)',
     },
     ...decoStyle,
@@ -43,8 +46,9 @@ const featureStyles = makeStyles(theme => ({
   decoSecondary: {
     fill: theme.palette.type === 'dark' ? theme.palette.secondary.dark : theme.palette.secondary.light,
     [theme.breakpoints.down('sm')]: {
+      position: 'relative',
+      margin:'auto',
       top: -30,
-      left: 0,
       transform: 'scale(0.7)',
     },
     ...decoStyle,
@@ -194,11 +198,9 @@ const featureStyles = makeStyles(theme => ({
       },
       [theme.breakpoints.down('sm')]: {
         marginTop: -40,
-        JustifyContent:'center',
       },
       [theme.breakpoints.down('xs')]: {
         marginTop: -40,
-        JustifyContent:'center',
       },
     },
 
