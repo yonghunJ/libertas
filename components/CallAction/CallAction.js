@@ -33,7 +33,7 @@ function CallAction(props) {
                   <Typography variant="h4" display="block">
                     {t('common:mobile-landing.cta_title')}
                   </Typography>
-                  <Typography variant="h6" display="block">
+                  <Typography variant="subtitle1" display="block">
                     {t('common:mobile-landing.cta_subtitle')}
                   </Typography>
                 </Grid>
