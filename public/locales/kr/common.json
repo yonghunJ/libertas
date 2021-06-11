@@ -104,6 +104,7 @@
     "cta_title": "상담을 원하시나요?",
     "cta_subtitle": "리베르타스 솔루션과 함께 성공사례가 될 수 있습니다.",
     "cta_btn": "신청하기",
+    "service_title": "서비스내용",
     "service_title_1": "로고 & 컨셉 디자인",
     "service_title_2": "웹사이트 구축",
     "service_title_3": "통합 채팅 시스템",
@@ -121,6 +122,14 @@
     "service_iamge_title3": "통합 채팅 시스템",
     "service_iamge_title4": "예약 및 상담 스케줄 관리",
     "service_iamge_title5": "인보이스 & 결제",
-    "service_iamge_title6": "프로젝트 진행 추적"
+    "service_iamge_title6": "프로젝트 진행 추적",
+    "feature_tab_1": "상담관리",
+    "feature_tab_2": "견적", 
+    "feature_tab_3": "인보이스", 
+    "feature_tab_4": "진행상황",
+    "feature_tab_5": "웹디자인",
+    "feature_tab_6": "재방문 고객", 
+    "feature_tab_7": "투명성", 
+    "feature_tab_8": "데이터보안"
   }
 }

@@ -22,7 +22,7 @@ function Services(props) {
           <ReactWOW animation="fadeInUpShort" offset={-150} delay="0.4s" duration="0.5s">
             <div className={classes.root1}>
               <Title align="center">
-                Our Services
+              {t('common:mobile-landing.service_title')}
               </Title>
               <Grid
                 container

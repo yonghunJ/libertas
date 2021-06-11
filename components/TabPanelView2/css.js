@@ -10,8 +10,7 @@ const useStyles = makeStyles((theme) => ({
     //backgroundColor: theme.palette.background.paper,
     width: '100%',
     position: 'relative',
-    minHeight: 700,
-    paddingBottom: theme.spacing(5),
+    minHeight: 500,
   },
   fab: {
     position: 'absolute',
@@ -25,6 +24,13 @@ const useStyles = makeStyles((theme) => ({
       backgroundColor: green[600],
     },
   },
+  AppBarDesign: {
+    width: '80%', 
+    margin: 'auto',
+    [theme.breakpoints.down('sm')]: {
+      width: '95%',
+    },
+  }
 }));
 
 export default useStyles;

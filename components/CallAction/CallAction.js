@@ -24,9 +24,9 @@ function CallAction(props) {
   const classes = useStyles();
   return (
     <div className={classes.background}>
+      <ReactWOW animation="fadeInUpShort" fdelay="0.3s" duration="0.5s">
       <Container>
         <div className={classes.root}>
-          <ReactWOW animation="fadeInUpShort" fdelay="0.3s" duration="0.5s">
             <Paper className={classes.paper}>
               <Grid container alignItems="center">
                 <Grid item md={9} xs={12}>
@@ -49,9 +49,9 @@ function CallAction(props) {
                 </Grid>
               </Grid>
             </Paper>
-          </ReactWOW>
         </div>
       </Container>
+    </ReactWOW>
     </div>
   );
 }

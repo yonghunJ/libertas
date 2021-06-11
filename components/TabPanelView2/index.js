@@ -83,7 +83,7 @@ const FloatingActionButtonZoom = (props) => {
       <Title align="center">
         {t('common:mobile-landing.feature_title_2')}
       </Title>
-      <AppBar position="static" color="default" style={{ width: '80%', margin: 'auto' }}>
+      <AppBar position="static" color="default" className={classes.AppBarDesign}>
         <Tabs
           style={{backgroundColor: theme.palette.type === 'dark' ? darken(theme.palette.primary.light, 0.80): 'White'}}
           value={value}
@@ -93,10 +93,10 @@ const FloatingActionButtonZoom = (props) => {
           variant="fullWidth"
           aria-label="action tabs example"
         >
-          <Tab label="WEB DESIGN" {...a11yProps(0)} />
-          <Tab label="REVISITING" {...a11yProps(1)} />
-          <Tab label="TRANSPARENCY" {...a11yProps(2)} />
-          <Tab label="SECURITY" {...a11yProps(3)} />
+          <Tab label={t('common:mobile-landing.feature_tab_5')} {...a11yProps(0)} />
+          <Tab label={t('common:mobile-landing.feature_tab_6')} {...a11yProps(1)} />
+          <Tab label={t('common:mobile-landing.feature_tab_7')} {...a11yProps(2)} />
+          <Tab label={t('common:mobile-landing.feature_tab_8')} {...a11yProps(3)} />
         </Tabs>
       </AppBar>
       <SwipeableViews

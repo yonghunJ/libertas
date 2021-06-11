@@ -11,7 +11,7 @@ const decoStyle = {
 const featureStyles = makeStyles(theme => ({
   root: {
     height: '100%',
-    minHeight: 620,
+    minHeight: 700,
     marginTop: theme.spacing(-6),
     [theme.breakpoints.down('sm')]: {
       marginTop: theme.spacing(0),
@@ -96,7 +96,7 @@ const featureStyles = makeStyles(theme => ({
       Width:'80%',
     },
     [theme.breakpoints.down('sm')]: {
-      textAlign: 'center',
+      Width:'100%',
     },
   },
   textLeft: {
@@ -106,7 +106,7 @@ const featureStyles = makeStyles(theme => ({
         Width:'80%',
       },
       [theme.breakpoints.down('sm')]: {
-        textAlign: 'center',
+        Width:'100%',
       },
   },
   /*Image*/
