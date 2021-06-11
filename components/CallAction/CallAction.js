@@ -25,11 +25,11 @@ function CallAction(props) {
   return (
     <div className={classes.background}>
       <ReactWOW animation="fadeInUpShort" fdelay="0.3s" duration="0.5s">
-      <Container>
-        <div className={classes.root}>
+        <Container>
+          <div className={classes.root}>
             <Paper className={classes.paper}>
               <Grid container alignItems="center">
-                <Grid item md={9} xs={12}>
+                <Grid item md={8} xs={12}>
                   <Typography variant="h4" display="block">
                     {t('common:mobile-landing.cta_title')}
                   </Typography>
@@ -37,9 +37,9 @@ function CallAction(props) {
                     {t('common:mobile-landing.cta_subtitle')}
                   </Typography>
                 </Grid>
-                <Grid item md={3} xs={12}>
+                <Grid item md={4} xs={12}>
                   <Grid style={{ justifyContent: 'center' }}>
-                    <Link href="contact" passHref>
+                    <Link href="/contact" passHref>
                       <Button className={classes.button} variant="contained" color="primary">
                         {t('common:mobile-landing.cta_btn')}
                         <SendIcon className={classes.rightIcon} />
@@ -49,9 +49,9 @@ function CallAction(props) {
                 </Grid>
               </Grid>
             </Paper>
-        </div>
-      </Container>
-    </ReactWOW>
+          </div>
+        </Container>
+      </ReactWOW>
     </div>
   );
 }

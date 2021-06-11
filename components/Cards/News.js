@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
+import Link from 'next/link';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import useStyles from './cards-style';
-import Link from 'next/link';
 
 export default function News(props) {
   const classes = useStyles();
@@ -13,7 +13,7 @@ export default function News(props) {
     caption,
     text,
     img,
-    type
+    type,
   } = props;
   const setOrientation = orientation => {
     if (orientation === 'landscape') {
@@ -31,7 +31,7 @@ export default function News(props) {
           <Typography variant="caption" className={classes.type}>{caption}</Typography>
           <Typography display="block" component="p">{text}</Typography>
         </div>
-        <Link href="comingSoon">
+        <Link href="/comingSoon">
           <Button size="small" className={classes.btn}>Read more</Button>
         </Link>
       </Paper>
