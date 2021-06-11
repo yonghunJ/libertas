@@ -4,7 +4,6 @@ import AppBar from '@material-ui/core/AppBar';
 import clsx from 'clsx';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
-import Hidden from '@material-ui/core/Hidden';
 import Link from 'next/link';
 import Container from '@material-ui/core/Container';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
@@ -68,7 +67,7 @@ function Header(props) {
     onToggleDark,
     onToggleDir,
     invert,
-    t
+    t,
   } = props;
   const isDesktop = useMediaQuery(theme.breakpoints.up('lg'));
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));

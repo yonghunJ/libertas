@@ -23,7 +23,7 @@ function FooterWithDeco(props) {
         <Typography variant="h4" className={text.title2}>
           {t('common:mobile-landing.footer_text')}
         </Typography>
-        <Link href="/en/contact">
+        <Link href="/contact">
           <Button variant="contained" color="primary" className={classes.detail}>
             See Detail
           </Button>

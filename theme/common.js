@@ -87,6 +87,7 @@ export const useText = makeStyles(theme => ({
     [theme.breakpoints.down('md')]: {
       fontSize: 16,
       lineHeight: '36px',
+      padding: theme.spacing(0, 5, 2, 4),
     },
     [theme.breakpoints.down('xs')]: {
       fontSize: 14,
@@ -132,12 +133,12 @@ export const useText = makeStyles(theme => ({
     paddingTop: theme.spacing(2),
     color: theme.palette.type === 'dark' ? theme.palette.primary.light : theme.palette.primary.dark,
     [theme.breakpoints.down('md')]: {
-      fontSize: 14,
+      fontSize: 16,
       lineHeight: '32px',
       textAlign: 'left',
     },
     [theme.breakpoints.down('xs')]: {
-      fontSize: 12,
+      fontSize: 14,
       lineHeight: '24px',
       textAlign: 'left',
     },
@@ -150,13 +151,13 @@ export const useText = makeStyles(theme => ({
     paddingLeft:'80px',
     color: theme.palette.type === 'dark' ? theme.palette.primary.light : theme.palette.primary.dark,
     [theme.breakpoints.down('md')]: {
-      fontSize: 14,
+      fontSize: 16,
       lineHeight: '32px',
       textAlign: 'left',
       paddingLeft:0,
     },
     [theme.breakpoints.down('xs')]: {
-      fontSize: 12,
+      fontSize: 14,
       lineHeight: '24px',
       textAlign: 'left',
       paddingLeft:0,

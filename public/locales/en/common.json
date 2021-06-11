@@ -104,6 +104,7 @@
     "cta_title": "Ready to get started?",
     "cta_subtitle": "Successful businesses are not instantly born but made.",
     "cta_btn": "CONTACT US",
+    "service_title": "Our Services",
     "service_title_1": "Logo & Concept Design",
     "service_title_2": "Website Development",
     "service_title_3": "Integrated Chat System",
@@ -121,6 +122,14 @@
     "service_iamge_title3": "Integrated Chat System",
     "service_iamge_title4": "Appointment Scheduling",
     "service_iamge_title5": "Invoices & Payment",
-    "service_iamge_title6": "Project Tracking"
+    "service_iamge_title6": "Project Tracking",
+    "feature_tab_1": "CONSULTATION",
+    "feature_tab_2": "ESTIMATE", 
+    "feature_tab_3": "INVOICING", 
+    "feature_tab_4": "TRACKING",
+    "feature_tab_5": "WEB DESIGN",
+    "feature_tab_6": "REVISITING", 
+    "feature_tab_7": "TRANSPARENCY", 
+    "feature_tab_8": "SECURITY"
   }
 }

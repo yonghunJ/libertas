@@ -14,18 +14,18 @@ const serviceStyles = makeStyles(theme => ({
       paddingTop: theme.spacing(20),
     },
     [theme.breakpoints.down('xs')]: {
-      Margin: theme.spacing(20, -10, 2, -10),
+      Margin: theme.spacing(10, -10, 2, -10),
     },
     [theme.breakpoints.down(330)]: {
-      Margin: theme.spacing(20, -10, 2, -10),
+      Margin: theme.spacing(10, -10, 2, -10),
     },
   },
   root1: {
     flexGrow: 1,
     padding: theme.spacing(30, 20, 0, 20),
-    marginTop: theme.spacing(-10),
+    marginTop: theme.spacing(-8),
     [theme.breakpoints.down('sm')]: {
-      padding: theme.spacing(20, 2, 0, 2),
+      padding: theme.spacing(10, 2, 0, 2),
       marginTop: theme.spacing(-5),
     },
   },
@@ -87,7 +87,7 @@ const serviceStyles = makeStyles(theme => ({
       marginTop: theme.spacing(-30),
     },
     [theme.breakpoints.down('xs')]: {
-      marginTop: theme.spacing(-35),
+      marginTop: theme.spacing(-37),
     },
     position: 'absolute',
     width: '100%',

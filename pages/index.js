@@ -8,7 +8,6 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import Header from '../components/Header';
 import Banner from '../components/Banner';
 import Showcase from '../components/Showcase';
-import Testimonials from '../components/Testimonials';
 import NewsEvent from '../components/NewsEvent';
 import FooterWithDeco from '../components/Footer/FooterWithDeco';
 import PageNav from '../components/PageNav';
@@ -78,7 +77,6 @@ const useStyles = makeStyles(theme => ({
 function Landing(props) {
   const classes = useStyles();
   const { onToggleDark, onToggleDir } = props;
-  const { t } = props;
   return (
     <React.Fragment>
       <Head>
@@ -133,7 +131,6 @@ Landing.getInitialProps = async () => ({
 Landing.propTypes = {
   onToggleDark: PropTypes.func.isRequired,
   onToggleDir: PropTypes.func.isRequired,
-  t: PropTypes.func.isRequired,
 };
 
 

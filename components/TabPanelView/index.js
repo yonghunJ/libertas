@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import clsx from 'clsx';
 import SwipeableViews from 'react-swipeable-views';
 import { useTheme } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
@@ -9,10 +8,7 @@ import Tab from '@material-ui/core/Tab';
 import Zoom from '@material-ui/core/Zoom';
 import { withTranslation } from '~/i18n';
 import Fab from '@material-ui/core/Fab';
-import AddIcon from '@material-ui/icons/Add';
-import EditIcon from '@material-ui/icons/Edit';
-import UpIcon from '@material-ui/icons/KeyboardArrowUp';
-import { fade, darken } from '@material-ui/core/styles/colorManipulator';
+import { darken } from '@material-ui/core/styles/colorManipulator';
 import TabPanel from './TabPanel';
 import useStyles from './css';
 import Feature1 from '../Feature/Feature1';
@@ -21,12 +17,10 @@ import Feature3 from '../Feature/Feature3';
 import Feature4 from '../Feature/Feature4';
 import Title from '../Title';
 
-const a11yProps = (index) => {
-  return {
+const a11yProps = (index) => ({
     id: `action-tab-${index}`,
     'aria-controls': `action-tabpanel-${index}`,
-  };
-};
+  });
 
 const FloatingActionButtonZoom = (props) => {
   const classes = useStyles();
@@ -59,9 +53,9 @@ const FloatingActionButtonZoom = (props) => {
       <Title align="center">
         {t('common:mobile-landing.feature_title')}
       </Title>
-      <AppBar position="static" color="default" style={{ width: '80%', margin: 'auto' }}>
+      <AppBar position="static" color="default" className={classes.AppBarDesign}>
         <Tabs
-          style={{backgroundColor: theme.palette.type === 'dark' ? darken(theme.palette.primary.light, 0.80): 'White'}}
+          style={{ backgroundColor: theme.palette.type === 'dark' ? darken(theme.palette.primary.light, 0.80) : 'White' }}
           value={value}
           onChange={handleChange}
           indicatorColor="primary"
@@ -69,10 +63,10 @@ const FloatingActionButtonZoom = (props) => {
           variant="fullWidth"
           aria-label="action tabs example"
         >
-          <Tab label="CONSULTATION" {...a11yProps(0)} />
-          <Tab label="ESTIMATE" {...a11yProps(1)} />
-          <Tab label="INVOICING" {...a11yProps(2)} />
-          <Tab label="TRACKING" {...a11yProps(3)} />
+          <Tab label={t('common:mobile-landing.feature_tab_1')} {...a11yProps(0)} />
+          <Tab label={t('common:mobile-landing.feature_tab_2')} {...a11yProps(1)} />
+          <Tab label={t('common:mobile-landing.feature_tab_3')} {...a11yProps(2)} />
+          <Tab label={t('common:mobile-landing.feature_tab_4')} {...a11yProps(3)} />
         </Tabs>
       </AppBar>
       <SwipeableViews

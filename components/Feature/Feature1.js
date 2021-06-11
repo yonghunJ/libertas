@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactWOW from 'react-wow'
+import ReactWOW from 'react-wow';
 import Container from '@material-ui/core/Container';
 import PropTypes from 'prop-types';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
@@ -12,7 +12,6 @@ import CheckIcon from '@material-ui/icons/Check';
 import imgAPI from '~/public/images/imgAPI';
 import { withTranslation } from '~/i18n';
 import { useText } from '~/theme/common';
-import TitleSecondary from '../Title/TitleSecondary';
 import useStyles from './feature-style';
 
 const Transition = React.forwardRef(function Transition(props, ref) { // eslint-disable-line
@@ -30,7 +29,6 @@ const Feature = (props) => {
 
   return (
     <>
-    
       <div className={classes.root}>
         <Container>
           <div className={clsx(classes.item, classes.first)}>
