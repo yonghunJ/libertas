@@ -11,6 +11,7 @@ const useStyles = makeStyles((theme) => ({
     width: '100%',
     position: 'relative',
     minHeight: 700,
+    paddingBottom: theme.spacing(5),
   },
   fab: {
     position: 'absolute',
