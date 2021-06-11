@@ -60,6 +60,26 @@ const imgAPI = {
     '/images/mobile/tab-solution6-2.png',
     '/images/mobile/tab-solution7-2.png',
     '/images/mobile/main banner message.svg',
+  ],
+
+  service: [
+    '/images/mobile/service 1.svg',
+    '/images/mobile/service 2.svg',
+    '/images/mobile/service 3.svg',
+    '/images/mobile/service 4.svg',
+    '/images/mobile/service 5.svg',
+    '/images/mobile/service 6.svg',
+  ],
+
+  featureIcon: [
+    '/images/mobile/feature-service-bg.svg',
+    '/images/mobile/feature-service1.svg',
+    '/images/mobile/feature-service2.svg',
+    '/images/mobile/feature-service3.svg',
+    '/images/mobile/feature-service4.svg',
+    '/images/mobile/feature-service5.svg',
+    '/images/mobile/feature-service6.svg',
+    '/images/mobile/feature-service7.svg',
   ]
 };
 

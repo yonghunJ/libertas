@@ -21,7 +21,6 @@ import Feature3 from '../Feature/Feature3';
 import Feature4 from '../Feature/Feature4';
 import Title from '../Title';
 
-
 const a11yProps = (index) => {
   return {
     id: `action-tab-${index}`,
@@ -70,10 +69,10 @@ const FloatingActionButtonZoom = (props) => {
           variant="fullWidth"
           aria-label="action tabs example"
         >
-          <Tab label="Inquiry" {...a11yProps(0)} />
-          <Tab label="Estimate" {...a11yProps(1)} />
-          <Tab label="Invoicing" {...a11yProps(2)} />
-          <Tab label="Tracking" {...a11yProps(3)} />
+          <Tab label="CONSULTATION" {...a11yProps(0)} />
+          <Tab label="ESTIMATE" {...a11yProps(1)} />
+          <Tab label="INVOICING" {...a11yProps(2)} />
+          <Tab label="TRACKING" {...a11yProps(3)} />
         </Tabs>
       </AppBar>
       <SwipeableViews

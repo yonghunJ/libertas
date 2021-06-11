@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'next/link';
+import ReactWOW from 'react-wow';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { useTheme } from '@material-ui/core/styles';
 import { Typography } from '@material-ui/core';
@@ -22,31 +23,33 @@ function CallAction(props) {
 
   const classes = useStyles();
   return (
-    <div>
+    <div className={classes.background}>
       <Container>
         <div className={classes.root}>
-          <Paper className={classes.paper}>
-            <Grid container alignItems="center">
-              <Grid item md={8} xs={12}>
-                <Typography variant="h4" gutterBottom display="block">
-                  {t('common:mobile-landing.cta_title')}
-                </Typography>
-                <Typography display="block" component="div">
-                  {t('common:mobile-landing.cta_subtitle')}
-                </Typography>
-              </Grid>
-              <Grid item md={4} xs={12}>
-                <Grid container alignItems="center">
-                  <Link href="contact" passHref>
-                    <Button variant="contained" color="primary">
-                      {t('common:mobile-landing.cta_btn')}
-                      <SendIcon className={classes.rightIcon} />
-                    </Button>
-                  </Link>
+          <ReactWOW animation="fadeInUpShort" fdelay="0.3s" duration="0.5s">
+            <Paper className={classes.paper}>
+              <Grid container alignItems="center">
+                <Grid item md={9} xs={12}>
+                  <Typography variant="h4" display="block">
+                    {t('common:mobile-landing.cta_title')}
+                  </Typography>
+                  <Typography variant="subtitle1" display="block">
+                    {t('common:mobile-landing.cta_subtitle')}
+                  </Typography>
+                </Grid>
+                <Grid item md={3} xs={12}>
+                  <Grid style={{ justifyContent: 'center' }}>
+                    <Link href="contact" passHref>
+                      <Button className={classes.button} variant="contained" color="primary">
+                        {t('common:mobile-landing.cta_btn')}
+                        <SendIcon className={classes.rightIcon} />
+                      </Button>
+                    </Link>
+                  </Grid>
                 </Grid>
               </Grid>
-            </Grid>
-          </Paper>
+            </Paper>
+          </ReactWOW>
         </div>
       </Container>
     </div>

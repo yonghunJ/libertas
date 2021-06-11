@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactWOW from 'react-wow'
 import Container from '@material-ui/core/Container';
 import PropTypes from 'prop-types';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
@@ -37,14 +38,25 @@ const Feature2 = (props) => {
               <Grid item md={6} xs={12}>
                 <div className={classes.illustrationLeft}>
                   <svg className={classes.decoPrimary} viewBox="0 0 512 512">
-                    <use xlinkHref="/images/mobile/deco-feature.svg#main" transform="translate(50 -20)"/>
+                    <ReactWOW animation="fadeInUpShort" delay="0.5s" duration="0.5s">
+                      <image
+                        xlinkHref={imgAPI.featureIcon[0]}
+                        style={{ x: '0', y: '-15', height: '84%' }}
+                      />
+                    </ReactWOW>
                     <image
                       className={classes.screen}
                       xlinkHref={imgAPI.feature[1]}
                       alt="Feature(2) Estimates"
                       style={{ height: '90%' }}
-                      transform="translate(-10 0)"
+                      transform="translate(10 0)"
                     />
+                    <ReactWOW animation="fadeInUpShort" delay="0.7s" duration="0.5s">
+                    <image
+                      xlinkHref={imgAPI.featureIcon[2]}
+                      style={{ x: '0', y: '-5', height: '28%' }}
+                    />
+                    </ReactWOW>
                   </svg>
                 </div>
               </Grid>
@@ -58,15 +70,15 @@ const Feature2 = (props) => {
                   </Typography>
                   <Typography display="block" component="div" className={text.subtitle4}>
                   <li className={classes.liStyle}>
-                      <CheckIcon fontSize="small"/>
+                      <CheckIcon className={classes.iconStyle} fontSize="small"/>
                       {t('common:mobile-landing.feature_list2-1')}
                     </li>
                     <li className={classes.liStyle}>
-                      <CheckIcon fontSize="small"/>
+                      <CheckIcon className={classes.iconStyle} fontSize="small"/>
                       {t('common:mobile-landing.feature_list2-2')}
                     </li>
                     <li className={classes.liStyle}>
-                      <CheckIcon fontSize="small"/>
+                      <CheckIcon className={classes.iconStyle} fontSize="small"/>
                       {t('common:mobile-landing.feature_list2-3')}
                     </li>
                   </Typography>

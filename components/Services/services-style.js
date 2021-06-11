@@ -82,12 +82,12 @@ const serviceStyles = makeStyles(theme => ({
     background: `url(${theme.palette.type === 'dark' ? decoDarkTop : decoLightTop}) no-repeat transparent`,
     backgroundSize: '100% auto',
     transform: 'scale(1.5, 0.5)',
-    marginTop: theme.spacing(-20),
+    marginTop: theme.spacing(-25),
     [theme.breakpoints.down('md')]: {
-      marginTop: theme.spacing(-23),
+      marginTop: theme.spacing(-30),
     },
     [theme.breakpoints.down('xs')]: {
-      marginTop: theme.spacing(-31),
+      marginTop: theme.spacing(-35),
     },
     position: 'absolute',
     width: '100%',

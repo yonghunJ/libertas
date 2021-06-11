@@ -68,7 +68,7 @@ function Banner(props) {
                 &nbsp;
   {t('common:mobile-landing.banner_title2')}
               </Typography>*/}
-              <Typography variant="h5" className={text.subtitle}>
+              <Typography className={text.subtitle}>
                 {t('common:mobile-landing.banner_desc')}
               </Typography>
               <div className={classes.btnArea}>

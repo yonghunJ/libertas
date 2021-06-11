@@ -17,8 +17,17 @@ const featureStyles = makeStyles(theme => ({
       marginTop: theme.spacing(0),
     },
   },
+
+  iconStyle: {
+    position: 'relative',
+    top: 5,
+    marginRight: 10,
+  },
   liStyle: {
     listStyleType: 'none',
+    // marginLeft: 15,
+    // display: 'flex',
+    // alignItems: 'center',
   },
   /* First feature tab BG */
   decoPrimary: {
@@ -82,12 +91,23 @@ const featureStyles = makeStyles(theme => ({
   },
   text: {
     [theme.breakpoints.up('md')]: {
-      paddingTop: theme.spacing(12),
+      paddingTop: theme.spacing(8),
+      paddingRight: theme.spacing(5),
       Width:'80%',
     },
     [theme.breakpoints.down('sm')]: {
       textAlign: 'center',
     },
+  },
+  textLeft: {
+      [theme.breakpoints.up('md')]: {
+        paddingTop: theme.spacing(10),
+        paddingLeft: theme.spacing(5),
+        Width:'80%',
+      },
+      [theme.breakpoints.down('sm')]: {
+        textAlign: 'center',
+      },
   },
   /*Image*/
   screen: {
@@ -184,10 +204,7 @@ const featureStyles = makeStyles(theme => ({
   illustrationRight: {
     position: 'relative',
     marginTop: -40,
-    '& $screen': {
-      [theme.breakpoints.up('md')]: {
-        marginTop: -40,
-      },
+    marginRight: 50,
       [theme.breakpoints.down('sm')]: {
         marginLeft: theme.spacing(),
         marginTop: -30,
@@ -196,7 +213,6 @@ const featureStyles = makeStyles(theme => ({
         marginLeft: theme.spacing(),
         marginTop: -30,
       },
-    },
   },
   illustrationCenter: {
     position: 'relative',

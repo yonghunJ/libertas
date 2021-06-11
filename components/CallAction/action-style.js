@@ -3,34 +3,23 @@ import { lighten, darken } from '@material-ui/core/styles/colorManipulator';
 
 const useStyles = makeStyles(theme => ({
   root: {
-    display: 'flex',
-    justifyContent:'center',
-    paddingTop: theme.spacing(5),
-    width:'100%',
-  [theme.breakpoints.down('sm')]: {
-    width:'100%',
-  },
+    position: 'relative',
+    margin: '0 auto',
+    width:'70%',
+    [theme.breakpoints.down('sm')]: {
+      width:'100%',
+    },
   },
   background: {
-    fill: theme.palette.type === 'dark' ? darken(theme.palette.primary.light, 0.8) : lighten(theme.palette.primary.light, 0.8),
-    width: 560,
-    height: 560,
-    top: theme.spacing(-50),
-    //left: '20%',
-    //right: '20%',
-    position: 'absolute',
-    transform: 'scale(3)'
+    background: theme.palette.type === 'dark' ? darken(theme.palette.primary.light, 0.6) : lighten(theme.palette.primary.light, 0.8),
+    backgroundSize: '100% auto',
+    paddingTop: theme.spacing(15),
+    paddingBottom: theme.spacing(25),
+    marginTop: theme.spacing(-5),
   },
   button: {
-    color: 'black',
-    [theme.breakpoints.up('md')]: {
-      width: 300,
-      height: 100,
-      fontSize: 14,
-      color: 'black',
-    },
     [theme.breakpoints.down('sm')]: {
-      margin: '0 auto',
+      marginTop: theme.spacing(2),
     }
   },
   paper: {

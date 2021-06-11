@@ -109,9 +109,6 @@ function Landing(props) {
           <section id="showcase" className={classes.spaceTopShort}>
             <Showcase />
           </section>
-          <section id="testimonials">
-            <Testimonials />
-          </section>
           <section id="callAction" className={classes.spaceTopShort}>
             <CallAction />
           </section>

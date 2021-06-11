@@ -81,8 +81,9 @@ export const useText = makeStyles(theme => ({
   },
   subtitle: {
     fontWeight: theme.typography.fontWeightRegular,
-    fontSize: 20,
-    lineHeight: '44px',
+    fontSize: 18,
+    lineHeight: '36px',
+    padding: theme.spacing(2, 20, 5, 0),
     [theme.breakpoints.down('md')]: {
       fontSize: 16,
       lineHeight: '36px',
@@ -96,11 +97,11 @@ export const useText = makeStyles(theme => ({
     fontWeight: theme.typography.fontWeightRegular,
     fontSize: 18,
     lineHeight: '32px',
-    paddingRight:'80px',
+    paddingRight:'10px',
     [theme.breakpoints.down('md')]: {
       fontSize: 16,
       lineHeight: '32px',
-      paddingRight:'40px',
+      paddingRight:'10px',
     },
     [theme.breakpoints.down('xs')]: {
       fontSize: 14,

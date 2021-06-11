@@ -14,7 +14,7 @@
 	"main": "index.js",
 	"private": true,
 	"scripts": {
-		"dev": "next",
+		"dev": "next -p 3002",
 		"build": "next build",
 		"start": "NODE_ENV=production node index.js",
 		"export": "next export",
