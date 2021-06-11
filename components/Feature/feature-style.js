@@ -17,8 +17,17 @@ const featureStyles = makeStyles(theme => ({
       marginTop: theme.spacing(0),
     },
   },
+
+  iconStyle: {
+    position: 'relative',
+    top: 5,
+    marginRight: 10,
+  },
   liStyle: {
     listStyleType: 'none',
+    // marginLeft: 15,
+    // display: 'flex',
+    // alignItems: 'center',
   },
   /* First feature tab BG */
   decoPrimary: {

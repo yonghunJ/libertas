@@ -69,15 +69,15 @@ const Feature3 = (props) => {
                   </Typography>
                   <Typography display="block" component="p" className={text.subtitle4}>
                     <li className={classes.liStyle}>
-                      <CheckIcon fontSize="small"/>
+                      <CheckIcon className={classes.iconStyle} fontSize="small"/>
                       {t('common:mobile-landing.feature_list3-1')}
                     </li>
                     <li className={classes.liStyle}>
-                      <CheckIcon fontSize="small"/>
+                      <CheckIcon className={classes.iconStyle} fontSize="small"/>
                       {t('common:mobile-landing.feature_list3-2')}
                     </li>
                     <li className={classes.liStyle}>
-                      <CheckIcon fontSize="small"/>
+                      <CheckIcon className={classes.iconStyle} fontSize="small"/>
                       {t('common:mobile-landing.feature_list3-3')}
                     </li>
                     </Typography>
