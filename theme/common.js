@@ -87,12 +87,12 @@ export const useText = makeStyles(theme => ({
     [theme.breakpoints.down('md')]: {
       fontSize: 16,
       lineHeight: '36px',
-      padding: theme.spacing(0, 5, 2, 4),
+      padding: theme.spacing(0, 5, 2, 3),
     },
     [theme.breakpoints.down('xs')]: {
       fontSize: 14,
       lineHeight: '28px',
-      padding: theme.spacing(0, 5, 2, 4),
+      marginTop: theme.spacing(-7),
     },
   },
   subtitle2: {

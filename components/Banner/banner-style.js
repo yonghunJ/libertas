@@ -119,7 +119,7 @@ const bannerStyles = makeStyles(theme => ({
     textAlign: 'center',
     display: 'flex',
     [theme.breakpoints.down('xs')]: {
-      marginLeft: theme.spacing(3),
+      marginLeft: theme.spacing(2),
     },
     '& a': {
       [theme.breakpoints.up('sm')]: {
