@@ -11,7 +11,7 @@ const decoStyle = {
 const featureStyles = makeStyles(theme => ({
   root: {
     height: '100%',
-    minHeight: 700,
+    minHeight: 750,
     marginTop: theme.spacing(-6),
     [theme.breakpoints.down('sm')]: {
       marginTop: theme.spacing(0),
@@ -194,9 +194,11 @@ const featureStyles = makeStyles(theme => ({
       },
       [theme.breakpoints.down('sm')]: {
         marginTop: -40,
+        JustifyContent:'center',
       },
       [theme.breakpoints.down('xs')]: {
         marginTop: -40,
+        JustifyContent:'center',
       },
     },
 
@@ -206,12 +208,12 @@ const featureStyles = makeStyles(theme => ({
     marginTop: -40,
     marginRight: 50,
       [theme.breakpoints.down('sm')]: {
-        marginLeft: theme.spacing(),
         marginTop: -30,
+        JustifyContent:'center',
       },
       [theme.breakpoints.down('xs')]: {
-        marginLeft: theme.spacing(),
         marginTop: -30,
+        JustifyContent:'center',
       },
   },
   illustrationCenter: {
