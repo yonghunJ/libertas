@@ -23,7 +23,6 @@ function Services(props) {
             <div className={classes.root1}>
               <Title align="center">
                 Our Services
-                {t('common:mobile-landing.service_title_1')}
               </Title>
               <Grid
                 container
