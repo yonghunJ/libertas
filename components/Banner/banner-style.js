@@ -177,8 +177,8 @@ const bannerStyles = makeStyles(theme => ({
       top: 200,
     },
     [theme.breakpoints.down('xs')]: {
-      top: 200,
-      right: theme.spacing(-10),
+      top: 250,
+      right: theme.spacing(-15),
       transform: 'scale(0.6)',
       //opacity: theme.palette.type === 'dark' ? 0.2 : 0.4
     },

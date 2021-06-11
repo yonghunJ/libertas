@@ -87,6 +87,7 @@ export const useText = makeStyles(theme => ({
     [theme.breakpoints.down('md')]: {
       fontSize: 16,
       lineHeight: '36px',
+      padding: theme.spacing(0, 5, 2, 4),
     },
     [theme.breakpoints.down('xs')]: {
       fontSize: 14,
