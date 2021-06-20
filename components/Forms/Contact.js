@@ -13,7 +13,7 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Snackbar from '@material-ui/core/Snackbar';
 import { ValidatorForm, TextValidator } from 'react-material-ui-form-validator';
-// import emailjs from 'emailjs-com';
+import emailjs from 'emailjs-com';
 import { withTranslation } from '~/i18n';
 import brand from '~/public/text/brand';
 import logo from '~/public/images/mobile-logo.svg';
@@ -60,7 +60,7 @@ function Contact(props) {
   };
 
   const handleSubmit = async () => {
-    // await emailjs.send(process.env.EMAILJS_SERVICE_ID, process.env.EMAILJS_TEMPLATE_ID, values, process.env.EMAILJS_USER_ID);
+    await emailjs.send(process.env.EMAILJS_SERVICE_ID, process.env.EMAILJS_TEMPLATE_ID, values, process.env.EMAILJS_USER_ID);
     console.log('sent');
     setFree();
     setNotif(true);
