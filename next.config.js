@@ -10,7 +10,7 @@ module.exports = withImages({
     exportPathMap: () => ({
         '/': { page: '/' },
         '/contact': { page: '/contact' },
-        '/blank-page': { page: '/blank-page' }, 
+        '/blank-page': { page: '/blank-page' },
       }),
     publicRuntimeConfig: {
       localeSubpaths: typeof process.env.LOCALE_SUBPATHS === 'string'
