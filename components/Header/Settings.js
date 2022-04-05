@@ -20,7 +20,7 @@ import useStyles from './header-style';
 
 let themeType = 'light';
 if (typeof Storage !== 'undefined') {
-  themeType = localStorage.getItem('luxiTheme') || 'light';
+  themeType = localStorage.getItem('heyboss') || 'light';
 }
 
 function Settings(props) {

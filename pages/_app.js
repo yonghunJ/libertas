@@ -25,7 +25,7 @@ import '~/vendors/hamburger-menu.css';
 import '../public/scripts/particles-spray.js';
 let themeType = 'light';
 if (typeof Storage !== 'undefined') { // eslint-disable-line
-  themeType = localStorage.getItem('luxiTheme') || 'light';
+  themeType = localStorage.getItem('heyboss') || 'light';
 }
 
 function MyApp(props) {
@@ -60,7 +60,7 @@ function MyApp(props) {
 
   const toggleDarkTheme = () => {
     const newPaletteType = theme.palette.type === 'light' ? 'dark' : 'light';
-    localStorage.setItem('luxiTheme', theme.palette.type === 'light' ? 'dark' : 'light');
+    localStorage.setItem('heyboss', theme.palette.type === 'light' ? 'dark' : 'light');
     setTheme({
       ...appTheme('joker', newPaletteType),
       direction: theme.direction,

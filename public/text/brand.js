@@ -6,8 +6,8 @@ module.exports = {
     footerText: 'HEYBOSS 2022',
     logoText: 'HEYBOSS',
     projectName: 'HEYBOSS',
-    url: 'luxireact.ux-maestro.com/mobile',
+    url: 'heyboss.us',
     img: '/static/images/mobile-logo.png',
     notifMsg: 'Donec sit amet nulla sed arcu pulvinar ultricies commodo id ligula.'
-  }
+  },
 };
