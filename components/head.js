@@ -40,12 +40,12 @@ const HeadComponent = () => (
     <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" />
     {/*  Facebook */}
     <meta property="author" content="luxi" />
-    <meta property="og:site_name" content="luxi.ux-maestro.com" />
+    <meta property="og:site_name" content="heyboss.us" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
     {/*  Twitter */}
-    <meta property="twitter:site" content="luxi.ux-maestro.com" />
-    <meta property="twitter:domain" content="luxi.ux-maestro.com" />
+    <meta property="twitter:site" content="heyboss.us" />
+    <meta property="twitter:domain" content="heyboss.us" />
     <meta property="twitter:creator" content="luxi" />
     <meta property="twitter:card" content="summary" />
     <meta property="twitter:image:src" content="/images/mobile-logo.png" />
